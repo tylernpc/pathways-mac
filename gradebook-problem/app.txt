@@ -1,0 +1,9 @@
+Program Descritpion:
+
+The professor needs a grade for class, this includes three grades 
+calculate a grade for a class, three grades (3 ints) each ones gonna have a weight. 
+Apply a grade and a weight together and apply a file grade. Refactor it to have loops later. 
+Homework avg, quiz avg, proj avg different weights
+
+
+3 versions, one that's entirely based
