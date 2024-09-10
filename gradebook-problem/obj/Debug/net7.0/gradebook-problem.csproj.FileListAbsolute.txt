@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/gradebook-problem/bin/Debug/net7.0/gradebook-problem
+/Users/tyler/Repos/pathways-mac/gradebook-problem/bin/Debug/net7.0/gradebook-problem.deps.json
+/Users/tyler/Repos/pathways-mac/gradebook-problem/bin/Debug/net7.0/gradebook-problem.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/gradebook-problem/bin/Debug/net7.0/gradebook-problem.dll
+/Users/tyler/Repos/pathways-mac/gradebook-problem/bin/Debug/net7.0/gradebook-problem.pdb
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.dll
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/refint/gradebook-problem.dll
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.pdb
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/gradebook-problem.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/gradebook-problem/obj/Debug/net7.0/ref/gradebook-problem.dll

@@ -1,9 +1,22 @@
 Program Descritpion:
 
-The professor needs a grade for class, this includes three grades 
-calculate a grade for a class, three grades (3 ints) each ones gonna have a weight. 
-Apply a grade and a weight together and apply a file grade. Refactor it to have loops later. 
-Homework avg, quiz avg, proj avg different weights
+( A, B, C, D, F )
+grade scale:
+a = 90+
+b = 80-89
+c = 70-79
+d = 60-69
+f = 59<
 
+the professor needs a grade for class, and a program that calculates that.
+assignments are expected to weight differently, ( formative/summative )
 
-3 versions, one that's entirely based
+different types of assignments:
+test     (summative)
+quiz     (formative)
+homework (formative)
+
+3 versions
+initial  v1: one that's entirely based if else
+looped   v2: another that's based on else, and loops
+advanced v3: a(n) ai revised version i took notes from
