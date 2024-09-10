@@ -5,6 +5,7 @@ using System;
 using System.Data;
 
 // v1.
+
 public class gradeBook
 {
     public static void Main(string[] args)
@@ -16,7 +17,6 @@ public class gradeBook
         double finalTestGrade;
         double finalQuizGrade;
         double finalHomeworkGrade;
-        
 
         // Asking for Exam Grade
         Console.Write("What grade did the student receive on their exam? ");
@@ -30,7 +30,6 @@ public class gradeBook
         Console.Write("What grade did the student receive on their homework? ");
         string homeworkGrade = Console.ReadLine();
 
-
         /* 
         0.8 & 0.6 are completely randomly selected numbers. The idea is that you give them less than the actual grade and add it up to be equivalent to something on the grading scale.
         In this case the 0.8 & 0.6 are completely for the weights of (0.8 = Summative) (0.6 = Formative)
@@ -40,6 +39,7 @@ public class gradeBook
 
         Max amount of points is 180
         */
+
         // Test Grade Selection | Summative
         if (testGrade.ToUpper() == "A")
         {
@@ -97,88 +97,20 @@ public class gradeBook
             finalHomeworkGrade = weightedHomeworkGrade * 0.6;
         }
 
+        // Final grade calculation to determine what comes below
         double finalGrade = (finalTestGrade + finalQuizGrade + finalHomeworkGrade) / 180;        
 
+        // Output | Depending on grade level you will receive one of these messages
         if (finalGrade >= 0.9) {
-            Console.WriteLine("Congratulations, you received an A this semester!");
-        } else if (finalGrade < 0.9) {
-            Console.WriteLine("Good job, you finished the semester with a B!");
-        } else if (finalGrade < 0.8) {
-            Console.WriteLine("You completed classes with a C. Nice try, definitely some things you can work on next semester!");
-        } else if (finalGrade < 0.7) {
-            Console.WriteLine("You finished with a D. Let's try to get you more into studying after school!");
+            Console.WriteLine("Congratulations, you received an A this semester! Your grade percentage was: " + finalGrade);
+        } else if (finalGrade >= 0.8) {
+            Console.WriteLine("Good job, you finished the semester with a B! Your grade percentage was: " + finalGrade);
+        } else if (finalGrade >= 0.7) {
+            Console.WriteLine("You completed classes with a C. Nice try, definitely some things you can work on next semester! Your grade percentage was: " + finalGrade);
+        } else if (finalGrade >= 0.6) {
+            Console.WriteLine("You finished with a D. Let's try to get you more into studying after school! Your grade percentage was: " + finalGrade);
         } else {
-            Console.WriteLine("You probably shouldn't take classes anymore.");
+            Console.WriteLine("You probably shouldn't take classes anymore. Your grade percentage was: " + finalGrade);
         }
     }
 }
-
-
-/* v2. loops *
-
-
-public class gradeBook
-{
-    public static void Main(string[] args)
-    {
-        // ask the user how many classes a student has
-        Console.Write("What grade did the student receive on their exam? ");
-        string testGrade = Console.ReadLine();
-
-        Console.Write("What grade did the student receive on their quiz? ");
-        string quizGrade = Console.ReadLine();
-
-        Console.Write("What grade did the student receive on their homework? ");
-        string homeworkGrade = Console.ReadLine();
-
-
-        if (testGrade == "A")
-        {
-            int weightedTestGrade = 90;
-        } else if (testGrade == "B") {
-            int weightedTestGrade = 80;
-        } else if (testGrade == "C") {
-            int weightedTestGrade = 70;
-        }
-
-        
-    }
-}
-
-
-*/
-
-
-/* v3. ai revised *
-
-
-public class gradeBook
-{
-    public static void Main(string[] args)
-    {
-        // ask the user how many classes a student has
-        Console.Write("What grade did the student receive on their exam? ");
-        string testGrade = Console.ReadLine();
-
-        Console.Write("What grade did the student receive on their quiz? ");
-        string quizGrade = Console.ReadLine();
-
-        Console.Write("What grade did the student receive on their homework? ");
-        string homeworkGrade = Console.ReadLine();
-
-
-        if (testGrade == "A")
-        {
-            int weightedTestGrade = 90;
-        } else if (testGrade == "B") {
-            int weightedTestGrade = 80;
-        } else if (testGrade == "C") {
-            int weightedTestGrade = 70;
-        }
-
-        
-    }
-}
-
-
-*/
