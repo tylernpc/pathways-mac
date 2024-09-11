@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/max-problem/bin/Debug/net7.0/max-problem
+/Users/tyler/Repos/pathways-mac/max-problem/bin/Debug/net7.0/max-problem.deps.json
+/Users/tyler/Repos/pathways-mac/max-problem/bin/Debug/net7.0/max-problem.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/max-problem/bin/Debug/net7.0/max-problem.dll
+/Users/tyler/Repos/pathways-mac/max-problem/bin/Debug/net7.0/max-problem.pdb
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.dll
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/refint/max-problem.dll
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.pdb
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/max-problem.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/max-problem/obj/Debug/net7.0/ref/max-problem.dll
