@@ -4,7 +4,7 @@
 // Step 3: Math.Max() largest number
 
 // Declare Variables
-int[] userNumbers = new int[5];
+
 
 // For Loop Logic
 for (int i = 0; i < 5; i++)
