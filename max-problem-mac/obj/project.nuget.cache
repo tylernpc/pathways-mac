@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "noFHvGhFNnuIAuHyDIR5uuYkS1wNM5hwzJA5v9ym/KBYs6rsMkDGDU2M18iyVD4BU9D9VGtNYsfVSUlC1lIjXw==",
+  "dgSpecHash": "6Ed3AU3leQoS2BK4SSvneOr3j65F9ggtZsJL4WZNRok2x/DRpv3lwUs23IiQo+/vmX0O8Nm9gVAaIWZ1NdHYTQ==",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/max-problem/max-problem.csproj",
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/max-problem-mac/max-problem.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

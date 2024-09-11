@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/max-problem-mac/max-problem.csproj",
-      "projectName": "max-problem",
-      "projectPath": "/Users/tyler/Repos/pathways-mac/max-problem-mac/max-problem.csproj",
+      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/car-problem-mac/car-problem-mac.csproj",
+      "projectName": "car-problem-mac",
+      "projectPath": "/Users/tyler/Repos/pathways-mac/car-problem-mac/car-problem-mac.csproj",
       "packagesPath": "/Users/tyler/.nuget/packages/",
-      "outputPath": "/Users/tyler/Repos/pathways-mac/max-problem-mac/obj/",
+      "outputPath": "/Users/tyler/Repos/pathways-mac/car-problem-mac/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tyler/.nuget/NuGet/NuGet.Config"
