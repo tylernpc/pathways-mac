@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/power-problem-mac/bin/Debug/net7.0/power-problem-mac
+/Users/tyler/Repos/pathways-mac/power-problem-mac/bin/Debug/net7.0/power-problem-mac.deps.json
+/Users/tyler/Repos/pathways-mac/power-problem-mac/bin/Debug/net7.0/power-problem-mac.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/power-problem-mac/bin/Debug/net7.0/power-problem-mac.dll
+/Users/tyler/Repos/pathways-mac/power-problem-mac/bin/Debug/net7.0/power-problem-mac.pdb
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.dll
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/refint/power-problem-mac.dll
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.pdb
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/power-problem-mac.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/power-problem-mac/obj/Debug/net7.0/ref/power-problem-mac.dll
