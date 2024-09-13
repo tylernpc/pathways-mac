@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/carpetLand/carpetLand.csproj",
+      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/carpetLand-mac/carpetLand.csproj",
       "projectName": "carpetLand",
-      "projectPath": "/Users/tyler/Repos/pathways-mac/carpetLand/carpetLand.csproj",
+      "projectPath": "/Users/tyler/Repos/pathways-mac/carpetLand-mac/carpetLand.csproj",
       "packagesPath": "/Users/tyler/.nuget/packages/",
-      "outputPath": "/Users/tyler/Repos/pathways-mac/carpetLand/obj/",
+      "outputPath": "/Users/tyler/Repos/pathways-mac/carpetLand-mac/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tyler/.nuget/NuGet/NuGet.Config"

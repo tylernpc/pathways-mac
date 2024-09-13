@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gvMc5yE+guSgw12PKHOfUbAKF4aXZ/eSAPEacCWwYOH51gTshr1Xs+OE11+/X5/lkmc/sVjRvEaH7EVymu2Suw==",
+  "dgSpecHash": "kYvf1zR4ZY2aaGkXy10yXcbqJeFw4dv2RnyCQWDyoQu3i7WfIuCOCO4PjmLQ9HFN96WN6vnMCfINNOqQR7hejA==",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/accumulator-problem/accumulator-problem.csproj",
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

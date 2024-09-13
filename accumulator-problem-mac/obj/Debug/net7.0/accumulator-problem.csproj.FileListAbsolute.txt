@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/bin/Debug/net7.0/accumulator-problem
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/bin/Debug/net7.0/accumulator-problem.deps.json
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/bin/Debug/net7.0/accumulator-problem.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/bin/Debug/net7.0/accumulator-problem.dll
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/bin/Debug/net7.0/accumulator-problem.pdb
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.dll
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/refint/accumulator-problem.dll
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.pdb
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/accumulator-problem.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/Debug/net7.0/ref/accumulator-problem.dll

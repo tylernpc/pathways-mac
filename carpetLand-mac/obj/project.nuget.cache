@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X/oqRRCYsVjp6z4bh7lc12adqWjwTiqkhUn3BHudrykjScm6rVtAS2yic8132bMK2wqlOEi/0pawjBPTpwQJNA==",
+  "dgSpecHash": "P4rsjIOOhZPJQQBbYhnaih6A7u3yeHS3PqRDFmFhBXZn33gRpoOMbbLrU2bsgSSRj3KKKwqWSnBWGjmV5pOJ5g==",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/carpetLand/carpetLand.csproj",
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/carpetLand-mac/carpetLand.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

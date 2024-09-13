@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/accumulator-problem/accumulator-problem.csproj": {}
+    "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/accumulator-problem/accumulator-problem.csproj": {
+    "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/accumulator-problem/accumulator-problem.csproj",
+        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj",
         "projectName": "accumulator-problem",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/accumulator-problem/accumulator-problem.csproj",
+        "projectPath": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj",
         "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/accumulator-problem/obj/",
+        "outputPath": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tyler/.nuget/NuGet/NuGet.Config"
