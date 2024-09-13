@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Diagnostics.Metrics;
-using System.Net.Security;
 
 namespace powerProblemV2
 {
@@ -21,15 +18,15 @@ namespace powerProblemV2
             int baseNum, lowExponent, highExponent, loopAmount;
             
             // user input for base number
-            Console.Write("Please enter the base number: ");
+            Console.WriteLine("Base Number");
             baseNum = intValidation();
 
             // user input for low exponent
-            Console.Write("Please enter the low exponent: ");
+            Console.WriteLine("Low exponent");
             lowExponent = intValidation();
 
             // user input for the high exponent
-            Console.Write("Please enter the high exponent: ");
+            Console.WriteLine("High exponent");
             highExponent = intValidation();
 
             do
