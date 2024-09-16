@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/w1-review/bin/Debug/net7.0/w1-review
+/Users/tyler/Repos/pathways-mac/w1-review/bin/Debug/net7.0/w1-review.deps.json
+/Users/tyler/Repos/pathways-mac/w1-review/bin/Debug/net7.0/w1-review.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/w1-review/bin/Debug/net7.0/w1-review.dll
+/Users/tyler/Repos/pathways-mac/w1-review/bin/Debug/net7.0/w1-review.pdb
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.dll
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/refint/w1-review.dll
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.pdb
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/w1-review.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/w1-review/obj/Debug/net7.0/ref/w1-review.dll
