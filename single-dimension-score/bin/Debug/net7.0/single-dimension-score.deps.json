@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "single-dimension-score/1.0.0": {
+        "runtime": {
+          "single-dimension-score.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "single-dimension-score/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

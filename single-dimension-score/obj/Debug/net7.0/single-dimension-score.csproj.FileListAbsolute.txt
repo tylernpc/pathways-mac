@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/single-dimension-score/bin/Debug/net7.0/single-dimension-score
+/Users/tyler/Repos/pathways-mac/single-dimension-score/bin/Debug/net7.0/single-dimension-score.deps.json
+/Users/tyler/Repos/pathways-mac/single-dimension-score/bin/Debug/net7.0/single-dimension-score.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/single-dimension-score/bin/Debug/net7.0/single-dimension-score.dll
+/Users/tyler/Repos/pathways-mac/single-dimension-score/bin/Debug/net7.0/single-dimension-score.pdb
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.dll
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/refint/single-dimension-score.dll
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.pdb
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/single-dimension-score.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/single-dimension-score/obj/Debug/net7.0/ref/single-dimension-score.dll
