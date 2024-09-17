@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/the-avg-problem/bin/Debug/net7.0/the-avg-problem
+/Users/tyler/Repos/pathways-mac/the-avg-problem/bin/Debug/net7.0/the-avg-problem.deps.json
+/Users/tyler/Repos/pathways-mac/the-avg-problem/bin/Debug/net7.0/the-avg-problem.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/the-avg-problem/bin/Debug/net7.0/the-avg-problem.dll
+/Users/tyler/Repos/pathways-mac/the-avg-problem/bin/Debug/net7.0/the-avg-problem.pdb
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.dll
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/refint/the-avg-problem.dll
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.pdb
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/the-avg-problem.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/the-avg-problem/obj/Debug/net7.0/ref/the-avg-problem.dll
