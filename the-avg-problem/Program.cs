@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Data;
-using System.Globalization;
-using System.Net.Sockets;
-using System.Numerics;
+
 
 namespace avgProblem
 {
@@ -11,28 +8,31 @@ namespace avgProblem
         static void Main(string[] args)
         {
             /*
-            create 2d array
-            transition it to a 1d array
-            pass to method that calculates avg
-            pass that to the high and low
-            return all three and display them
+            create and display 2d array
+            transition back into 1d array per column (1)
+                for loop each student
+                    for loop each student
             */
 
             // declare variables
+            int totalAvg = 0;
             int avg = 0;
+            int highestAvg = 0;
+            int lowestAvg = 100;
+            int highestAvgStudent = 0;
+            int lowestAvgStudent = 0;
 
             // 2D ARRAY
             // formatting to show student 1, 2, and 3
             Console.WriteLine(" Scores");
             Console.WriteLine("S1 S2 S3");
-            int [,] students = {   //s1  s2  s3
+            int[,] students = {   //s1  s2  s3
                                     {78, 86, 94}, // hw
                                     {90, 84, 96}, // quiz
                                     {80, 90, 99}  // exam
                                 }; // end of student array
 
-            // nested for loop to make it grid
-            // displasy students scores
+            // displasy students scores in grid
             for (int i = 0; i < students.GetLength(0); i++)
             {
                 for (int j = 0; j < students.GetLength(1); j++)
@@ -42,25 +42,50 @@ namespace avgProblem
                 Console.WriteLine();
             } // end of for loop
 
+            // array to store each student's average
+            int[] studentAverages = new int[students.GetLength(1)]; // works together [1 big bit]
+
             // increments through each student column
             for (int student = 0; student < students.GetLength(1); student++)
             {
                 // creates a single record for the student
-                int[] studentScores = new int[students.GetLength(0)];
+                int[] studentScores = new int[students.GetLength(0)]; // works together [1 medium bit]
 
                 // loops through each score for the student
                 for (int i = 0; i < students.GetLength(0); i++)
                 {
-                    studentScores[i] = students[i, student];
-                }
+                    studentScores[i] = students[i, student]; // works together [1 small bit]
+                } // end of for loop
 
-                // utilize avg method
+                // used to find avg score
                 avg = AvgCalc(studentScores);
-                Console.WriteLine($"Average for student {student + 1}: {avg}");
-            }   
-            
-        } // end of main class
 
+                // stores each students average
+                studentAverages[student] = avg;
+
+                // adds each averagae to a total
+                totalAvg += avg;
+
+                // logic to find highest average
+                if (avg > highestAvg)
+                {
+                    highestAvg = avg;
+                    highestAvgStudent = student + 1;
+                } // end of if
+                // logic to find lowest average
+                if (avg < lowestAvg)
+                {
+                    lowestAvg = avg;
+                    lowestAvgStudent = student + 1;
+                } // end of if
+            } // end of for loop
+
+            // output
+            // total average / amount of data in this case 9
+            totalAvg /= students.GetLength(1);
+            Console.WriteLine();
+            Console.WriteLine($"The student with the highest average is S{highestAvgStudent} with a {highestAvg}\nThe student with the lowest average is S{lowestAvgStudent} with a {lowestAvg}\nWith a class average of {totalAvg}");
+        } // end of main class
 
         // logic to get the avg
         static int AvgCalc(int[] array)
@@ -71,18 +96,16 @@ namespace avgProblem
             */
 
             // declared variables
-            int averageNum = 0;
             int result = 0;
 
             // foreach that adds up total
             foreach (int i in array)
             {
-                averageNum += i;
+                result += i;
             } // end of foreach
 
-            // return result here and averages out
-            result = averageNum / array.Length;
-            return result;
+            // return results
+            return result / array.Length;
         } // end of avgCalc
     }
 }
