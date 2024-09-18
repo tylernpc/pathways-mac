@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/CRUDapp/bin/Debug/net7.0/CRUDapp
+/Users/tyler/Repos/pathways-mac/CRUDapp/bin/Debug/net7.0/CRUDapp.deps.json
+/Users/tyler/Repos/pathways-mac/CRUDapp/bin/Debug/net7.0/CRUDapp.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/CRUDapp/bin/Debug/net7.0/CRUDapp.dll
+/Users/tyler/Repos/pathways-mac/CRUDapp/bin/Debug/net7.0/CRUDapp.pdb
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.dll
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/refint/CRUDapp.dll
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.pdb
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/CRUDapp.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp/obj/Debug/net7.0/ref/CRUDapp.dll

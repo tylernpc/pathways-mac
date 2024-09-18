@@ -29,7 +29,8 @@ namespace avgProblem
             int[,] students = {   //s1  s2  s3
                                     {78, 86, 94}, // hw
                                     {90, 84, 96}, // quiz
-                                    {80, 90, 99}  // exam
+                                    {80, 90, 99},  // exam
+                                    {49, 32, 30}
                                 }; // end of student array
 
             // displasy students scores in grid
@@ -57,13 +58,14 @@ namespace avgProblem
                     studentScores[i] = students[i, student]; // works together [1 small bit]
                 } // end of for loop
 
-                // used to find avg score
+                // used to calculate avg score
                 avg = AvgCalc(studentScores);
+                Console.WriteLine($"{avg} for {student}");
 
                 // stores each students average
                 studentAverages[student] = avg;
 
-                // adds each averagae to a total
+                // adds each average to a total
                 totalAvg += avg;
 
                 // logic to find highest average
