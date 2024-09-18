@@ -80,7 +80,11 @@ namespace HelloWorld
                     catch (Exception e)
                     {
 
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine(e.Message + " type, " + e.GetType());
+                        if (e.GetType().ToString() == "System.IndexOutOfRangeException")
+                        {
+                            Console.WriteLine("There is a system error");
+                        }
                     }
                     finally
                     {
