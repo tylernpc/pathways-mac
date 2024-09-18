@@ -29,7 +29,7 @@ namespace singleDimension
             // calling min method
             int minValue = minMethod(myArray);
 
-            // calling avg method 
+            // calling avg method
             int avgValue = avgMethod(myArray);
 
             Console.WriteLine("The highest number was " + maxValue + ", the lowest number was " + minValue + ", the average number was " + avgValue);
