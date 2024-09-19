@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/bin/Debug/net7.0/CRUDapp-recipes
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/bin/Debug/net7.0/CRUDapp-recipes.deps.json
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/bin/Debug/net7.0/CRUDapp-recipes.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/bin/Debug/net7.0/CRUDapp-recipes.dll
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/bin/Debug/net7.0/CRUDapp-recipes.pdb
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.dll
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/refint/CRUDapp-recipes.dll
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.pdb
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/CRUDapp-recipes.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/CRUDapp-recipes/obj/Debug/net7.0/ref/CRUDapp-recipes.dll

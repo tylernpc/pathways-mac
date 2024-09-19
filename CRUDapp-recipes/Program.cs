@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace HelloWorld
 {
@@ -10,8 +11,8 @@ namespace HelloWorld
         // Declare variables
         bool userChoice;
         string userChoiceString;
-        const int arrayRow = 21;
-        const int arrayColumn = 12;
+        const int arrayRow = 3;
+        const int arrayColumn = 3;
         string[,] recipeArray = { {arrayRow.ToString()} , {arrayColumn.ToString()} };
         string fileName = "recipes.txt";
 
@@ -63,16 +64,28 @@ namespace HelloWorld
             {
                 Console.WriteLine("In the L/l area");
 
-                int index = 0;  // index for my array
+                // row index for the array
+                int row = 0;
+
                 using (StreamReader sr = File.OpenText(fileName))
                 {
-                    string s = "";
-				    Console.WriteLine(" Here is the content of the file recipes.txt : ");
-                    while ((s = sr.ReadLine()) != null)
+
+                    string line = "";
+				    Console.WriteLine("Here is the content of the file recipes.txt : ");
+
+                    while ((line = sr.ReadLine()) != null && row < arrayRow)
                     {
-                       Console.WriteLine(s);
-                       recipeArray[index] = s;
-                       index = index + 1;
+                       Console.WriteLine(line);
+
+                        // split parts based on a delimiter
+                        string[] parts = line.Split(',');
+
+                        // assigning parts to rows
+                        for (int col = 0; col < parts.Length && col < arrayColumn; col++)
+                        {
+                            recipeArray[row, col] = parts[col];
+                        }
+                        row++;
                     }
                     Console.WriteLine("");
                 }
@@ -80,7 +93,7 @@ namespace HelloWorld
             catch (Exception e)
             {
                 
-                  Console.WriteLine("Sorry that file isn't found");             
+                  Console.WriteLine("Sorry that file isn't found" + e.Message);             
             }
             finally
             {
@@ -108,14 +121,21 @@ namespace HelloWorld
             else if (userChoiceString=="R" || userChoiceString=="r")
             {
                 Console.WriteLine("In the R/r area");
-                for (int index = 0; index < arraySize; index++)
+                for (int row = 0; row < arrayRow; row++)
                 {
-                    if ((recipeArray[index])!=" ")
-                        Console.WriteLine(recipeArray[index]);
+                    for (int col = 0; col < arrayColumn; col++)
+                {
+                    if (!string.IsNullOrEmpty(recipeArray[row, col]))
+                    {
+                        Console.WriteLine($"recipeArray[{row}, {col}] = {recipeArray[row, col]}");
+                    }
                     else
-                        Console.WriteLine("Index " + index + " is available.");
+                    {
+                        Console.WriteLine($"recipeArray[{row}, {col}] is available.");
+                    }
                 }
-
+                }
+                
             }
         //  TODO: Else if the option is a U or u then update a name in the array (if it's there)
 
