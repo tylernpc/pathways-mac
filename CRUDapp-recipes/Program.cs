@@ -162,16 +162,16 @@ namespace HelloWorld
                             Console.Write("Enter a recipe name: ");
                             recipeArray[row, 0] = Console.ReadLine();
 
-                            // 
+                            // loops to go through ingredients creation
                             for (int col = 1; col <= 4; col++)
                             {
                                 // storing the new ingredients to the new recipe
-                                Console.WriteLine("Please enter 1-5 ingredients");
+                                Console.WriteLine("Please enter 1-4 ingredients");
                                 Console.Write($"Please enter a(n) ingredient {col}: ");
                                 recipeArray[row, col] = Console.ReadLine();
                             }
-
-                            break; // exits the loop once an empty spot is found and filled
+                            // the exit
+                            break;
                         }
                     }
                     // lets user know there's no space available
@@ -193,11 +193,11 @@ namespace HelloWorld
                         {
                             if (!string.IsNullOrEmpty(recipeArray[row, col]))
                             {
-                                Console.WriteLine($"recipeArray[{row}, {col}] = {recipeArray[row, col]}");
+                                Console.WriteLine($"Here is the Recipe, and it's Ingredients: {recipeArray[row, col]}");
                             }
                             else
                             {
-                                Console.WriteLine($"recipeArray[{row}, {col}] is available.");
+                                Console.WriteLine("This spot is open!");
                             }
                         }
                     }
@@ -225,6 +225,7 @@ namespace HelloWorld
                     // used to check if space is available
                     string oldRecipe;
                     string newRecipe;
+                    string newIngredient;
                     bool recipeSearch = false;
 
                     // prompt user for which recipe they'd like to change
@@ -251,6 +252,15 @@ namespace HelloWorld
 
                                 // update the recipe in the array
                                 recipeArray[row, 0] = newRecipe;
+
+                                // update each ingredient
+                                for (int col = 1; col < arrayColumn; col++)
+                                {
+                                    Console.Write($"Enter ingredient {col}: ");
+                                    newIngredient = Console.ReadLine();
+                                    recipeArray[row, col] = newIngredient;
+                                }
+
                                 break;
                             }
                         }
@@ -296,6 +306,13 @@ namespace HelloWorld
 
                                 // update the recipe in the array
                                 recipeArray[row, 0] = newRecipe;
+
+                                // loops through each ingredient and deletes it
+                                for (int col = 1; col < arrayColumn; col++)
+                                {
+                                    recipeArray [row, col] = "";
+                                }
+
                                 break;
                             }
                         }
