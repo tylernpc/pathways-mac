@@ -10,9 +10,10 @@ namespace HelloWorld
         // Declare variables
         bool userChoice;
         string userChoiceString;
-        const int arraySize=12;
-        string[] nameArray = new string[arraySize];
-        string fileName = "names.txt";
+        const int arrayRow = 21;
+        const int arrayColumn = 12;
+        string[,] recipeArray = { {arrayRow.ToString()} , {arrayColumn.ToString()} };
+        string fileName = "recipes.txt";
 
       // Repeat main loop
       do
@@ -30,10 +31,10 @@ namespace HelloWorld
                 Console.WriteLine("What's your pleasure? ");
                 Console.WriteLine("L: Load the data file into an array.");
                 Console.WriteLine("S: Save the array to the data file.");
-                Console.WriteLine("C: Add a name to the array.");
-                Console.WriteLine("R: Read a name from the array.");
-                Console.WriteLine("U: Update a name in the array.");
-                Console.WriteLine("D: Delete a name from the array.");
+                Console.WriteLine("C: Add a recipe to the array.");
+                Console.WriteLine("R: Read a recipe from the array.");
+                Console.WriteLine("U: Update a recipe in the array.");
+                Console.WriteLine("D: Delete a recipe from the array.");
                 Console.WriteLine("Q: Quit the program.");
 
                 //  TODO: Get a user option (valid means its on the menu)
@@ -66,11 +67,11 @@ namespace HelloWorld
                 using (StreamReader sr = File.OpenText(fileName))
                 {
                     string s = "";
-				    Console.WriteLine(" Here is the content of the file names.txt : ");
+				    Console.WriteLine(" Here is the content of the file recipes.txt : ");
                     while ((s = sr.ReadLine()) != null)
                     {
                        Console.WriteLine(s);
-                       nameArray[index] = s;
+                       recipeArray[index] = s;
                        index = index + 1;
                     }
                     Console.WriteLine("");
@@ -109,8 +110,8 @@ namespace HelloWorld
                 Console.WriteLine("In the R/r area");
                 for (int index = 0; index < arraySize; index++)
                 {
-                    if ((nameArray[index])!=" ")
-                        Console.WriteLine(nameArray[index]);
+                    if ((recipeArray[index])!=" ")
+                        Console.WriteLine(recipeArray[index]);
                     else
                         Console.WriteLine("Index " + index + " is available.");
                 }
