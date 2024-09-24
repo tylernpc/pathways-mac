@@ -1,0 +1,25 @@
+Luigi’s Trattoria - Italian - 5 Stars
+Señor Pepe’s Cantina - Mexican - 4 Stars
+Dragon Palace - Chinese - 3 Stars
+Curry House - Indian - 5 Stars
+Sushi Zen - Japanese - 4 Stars
+Bangkok Bistro - Thai - 3 Stars
+Le Petit Chef - French - 5 Stars
+Taverna Dionysus - Greek - 4 Stars
+Uncle Sam’s Diner - American - 3 Stars
+Casa de Tapas - Spanish - 4 Stars
+Seoul Garden - Korean - 5 Stars
+Pho Haven - Vietnamese - 4 Stars
+Rio Grill - Brazilian - 3 Stars
+Cedar Grove - Lebanese - 5 Stars
+Marrakesh Delights - Moroccan - 4 Stars
+Istanbul Kitchen - Turkish - 3 Stars
+Addis Ababa Eats - Ethiopian - 4 Stars
+Island Breeze - Caribbean - 3 Stars
+Biergarten Haus - German - 5 Stars
+Lima Loca - Peruvian - 4 Stars
+Red Square Bistro - Russian - 3 Stars
+Buenos Aires Grill - Argentinian - 5 Stars
+Testaurant - test - 4 Stars
+Manila Cafe - Filipino - 3 Stars
+Pierogi Place - Polish - 4 Stars
