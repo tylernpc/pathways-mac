@@ -22,4 +22,4 @@ Red Square Bistro - Russian - 3 Stars
 Buenos Aires Grill - Argentinian - 5 Stars
 Testaurant - test - 4 Stars
 Manila Cafe - Filipino - 3 Stars
-Pierogi Place - Polish - 4 Stars
+Piergoi Place - Polish - 4 Stars

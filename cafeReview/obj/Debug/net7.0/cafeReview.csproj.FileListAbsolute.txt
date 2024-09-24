@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/cafeReview/bin/Debug/net7.0/cafeReview
+/Users/tyler/Repos/pathways-mac/cafeReview/bin/Debug/net7.0/cafeReview.deps.json
+/Users/tyler/Repos/pathways-mac/cafeReview/bin/Debug/net7.0/cafeReview.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/cafeReview/bin/Debug/net7.0/cafeReview.dll
+/Users/tyler/Repos/pathways-mac/cafeReview/bin/Debug/net7.0/cafeReview.pdb
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.dll
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/refint/cafeReview.dll
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.pdb
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/cafeReview.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/cafeReview/obj/Debug/net7.0/ref/cafeReview.dll
