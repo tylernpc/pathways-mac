@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/oop-practice/bin/Debug/net7.0/oop-practice
+/Users/tyler/Repos/pathways-mac/oop-practice/bin/Debug/net7.0/oop-practice.deps.json
+/Users/tyler/Repos/pathways-mac/oop-practice/bin/Debug/net7.0/oop-practice.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/oop-practice/bin/Debug/net7.0/oop-practice.dll
+/Users/tyler/Repos/pathways-mac/oop-practice/bin/Debug/net7.0/oop-practice.pdb
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.dll
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/refint/oop-practice.dll
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.pdb
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/oop-practice.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/oop-practice/obj/Debug/net7.0/ref/oop-practice.dll
