@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/music-oop/bin/Debug/net7.0/music-oop
+/Users/tyler/Repos/pathways-mac/music-oop/bin/Debug/net7.0/music-oop.deps.json
+/Users/tyler/Repos/pathways-mac/music-oop/bin/Debug/net7.0/music-oop.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/music-oop/bin/Debug/net7.0/music-oop.dll
+/Users/tyler/Repos/pathways-mac/music-oop/bin/Debug/net7.0/music-oop.pdb
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.dll
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/refint/music-oop.dll
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.pdb
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/music-oop.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/music-oop/obj/Debug/net7.0/ref/music-oop.dll
