@@ -16,8 +16,8 @@ namespace CafeReview
             */
 
             const int arrayRow = 25;
-            const int arrayColumn = 25;
-            string[,] mainArray = new string[arrayRow, arrayColumn];
+            // const int arrayColumn = 25;
+            Restaurant[] mainArray = new Restaurant[arrayRow];
 
             Console.Write("O P E R A T I O N S");
             Console.WriteLine("L: Load the data file into an array.");
@@ -29,12 +29,6 @@ namespace CafeReview
             Console.WriteLine("Q: Quit the program.");
             Console.Write("Input Choice: ");
             string userChoice = Console.ReadLine().ToUpper();
-
-
-
-
-            // FileManager fileManager = new FileManager();
-            // fileManager.ReadReviews(userChoice);
 
             RestaurantManager restaurantManager = new RestaurantManager();
             restaurantManager.MainOperations(userChoice, mainArray, arrayRow, arrayColumn);

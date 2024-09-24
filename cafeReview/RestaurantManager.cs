@@ -140,23 +140,15 @@ class RestaurantManager
             }
             else if (userChoice == "R")
             {
-                // minor user validation
-                try
+                for (int row = 0; row < arrayRow; row++)
                 {
-                    // operation to read/open the file
-                    using (StreamReader sr = File.OpenText(fileName))
+                    for (int col = 0; col < arrayColumn; col++)
                     {
-                        // goes line by line and just writes it out
-                        string line;
-                        while ((line = sr.ReadLine()) != null)
+                        if (!string.IsNullOrEmpty(mainArray[row, col]))
                         {
-                            Console.WriteLine(line);
+                            Console.WriteLine($"Restaurant Name: {mainArray[row, col]}");
                         }
                     }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"{e.Message} is there error, try again.");
                 }
             }
             else if (userChoice == "U")
