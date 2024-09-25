@@ -56,23 +56,15 @@ namespace CarProgram
         public bool IsMotorcycle { get; set; }
 
         // default constructor
-        public Motorcycle()
+        public Motorcycle():base()
         {
             IsMotorcycle = true;
-            Brand = "";
-            Model = "";
-            Color = "";
-            Price = 0;
         }
 
         // constructor for user
-        public Motorcycle (bool motorcycle, string brand, string model, string color, int price)
+        public Motorcycle (bool motorcycle, string brand, string model, string color, int price):base(brand, model, color, price)
         {
             this.IsMotorcycle = motorcycle;
-            this.Brand = brand;
-            this.Model = model;
-            this.Color = color;
-            this.Price = price;
         }
 
         // basic override string
@@ -88,13 +80,15 @@ namespace CarProgram
         public bool IsCar { get; set; }
 
         // default constructor
-        public Car (bool car, string brand, string model, string color, int price)
+        public Car():base()
+        {
+            IsCar = true;
+        }
+
+        // constructor for user
+        public Car (bool car, string brand, string model, string color, int price):base(brand, model, color, price)
         {
             this.IsCar = car;
-            this.Brand = brand;
-            this.Model = model;
-            this.Color = color;
-            this.Price = price;
         }
 
         // basic override string
