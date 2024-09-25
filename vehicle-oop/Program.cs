@@ -6,11 +6,14 @@ namespace CarProgram
     {
         static void Main(string[] args)
         {
-            Vehicle vehicle = new Vehicle("Mercedes", "C300", "Silver", 20000);
-            Console.WriteLine(vehicle);
+            // Vehicle vehicle = new Vehicle("Mercedes", "C300", "Silver", 20000);
+            // Console.WriteLine(vehicle);
 
             Motorcycle motorcycle = new Motorcycle(true, "Ducati", "Panigale V4s", "Red", 30000);
             Console.WriteLine(motorcycle);
+
+            Car car = new Car(true, "Mercedes", "C300", "Silver", 20000);
+            Console.WriteLine(car);
         }
     }
 
@@ -63,7 +66,7 @@ namespace CarProgram
         }
 
         // constructor for user
-        public Motorcycle(bool motorcycle, string brand, string model, string color, int price)
+        public Motorcycle (bool motorcycle, string brand, string model, string color, int price)
         {
             this.IsMotorcycle = motorcycle;
             this.Brand = brand;
@@ -76,6 +79,28 @@ namespace CarProgram
         public override string ToString()
         {
             return $"Is it a Motorcycle: {IsMotorcycle} | Brand: {Brand} | Model: {Model} | Color: {Color} | Price: {Price}";
+        }
+    }
+
+    class Car : Vehicle
+    {
+        // declaring variables
+        public bool IsCar { get; set; }
+
+        // default constructor
+        public Car (bool car, string brand, string model, string color, int price)
+        {
+            this.IsCar = car;
+            this.Brand = brand;
+            this.Model = model;
+            this.Color = color;
+            this.Price = price;
+        }
+
+        // basic override string
+        public override string ToString()
+        {
+            return $"Is it a Car: {IsCar} | Brand: {Brand} | Model: {Model} | Color: {Color} | Price: {Price}";
         }
     }
 }
