@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/vehicle-oop/bin/Debug/net7.0/vehicle-oop
+/Users/tyler/Repos/pathways-mac/vehicle-oop/bin/Debug/net7.0/vehicle-oop.deps.json
+/Users/tyler/Repos/pathways-mac/vehicle-oop/bin/Debug/net7.0/vehicle-oop.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/vehicle-oop/bin/Debug/net7.0/vehicle-oop.dll
+/Users/tyler/Repos/pathways-mac/vehicle-oop/bin/Debug/net7.0/vehicle-oop.pdb
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.dll
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/refint/vehicle-oop.dll
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.pdb
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/vehicle-oop.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/Debug/net7.0/ref/vehicle-oop.dll

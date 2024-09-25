@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/car-oop/car-oop.csproj": {}
+    "/Users/tyler/Repos/pathways-mac/vehicle-oop/car-oop.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/car-oop/car-oop.csproj": {
+    "/Users/tyler/Repos/pathways-mac/vehicle-oop/car-oop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/car-oop/car-oop.csproj",
+        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/vehicle-oop/car-oop.csproj",
         "projectName": "car-oop",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/car-oop/car-oop.csproj",
+        "projectPath": "/Users/tyler/Repos/pathways-mac/vehicle-oop/car-oop.csproj",
         "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/car-oop/obj/",
+        "outputPath": "/Users/tyler/Repos/pathways-mac/vehicle-oop/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tyler/.nuget/NuGet/NuGet.Config"
