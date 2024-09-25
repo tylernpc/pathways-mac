@@ -44,10 +44,9 @@ namespace musicLibrary
                         music[row] = new Music(artist, song, rating); // stores in an array
                         row++; // increments through rows
                     }
-                    Console.WriteLine(line);
+                    // DISPLAYS ALL STUFF THAT'S OPEN Console.WriteLine(line);
                 }
             }
-
             // Music userMusic = new Music(userArtist, userSong, userRating);
         }
     }
@@ -86,5 +85,10 @@ namespace musicLibrary
             return $"Artist: {Artist} | Song: {Song} | Rating: {Rating}";
         }
 
+    }
+
+    class Classical : Music
+    {
+        public string SongYear { get; set; }
     }
 }
