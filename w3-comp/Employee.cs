@@ -5,7 +5,6 @@ class Employee
     // declaring base variables
     public string EmpLName { get; set; }
     public string EmpFName { get; set; }
-    public string EmpType { get; set; }
     public double EmpPay { get; set; }
 
     // default constructor
@@ -13,25 +12,22 @@ class Employee
     {
         EmpLName = "";
         EmpFName = "";
-        EmpType = "";
         EmpPay = 0;
     }
 
-    // user constructor
-    public Employee(string empLName, string empFName, string empType, double empPay)
+    // user constructor if not salary or hourly
+    public Employee(string empLName, string empFName, double empPay)
     {
         this.EmpLName = empLName;
         this.EmpFName = empFName;
-        this.EmpType = empType;
         this.EmpPay = empPay;
     }
 
     // constructor for child classes
-    public Employee(string empLName, string empFName, string empType)
+    public Employee(string empLName, string empFName)
     {
         this.EmpLName = empLName;
         this.EmpFName = empFName;
-        this.EmpType = empType;
     }
 
     // override method for bonus
