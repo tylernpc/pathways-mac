@@ -10,7 +10,8 @@ namespace w3Comp
     {
         static void Main(string[] args)
         {
-            
+            Employee tylerSalary = new Employee("Le", "Tyler", "Salary", 50000);
+            Console.WriteLine(tylerSalary);
         }
     }
 
@@ -64,10 +65,22 @@ namespace w3Comp
             IsHourly = true; // might have to be false
         }
 
+        // user constructor
+        public Hourly(bool isHourly, string empLName, string empFName, string empType, int empPay):base(empLName, empFName, empType, empPay)
+        {
+            this.IsHourly = isHourly;
+        }
+
         // override method for bonus
         public override int CalculateBonus()
         {
-            return 0;
+            return 0; // calculate bonus
+        }
+
+        // override to string
+        public override string ToString()
+        {
+            return $"{base.ToString()} Is Hourly";
         }
     }
 
@@ -82,5 +95,22 @@ namespace w3Comp
             IsSalary = true; // might have to be false
         }
 
+        // user constructor
+        public Salary(bool isSalary, string empLName, string empFName, string empType, int empPay):base()
+        {
+            this.IsSalary = isSalary;
+        }
+
+        // override method for bounus
+        public override int CalculateBonus()
+        {
+            return 0; // calculate bonus
+        }
+
+        // override to string
+        public override string ToString()
+        {
+            return $"{base.ToString()} Is Salary";
+        }
     }
 }
