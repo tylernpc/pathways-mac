@@ -8,6 +8,14 @@ namespace w3Comp
     {
         static void Main(string[] args)
         {
+            string typeOfPay;
+            string payAmt;
+            string lastName;
+            string firstName;
+            
+
+            Console.WriteLine("Are you hourly or salary? ");
+            
             Employee hourlyPay = new Hourly(true, 25, "Le", "Tyler", "Hourly");
             Console.WriteLine($"{hourlyPay} with a bonus of {hourlyPay.CalculateBonus()}");
 
