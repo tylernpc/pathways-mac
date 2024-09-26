@@ -10,7 +10,7 @@ namespace w3Comp
         {
             // declaring variables
             string typeOfEmployee;
-            double payAmt; // kind of redundant but this gets user pay
+            double payAmt = 0; // kind of redundant but this gets user pay
             string lastName;
             string firstName;
             bool positionMet = false; // this breaks the loop if one of the three options are chosen
