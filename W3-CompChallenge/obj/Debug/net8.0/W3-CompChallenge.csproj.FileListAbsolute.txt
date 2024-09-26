@@ -1,0 +1,15 @@
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\bin\Debug\net8.0\W3-CompChallenge.exe
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\bin\Debug\net8.0\W3-CompChallenge.deps.json
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\bin\Debug\net8.0\W3-CompChallenge.runtimeconfig.json
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\bin\Debug\net8.0\W3-CompChallenge.dll
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\bin\Debug\net8.0\W3-CompChallenge.pdb
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.AssemblyInfoInputs.cache
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.AssemblyInfo.cs
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.csproj.CoreCompileInputs.cache
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.sourcelink.json
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.dll
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\refint\W3-CompChallenge.dll
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.pdb
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\W3-CompChallenge.genruntimeconfig.cache
+C:\Users\TLe\source\repos\pathways-mac\W3-CompChallenge\obj\Debug\net8.0\ref\W3-CompChallenge.dll
