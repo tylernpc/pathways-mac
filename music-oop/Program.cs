@@ -13,8 +13,8 @@ namespace musicLibrary
             string fileName = "musicbook.txt";
             string userArtist;
             string userAlbum;
-            int row = 0;
             int userRating = 0;
+            int row = 0;
 
 
             // reading and writing portion
