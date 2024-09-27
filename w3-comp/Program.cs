@@ -16,11 +16,10 @@ namespace w3Comp
             bool positionMet = false; // this breaks the loop if one of the three options are chosen
             bool userChoice = false;
             string userChoiceString;
-
-
             Employee[] employee = new Employee[25];
             string fileName = "Employees.txt";
             int row = 0;
+
 
             do
             {
@@ -49,25 +48,27 @@ namespace w3Comp
                     }
                 } while (!userChoice);
 
-                // reading and writing portion
-                using (StreamReader sr = File.OpenText(fileName))
+                if (userChoiceString == "L")
                 {
-                    string line;
-                    while ((line = sr.ReadLine()) != null && row < employee.Length)
+                    using (StreamReader sr = File.OpenText(fileName))
                     {
-                        // split parts based on a delimiter
-                        string[] parts = line.Split(':');
-
-                        // assigning parts to rows and loops through
-                        if (parts.Length == 4)
+                        string line;
+                        while ((line = sr.ReadLine()) != null && row < employee.Length)
                         {
-                            // split the txt file into three parts
-                            string empType = parts[0];
-                            lastName = parts[1];
-                            firstName = parts[2];
-                            payAmt = Convert.ToDouble(parts[3]);
+                            // split parts based on a delimiter
+                            string[] parts = line.Split(':');
+
+                            // assigning parts to rows and loops through
+                            if (parts.Length == 4)
+                            {
+                                // split the txt file into three parts
+                                string empType = parts[0];
+                                lastName = parts[1];
+                                firstName = parts[2];
+                                payAmt = Convert.ToDouble(parts[3]);
+                            }
+                            // Console.WriteLine(line); Reads out things
                         }
-                        // Console.WriteLine(line); Reads out things
                     }
                 }
 
@@ -112,7 +113,7 @@ namespace w3Comp
                 Employee salaryPay = new Salary(payAmt, lastName, firstName);
                 Console.WriteLine($"{salaryPay} with a bonus of {salaryPay.CalculateBonus()}");
 
-                
+
             } while (!(userChoiceString == "Q"));
         }
     }
