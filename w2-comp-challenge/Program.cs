@@ -106,7 +106,7 @@ namespace w2CompChallenge
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine($"{e.Message} type, e.GetType()");
+                        Console.WriteLine($"{e.Message} type, {e.GetType()}");
                     }
                     finally
                     {

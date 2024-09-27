@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eWArHw2/7Ak/ZAyDVk9eeVq+6/IU0isQFQxwdxc102YDNSSRYrjd+iqTto8sJ1bikIp64miY2TzLBxy0JRaO6A==",
+  "dgSpecHash": "S0y1fWouDQLnfC8dc5lCU8eF4R/NQFpkCpI/WmPHtFas7cQC5nHbxLP4laSfFThYLQG9m7clVaKTpD1T4PP/QA==",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/CRUDapp/CRUDapp.csproj",
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/crudapp/CRUDapp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

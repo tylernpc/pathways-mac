@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/CRUDapp/CRUDapp.csproj": {}
+    "/Users/tyler/Repos/pathways-mac/crudapp/CRUDapp.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/CRUDapp/CRUDapp.csproj": {
+    "/Users/tyler/Repos/pathways-mac/crudapp/CRUDapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/CRUDapp/CRUDapp.csproj",
+        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/crudapp/CRUDapp.csproj",
         "projectName": "CRUDapp",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/CRUDapp/CRUDapp.csproj",
+        "projectPath": "/Users/tyler/Repos/pathways-mac/crudapp/CRUDapp.csproj",
         "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/CRUDapp/obj/",
+        "outputPath": "/Users/tyler/Repos/pathways-mac/crudapp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tyler/.nuget/NuGet/NuGet.Config"
