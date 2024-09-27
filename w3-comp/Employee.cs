@@ -52,6 +52,6 @@ class Employee
     // base override
     public override string ToString()
     {
-        return $"First Name: {FirstName}, Last Name: {LastName}, Is: {Type}";
+        return $"First Name: {FirstName}, Last Name: {LastName}, Pay Type: {Type}";
     }
 }

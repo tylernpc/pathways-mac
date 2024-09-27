@@ -24,6 +24,6 @@ class SalaryEmployee : Employee
     // override to string
     public override string ToString()
     {
-        return $"{base.ToString()} is Salary with a bonus of {CalculateBonus():C}";
+        return $"{base.ToString()} base pay is: {SalaryPay} is with a bonus of {CalculateBonus():C}";
     }
 }
