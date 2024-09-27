@@ -67,7 +67,7 @@ namespace w3Comp
                                 firstName = parts[2];
                                 payAmt = Convert.ToDouble(parts[3]);
                             }
-                            // Console.WriteLine(line); Reads out things
+                            // Console.WriteLine(line); Reads out everything
                         }
                     }
                 }
