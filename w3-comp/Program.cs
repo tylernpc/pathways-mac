@@ -71,22 +71,39 @@ namespace w3Comp
                 }
                 else if (userChoiceString == "S")
                 {
-                    // using (StreamWriter writer = new StreamWriter(fileName))
-                    // {
-                    //     // loop through each row of the array
-                    //     for (row = 0; row < employee.Length; row++)
-                    //     {
-                    //         if (!string.IsNullOrEmpty(employee.Length))
-                    //         {
-                    //             writer.WriteLine($"{employee.Length} ");
-                    //         }
-                    //     }
-                    // }
-
+                    using (StreamWriter writer = new StreamWriter(fileName))
+                    {
+                        // loop through each row of the array
+                        for (row = 0; row < employee.Length; row++)
+                        {
+                            if (!string.IsNullOrEmpty(employee.Length.ToString()))
+                            {
+                                writer.WriteLine($"{employee.Length} ");
+                            }
+                        }
+                    }
                 }
                 else if (userChoiceString == "C")
                 {
+                    bool isSpotAvailable = false;
 
+                    for (row = 0; row < employee.Length; row++)
+                    {
+                        if (string.IsNullOrEmpty(employee))
+                        {
+                            Console.Write("Are you Contract / Temp / Salary / Hourly: ");
+                            typeOfEmployee = Console.ReadLine();
+
+                            Console.Write("First Name: ");
+                            firstName = Console.ReadLine();
+
+                            Console.Write("Last Name: ");
+                            lastName = Console.ReadLine();
+
+                            Console.Write("Pay: ");
+                            payAmt = Convert.ToDouble(Console.ReadLine());
+                        }
+                    }
                 }
                 else if (userChoiceString == "R")
                 {
@@ -118,48 +135,3 @@ namespace w3Comp
         }
     }
 }
-
-
-
-
-
-
-// // let's the user pass the parameters
-// while (positionMet == false)
-// {
-//     Console.Write("Are you hourly or salary or other: ");
-//     typeOfEmployee = Console.ReadLine().ToUpper();
-
-//     if (typeOfEmployee == "SALARY")
-//     {
-//         positionMet = true;
-//         Console.Write("What is your pay annually: ");
-//         payAmt = Convert.ToDouble(Console.ReadLine());
-//     }
-//     else if (typeOfEmployee == "HOURLY")
-//     {
-//         positionMet = true;
-//         Console.Write("What is your pay hourly: ");
-//         payAmt = Convert.ToDouble(Console.ReadLine());
-//     }
-//     else if (typeOfEmployee == "OTHER")
-//     {
-//         positionMet = true;
-//         Console.Write("What are you being paid: ");
-//         payAmt = Convert.ToDouble(Console.ReadLine());
-//    
-// }
-
-
-// // prompt user for first and last name
-// Console.Write("Please enter a first name: ");
-// firstName = Console.ReadLine();
-
-// Console.Write("Please enter a last name: ");
-// lastName = Console.ReadLine();
-
-// Employee hourlyPay = new Hourly(payAmt, lastName, firstName);
-// Console.WriteLine($"{hourlyPay} with a bonus of {hourlyPay.CalculateBonus()}");
-
-// Employee salaryPay = new Salary(payAmt, lastName, firstName);
-// Console.WriteLine($"{salaryPay} with a bonus of {salaryPay.CalculateBonus()}");
