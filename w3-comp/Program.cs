@@ -25,6 +25,7 @@ namespace w3Comp
             {
                 do
                 {
+                    // initial prompt for lscrudq operations
                     Console.WriteLine("Employee Database");
                     Console.WriteLine("L: Load the data file into an array.\nS: Save the array to the data file.\nC: Add a name to the array.\nR: Read a name from the array.\nU: Update a name in the array.\nD: Delete a name from the array.\nQ: Quit the program.");
                     Console.Write("What operation would you like to do: ");
@@ -48,32 +49,39 @@ namespace w3Comp
                     }
                 } while (!userChoice);
 
+
                 if (userChoiceString == "L")
                 {
                     using (StreamReader sr = File.OpenText(fileName))
                     {
-                        string line;
-                        while ((line = sr.ReadLine()) != null && row < employee.Length)
+                        string line = "";
+                        while ((line = sr.ReadLine()) != null)
                         {
-                            // split parts based on a delimiter
                             string[] parts = line.Split(':');
 
-                            // assigning parts to rows and loops through
-                            if (parts.Length == 4)
-                            {
-                                // split the txt file into three parts
-                                string empType = parts[0];
-                                lastName = parts[1];
-                                firstName = parts[2];
-                                payAmt = Convert.ToDouble(parts[3]);
-                            }
+                            string empType = parts[0].Trim();
+                            lastName = parts[1].Trim();
+                            firstName = parts[2].Trim();
+                            payAmt = Convert.ToDouble(parts[3].Trim());
+
+                            employee[row] = new Employee(empType, lastName, firstName, payAmt);
                             row++;
-                            // Console.WriteLine(line); Reads out everything
                         }
                     }
                 }
                 else if (userChoiceString == "S")
                 {
+                    // using (StreamWriter writer = new StreamWriter(fileName))
+                    // {
+                    //     // loop through each row of the array
+                    //     for (row = 0; row < employee.Length; row++)
+                    //     {
+                    //         if (!string.IsNullOrEmpty(employee.Length))
+                    //         {
+                    //             writer.WriteLine($"{employee.Length} ");
+                    //         }
+                    //     }
+                    // }
 
                 }
                 else if (userChoiceString == "C")
@@ -86,7 +94,7 @@ namespace w3Comp
                     {
                         if (!string.IsNullOrEmpty(Convert.ToString(employee.Length)))
                         {
-                            Console.WriteLine("Space");
+                            Console.WriteLine(employee[row]);
                         }
                         else
                         {
@@ -106,50 +114,52 @@ namespace w3Comp
                 {
                     Console.WriteLine("Thanks for using TylerDB");
                 }
-
-
-                // // let's the user pass the parameters
-                // while (positionMet == false)
-                // {
-                //     Console.Write("Are you hourly or salary or other: ");
-                //     typeOfEmployee = Console.ReadLine().ToUpper();
-
-                //     if (typeOfEmployee == "SALARY")
-                //     {
-                //         positionMet = true;
-                //         Console.Write("What is your pay annually: ");
-                //         payAmt = Convert.ToDouble(Console.ReadLine());
-                //     }
-                //     else if (typeOfEmployee == "HOURLY")
-                //     {
-                //         positionMet = true;
-                //         Console.Write("What is your pay hourly: ");
-                //         payAmt = Convert.ToDouble(Console.ReadLine());
-                //     }
-                //     else if (typeOfEmployee == "OTHER")
-                //     {
-                //         positionMet = true;
-                //         Console.Write("What are you being paid: ");
-                //         payAmt = Convert.ToDouble(Console.ReadLine());
-                //    
-                // }
-
-
-                // // prompt user for first and last name
-                // Console.Write("Please enter a first name: ");
-                // firstName = Console.ReadLine();
-
-                // Console.Write("Please enter a last name: ");
-                // lastName = Console.ReadLine();
-
-                // Employee hourlyPay = new Hourly(payAmt, lastName, firstName);
-                // Console.WriteLine($"{hourlyPay} with a bonus of {hourlyPay.CalculateBonus()}");
-
-                // Employee salaryPay = new Salary(payAmt, lastName, firstName);
-                // Console.WriteLine($"{salaryPay} with a bonus of {salaryPay.CalculateBonus()}");
-
-
             } while (!(userChoiceString == "Q"));
         }
     }
 }
+
+
+
+
+
+
+// // let's the user pass the parameters
+// while (positionMet == false)
+// {
+//     Console.Write("Are you hourly or salary or other: ");
+//     typeOfEmployee = Console.ReadLine().ToUpper();
+
+//     if (typeOfEmployee == "SALARY")
+//     {
+//         positionMet = true;
+//         Console.Write("What is your pay annually: ");
+//         payAmt = Convert.ToDouble(Console.ReadLine());
+//     }
+//     else if (typeOfEmployee == "HOURLY")
+//     {
+//         positionMet = true;
+//         Console.Write("What is your pay hourly: ");
+//         payAmt = Convert.ToDouble(Console.ReadLine());
+//     }
+//     else if (typeOfEmployee == "OTHER")
+//     {
+//         positionMet = true;
+//         Console.Write("What are you being paid: ");
+//         payAmt = Convert.ToDouble(Console.ReadLine());
+//    
+// }
+
+
+// // prompt user for first and last name
+// Console.Write("Please enter a first name: ");
+// firstName = Console.ReadLine();
+
+// Console.Write("Please enter a last name: ");
+// lastName = Console.ReadLine();
+
+// Employee hourlyPay = new Hourly(payAmt, lastName, firstName);
+// Console.WriteLine($"{hourlyPay} with a bonus of {hourlyPay.CalculateBonus()}");
+
+// Employee salaryPay = new Salary(payAmt, lastName, firstName);
+// Console.WriteLine($"{salaryPay} with a bonus of {salaryPay.CalculateBonus()}");
