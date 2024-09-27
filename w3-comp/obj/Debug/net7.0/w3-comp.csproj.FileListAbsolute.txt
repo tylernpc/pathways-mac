@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/w3-comp/bin/Debug/net7.0/w3-comp
+/Users/tyler/Repos/pathways-mac/w3-comp/bin/Debug/net7.0/w3-comp.deps.json
+/Users/tyler/Repos/pathways-mac/w3-comp/bin/Debug/net7.0/w3-comp.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/w3-comp/bin/Debug/net7.0/w3-comp.dll
+/Users/tyler/Repos/pathways-mac/w3-comp/bin/Debug/net7.0/w3-comp.pdb
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.dll
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/refint/w3-comp.dll
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.pdb
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/w3-comp.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/w3-comp/obj/Debug/net7.0/ref/w3-comp.dll
