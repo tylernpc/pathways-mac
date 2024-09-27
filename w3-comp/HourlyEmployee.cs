@@ -1,20 +1,18 @@
-using System;
-
-class Hourly : Employee
+class HourlyEmployee : Employee
 {
     // declaring base variables | hourly
     public double HourlyPay { get; set; }
 
     // default constructor
-    public Hourly() : base()
+    public HourlyEmployee() : base()
     {
         HourlyPay = 0;
     }
 
     // user constructor
-    public Hourly(double hourlyPay, string empLName, string empFName) : base(empLName, empFName)
+    public HourlyEmployee(double hourlyPay, string empLName, string empFName) : base(empLName, empFName)
     {
-        this.HourlyPay = hourlyPay;
+        HourlyPay = hourlyPay;
     }
 
     // override method for bonus
@@ -26,6 +24,6 @@ class Hourly : Employee
     // override to string
     public override string ToString()
     {
-        return $"{base.ToString()} is Hourly";
+        return $"{base.ToString()} is Salary with a bonus of {CalculateBonus():C}";
     }
 }

@@ -1,36 +1,46 @@
-using System;
-
 class Employee
 {
+    // don't abbreviate unless there's a good reason
+    // no need to repeat yourself
+    // alphabetize everything, properties, methods
+    // more complex constructors at the bottom
     // declaring base variables
-    public string EmpType {get; set;}
-    public string EmpLName { get; set; }
-    public string EmpFName { get; set; }
-    public double EmpPay { get; set; }
+    public string Type {get; set;}
+    public string LastName { get; set; }
+    public string FirstName { get; set; }
+    public double Pay { get; set; }
 
     // default constructor
     public Employee()
     {
-        EmpType = "";
-        EmpLName = "";
-        EmpFName = "";
-        EmpPay = 0;
+        Type = "";
+        LastName = "";
+        FirstName = "";
+        Pay = 0;
     }
 
     // user constructor if not salary or hourly
-    public Employee(string empType, string empLName, string empFName, double empPay)
+    public Employee(string type, string lastName, string firstName, double pay)
     {
-        this.EmpType = empType;
-        this.EmpLName = empLName;
-        this.EmpFName = empFName;
-        this.EmpPay = empPay;
+        Type = type;
+        LastName = lastName;
+        FirstName = firstName;
+        Pay = pay;
+    }
+
+    // constructor for main class
+    public Employee(double pay, string lastName, string firstName)
+    {
+        Pay = pay;
+        LastName = lastName;
+        FirstName = firstName;
     }
 
     // constructor for child classes
     public Employee(string empLName, string empFName)
     {
-        this.EmpLName = empLName;
-        this.EmpFName = empFName;
+        LastName = empLName;
+        FirstName = empFName;
     }
 
     // override method for bonus
@@ -42,6 +52,6 @@ class Employee
     // base override
     public override string ToString()
     {
-        return $"First Name: {EmpFName} | Last Name: {EmpLName} | Is a: {EmpType}";
+        return $"First Name: {FirstName}, Last Name: {LastName}, Is: {Type}";
     }
 }

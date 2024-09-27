@@ -1,23 +1,21 @@
-using System;
-
-class Salary : Employee
+class SalaryEmployee : Employee
 {
     // declaring base variables | salary
     public double SalaryPay { get; set; }
 
     // default constructor
-    public Salary() : base()
+    public SalaryEmployee() : base()
     {
         SalaryPay = 0;
     }
 
     // user constructor
-    public Salary(double salaryHourly, string empLName, string empFName) : base(empLName, empFName)
+    public SalaryEmployee(double salaryHourly, string empLName, string empFName) : base(empLName, empFName)
     {
-        this.SalaryPay = salaryHourly;
+        SalaryPay = salaryHourly;
     }
 
-    // override method for bounus
+    // override method for bonus
     public override double CalculateBonus()
     {
         return SalaryPay * 0.10;
@@ -26,6 +24,6 @@ class Salary : Employee
     // override to string
     public override string ToString()
     {
-        return $"{base.ToString()} is Salary";
+        return $"{base.ToString()} is Salary with a bonus of {CalculateBonus():C}";
     }
 }
