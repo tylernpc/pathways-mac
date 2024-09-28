@@ -89,7 +89,7 @@ class Program
                     {
                         if (employee[row] != null)
                         {
-                            writer.WriteLine($"{employee[row].GetType().Name}:{employee[row].LastName}:{employee[row].FirstName}:{employee[row].Pay}");
+                            writer.WriteLine(employee[row]);
                         }
                     }
                 }
