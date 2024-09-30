@@ -89,7 +89,23 @@ class Program
                     {
                         if (employee[row] != null)
                         {
-                            writer.WriteLine(employee[row]);
+                            // writer.WriteLine($"{employee[row].GetType().Name} : {employee[row].LastName} : {employee[row].FirstName} : {employee[row].Pay}");
+
+
+                            // writer.WriteLine($"{employee[row].GetType().Name} : {employee[row].LastName} : {employee[row].FirstName} : {employee[row].Pay}");
+
+                            if (employee[row].GetType().Name == "Employee")
+                            {
+                                writer.WriteLine($"Employee : {employee[row].LastName} : {employee[row].FirstName} : {employee[row].Pay}");
+                            }
+                            else if (employee[row].GetType().Name == "HourlyEmployee")
+                            {
+                                writer.WriteLine($"Hourly : {employee[row].LastName} : {employee[row].FirstName} : {employee[row].Pay}");
+                            }
+                            else if (employee[row].GetType().Name == "SalaryEmployee")
+                            {
+                                writer.WriteLine($"Salary : {employee[row].LastName} : {employee[row].FirstName} : {employee[row].Pay}");
+                            }
                         }
                     }
                 }
