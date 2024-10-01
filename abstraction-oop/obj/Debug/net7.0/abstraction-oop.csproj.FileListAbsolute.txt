@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/abstraction-oop/bin/Debug/net7.0/abstraction-oop
+/Users/tyler/Repos/pathways-mac/abstraction-oop/bin/Debug/net7.0/abstraction-oop.deps.json
+/Users/tyler/Repos/pathways-mac/abstraction-oop/bin/Debug/net7.0/abstraction-oop.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/abstraction-oop/bin/Debug/net7.0/abstraction-oop.dll
+/Users/tyler/Repos/pathways-mac/abstraction-oop/bin/Debug/net7.0/abstraction-oop.pdb
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.dll
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/refint/abstraction-oop.dll
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.pdb
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/abstraction-oop.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/Debug/net7.0/ref/abstraction-oop.dll
