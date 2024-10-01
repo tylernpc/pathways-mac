@@ -17,12 +17,22 @@ class Program
         // prompting user for creation
         Console.Write("Please input first name: ");
         firstName = Console.ReadLine();
-        Console.Write("Please input first name: ");
+        Console.Write("Please input last name: ");
         lastName = Console.ReadLine();
-        Console.Write("Please input pay (hourly or salaried amount): ");
-        pay = Convert.ToDouble(Console.ReadLine());
-        Console.Write("Please input type (hourly, salary, contractor, or temp): ");
+        Console.Write("Please input type (Hourly, Salary, Contractor, or Temp): ");
         type = Console.ReadLine().ToUpper();
+
+        // checks the question
+        if (type == "HOURLY" || type == "TEMP")
+        {
+            Console.Write("What is your pay Hourly?: ");
+            pay = Convert.ToDouble(Console.ReadLine());
+        }
+        if (type == "SALARY" || type == "CONTRACTOR")
+        {
+            Console.Write("What is your pay Annually?: ");
+            pay = Convert.ToDouble(Console.ReadLine());
+        }
 
         // adds a new user to the text file
         if (type == "HOURLY")
@@ -38,15 +48,19 @@ class Program
             employeeList.Add(new Employee(firstName, lastName, pay, type));
         }
 
-        var foundEmployees = employeeList;
-
         // writing new information to the text file
         using (StreamWriter sw = new StreamWriter(fileName))
         {
-            foreach (Person anEmployee in foundEmployees)
+            foreach (Person anEmployee in employeeList)
             {
-                sw.WriteLine(Person.foundEmployees);
+                sw.WriteLine($"{anEmployee.FirstName} : {anEmployee.LastName} : {anEmployee.Pay} : {anEmployee.Type}");
             }
+        }
+
+        // writes out the ToString()
+        foreach (Person anEmployee in employeeList)
+        {
+            Console.WriteLine(anEmployee);
         }
 
 
