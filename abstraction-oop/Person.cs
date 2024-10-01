@@ -58,7 +58,7 @@ class Employee : Person
     // override ToString()
     public override string ToString()
     {
-        return $"{base.ToString()}, with a bonus of {CalculateBonus}";
+        return $"{base.ToString()}, with a bonus of {CalculateBonus().ToString()}";
     }
 }
 
@@ -86,7 +86,7 @@ class HourlyEmployee : Person
     // override ToString()
     public override string ToString()
     {
-        return $"{base.ToString()}, with a bonus of {CalculateBonus}";
+        return $"{base.ToString()}, with a bonus of {CalculateBonus().ToString()}";
     }
 }
 
@@ -114,6 +114,6 @@ class SalaryEmployee : Person
     // override ToString()
     public override string ToString()
     {
-        return $"{base.ToString()}, with a bonus of {CalculateBonus}";
+        return $"{base.ToString()}, with a bonus of {CalculateBonus().ToString()}";
     }
 }
