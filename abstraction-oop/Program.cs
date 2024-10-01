@@ -24,8 +24,6 @@ class Program
         Console.Write("Please input type (hourly, salary, contractor, or temp): ");
         type = Console.ReadLine().ToUpper();
 
-
-
         // adds a new user to the text file
         if (type == "HOURLY")
         {
@@ -40,6 +38,16 @@ class Program
             employeeList.Add(new Employee(firstName, lastName, pay, type));
         }
 
+        var foundEmployees = employeeList;
+
+        // writing new information to the text file
+        using (StreamWriter sw = new StreamWriter(fileName))
+        {
+            foreach (Person anEmployee in foundEmployees)
+            {
+                sw.WriteLine(Person.foundEmployees);
+            }
+        }
 
 
 
@@ -50,9 +58,6 @@ class Program
 
 
 
-
-
-        
 
         // using streamreader to load the file
         /*
