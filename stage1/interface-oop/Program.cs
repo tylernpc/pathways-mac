@@ -68,7 +68,7 @@ class Program
         }
 
         // writing new information to the text file
-        using (StreamWriter sw = new StreamWriter(fileName))
+        using (StreamWriter sw = new StreamWriter(fileName, true))
         {
             foreach (Payment customer in payingCustomers)
             {
