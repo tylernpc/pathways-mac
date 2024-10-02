@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/bin/Debug/net7.0/interface-oop
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/bin/Debug/net7.0/interface-oop.deps.json
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/bin/Debug/net7.0/interface-oop.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/bin/Debug/net7.0/interface-oop.dll
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/bin/Debug/net7.0/interface-oop.pdb
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.dll
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/refint/interface-oop.dll
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.pdb
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/interface-oop.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage1/interface-oop/obj/Debug/net7.0/ref/interface-oop.dll
