@@ -19,10 +19,6 @@ class Program
         // creating a list of purchasers
         List<Payment> payingCustomers = new List<Payment>();
 
-        // declaring objects
-        Payment newDebit = new DebitCard();
-        Payment newCredit = new CreditCard();
-
         // prompting customer for card details
         Console.Write("Please enter a card issuer: ");
         cardIssuer = Console.ReadLine();
@@ -44,8 +40,9 @@ class Program
             amountOfDebit = Convert.ToInt32(Console.ReadLine());
             if (amountOfDebit >= totalPrice)
             {
+                DebitCard newDebit = new DebitCard(amountOfDebit, cardIssuer, cardNumber, firstName, lastName, transactionID);
+                payingCustomers.Add(newDebit);
                 newDebit.ProcessPayment();
-                payingCustomers.Add(new DebitCard(amountOfDebit, cardIssuer, cardNumber, firstName, lastName, transactionID));
             }
             else
             {
@@ -58,8 +55,10 @@ class Program
             amountOfCredit = Convert.ToInt32(Console.ReadLine());
             if (amountOfCredit >= totalPrice)
             {
+                CreditCard newCredit = new CreditCard(amountOfCredit, cardIssuer, cardNumber, firstName, lastName, transactionID);
+                payingCustomers.Add(newCredit);
                 newCredit.ProcessPayment();
-                payingCustomers.Add(new CreditCard(amountOfCredit, cardIssuer, cardNumber, firstName, lastName, transactionID));
+                
             }
             else
             {

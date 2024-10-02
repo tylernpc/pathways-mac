@@ -1,4 +1,4 @@
-class CreditCard : Payment
+class CreditCard : Payment, IPayment
 {
     // declaring variables
     public int AmountOfCredit { get; set; } // credit limit
@@ -16,7 +16,7 @@ class CreditCard : Payment
     }
 
     // main method to green light user payment
-    public override void ProcessPayment()
+    public void ProcessPayment()
     {
         Console.WriteLine($"You can afford this!");
     }

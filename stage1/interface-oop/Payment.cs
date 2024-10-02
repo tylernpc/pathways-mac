@@ -1,6 +1,6 @@
 // no bodies for methods
 
-abstract class Payment : IPayment
+abstract class Payment
 {
     // declaring variables
     public string CardIssuer { get; set; }
@@ -28,9 +28,6 @@ abstract class Payment : IPayment
         LastName = lastName;
         TransactionID = transactionID;
     }
-
-    // interface use
-    public abstract void ProcessPayment();
 
     public override string ToString()
     {

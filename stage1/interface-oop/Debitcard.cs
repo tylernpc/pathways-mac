@@ -1,4 +1,4 @@
-class DebitCard : Payment
+class DebitCard : Payment, IPayment
 {
     // declaring variables
     public int AmountOfDebit { get; set; } // amount user has in debit account
@@ -16,7 +16,7 @@ class DebitCard : Payment
     }
 
     // main method to green light user payment
-    public override void ProcessPayment()
+    public void ProcessPayment()
     {
         Console.WriteLine($"You can afford this!");
     }
