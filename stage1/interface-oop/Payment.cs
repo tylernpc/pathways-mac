@@ -2,11 +2,12 @@
 
 abstract class Payment : IPayment
 {
-    // declare variables
+    // declaring variables
     public string CardIssuer { get; set; }
     public int CardNumber { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
+    public string TransactionID { get; set; }
 
     // default constructor
     public Payment()
@@ -15,26 +16,24 @@ abstract class Payment : IPayment
         CardNumber = 0;
         FirstName = "";
         LastName = "";
+        TransactionID = "";
     }
 
     // user constructor
-    public Payment(string cardIssuer, int cardNumber, string firstName, string lastName)
+    public Payment(string cardIssuer, int cardNumber, string firstName, string lastName, string transactionID)
     {
         CardIssuer = cardIssuer;
         CardNumber = cardNumber;
         FirstName = firstName;
         LastName = lastName;
+        TransactionID = transactionID;
     }
 
-    // interface assignment
-    public void ProcessPayment()
-    {
-        Console.WriteLine($"Card Issuer: {CardIssuer} | Card Number: {CardNumber} | First Name: {FirstName} | Last Name: {LastName}");
-    }
+    // interface use
+    public abstract void ProcessPayment();
 
-    // base override
     public override string ToString()
     {
-        return $"Card Issuer: {CardIssuer} | Card Number: {CardNumber} | First Name: {FirstName} | Last Name: {LastName}";
+        return $"Card issuer: {CardIssuer} | Card Number: {CardNumber} | First Name: {FirstName} | Last Name: {LastName} | Transaction ID: {TransactionID}";
     }
 }
