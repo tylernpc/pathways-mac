@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/abstraction-oop/abstraction-oop.csproj": {}
+    "/Users/tyler/Repos/pathways-mac/stage1/abstraction-oop/abstraction-oop.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/abstraction-oop/abstraction-oop.csproj": {
+    "/Users/tyler/Repos/pathways-mac/stage1/abstraction-oop/abstraction-oop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/abstraction-oop/abstraction-oop.csproj",
+        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage1/abstraction-oop/abstraction-oop.csproj",
         "projectName": "abstraction-oop",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/abstraction-oop/abstraction-oop.csproj",
+        "projectPath": "/Users/tyler/Repos/pathways-mac/stage1/abstraction-oop/abstraction-oop.csproj",
         "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/abstraction-oop/obj/",
+        "outputPath": "/Users/tyler/Repos/pathways-mac/stage1/abstraction-oop/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tyler/.nuget/NuGet/NuGet.Config"
