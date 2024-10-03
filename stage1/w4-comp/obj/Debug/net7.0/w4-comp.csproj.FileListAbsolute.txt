@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/bin/Debug/net7.0/w4-comp
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/bin/Debug/net7.0/w4-comp.deps.json
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/bin/Debug/net7.0/w4-comp.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/bin/Debug/net7.0/w4-comp.dll
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/bin/Debug/net7.0/w4-comp.pdb
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.dll
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/refint/w4-comp.dll
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.pdb
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/w4-comp.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage1/w4-comp/obj/Debug/net7.0/ref/w4-comp.dll
