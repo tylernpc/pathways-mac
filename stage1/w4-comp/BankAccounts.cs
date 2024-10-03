@@ -1,4 +1,4 @@
-abstract class BankAccounts
+public abstract class BankAccounts
 {
     public string AccountID { get; set; }
     public string AccountType { get; set; }
@@ -18,6 +18,11 @@ abstract class BankAccounts
         CurrentBalance = currentBalance;
     }
 
+    public double Deposit(double depositAmount)
+    {
+        return CurrentBalance + depositAmount;
+    }
+
     public abstract double Withdraw (double withdrawAmount);
 
     public override string ToString ()
@@ -26,24 +31,50 @@ abstract class BankAccounts
     }
 }
 
-class SavingsAccount : BankAccounts, // interface class
+
+
+public class SavingsAccount : BankAccounts, IAnnualInterest
 {
     public double AnnualInterestRate { get; set; }
+    public double WithdrawAmount { get; set; }
 
     public SavingsAccount() : base ()
     {
         AnnualInterestRate = 0;
     }
 
-    public SavingsAccount (double annualInterestRate, string accountID, 
-    string accountType, double currentBalance) : 
+    public SavingsAccount (double annualInterestRate, double withdrawAmount, 
+    string accountID, string accountType, double currentBalance) : 
     base (accountID, accountType, currentBalance)
     {
         AnnualInterestRate = annualInterestRate;
+        WithdrawAmount = withdrawAmount;
+    }
+
+    public double Deposit(double depositAmount)
+    {
+        depositAmount = 32;
+    }
+
+    public double Withdraw()
+    {
+        return CurrentBalance;
+    }
+
+    public void CalculateAnnualInterest(double currentBalance, double annualInterestRate)
+    {
+        Console.WriteLine($"Your current balance is {currentBalance} and your interest rate is {annualInterestRate}");
+    }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} This is in the savings field";
     }
 }
 
-class CheckingsAccount : BankAccounts, // interface class
+
+
+public class CheckingsAccount : BankAccounts
 {
     public int AnnualFee { get; set; }
 
@@ -58,9 +89,26 @@ class CheckingsAccount : BankAccounts, // interface class
     {
         AnnualFee = annualFee;
     }
+
+    public double Deposit(double depositAmount)
+    {
+        depositAmount = 32;
+    }
+
+    public double Withdraw()
+    {
+        return CurrentBalance;
+    }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} This is in the checkings field";
+    }
 }
 
-class CdAccounts : BankAccounts, // interface class
+
+
+public class CdAccounts : BankAccounts, IAnnualInterest
 {
     public double AnnualInterestRate { get; set; }
     public double EarlyWithdrawPenalty { get; set; }
@@ -77,5 +125,25 @@ class CdAccounts : BankAccounts, // interface class
     {
         AnnualInterestRate = annualInterestRate;
         EarlyWithdrawPenalty = earlyWithdrawPenalty;
+    }
+
+    public double Deposit(double depositAmount)
+    {
+        depositAmount = 32;
+    }
+
+    public double Withdraw()
+    {
+        return CurrentBalance;
+    }
+
+    public void CalculateAnnualInterest(double currentBalance, double annualInterestRate)
+    {
+        Console.WriteLine($"Your current balance is {currentBalance} and your interest rate is {annualInterestRate}");
+    }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} This is in the cd field";
     }
 }
