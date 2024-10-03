@@ -1,12 +1,10 @@
-using System.Security.Cryptography.X509Certificates;
-
 abstract class BankAccounts
 {
     public string AccountID { get; set; }
     public string AccountType { get; set; }
     public double CurrentBalance { get; set; }
 
-    public BankAccounts()
+    public BankAccounts ()
     {
         AccountID = "";
         AccountType = "";
@@ -20,9 +18,12 @@ abstract class BankAccounts
         CurrentBalance = currentBalance;
     }
 
-    public abstract double Deposit(double depositAmount);
+    public abstract double Withdraw (double withdrawAmount);
 
-    public abstract double Withdraw(double withdrawAmount);
+    public override string ToString ()
+    {
+        return $"Account ID {AccountID} | Account Type: {AccountType}, Current Balance: {CurrentBalance}";
+    }
 }
 
 class SavingsAccount : BankAccounts, // interface class
@@ -34,7 +35,9 @@ class SavingsAccount : BankAccounts, // interface class
         AnnualInterestRate = 0;
     }
 
-    public SavingsAccount(double annualInterestRate, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
+    public SavingsAccount (double annualInterestRate, string accountID, 
+    string accountType, double currentBalance) : 
+    base (accountID, accountType, currentBalance)
     {
         AnnualInterestRate = annualInterestRate;
     }
@@ -44,12 +47,14 @@ class CheckingsAccount : BankAccounts, // interface class
 {
     public int AnnualFee { get; set; }
 
-    public CheckingsAccount() : base ()
+    public CheckingsAccount () : base ()
     {
         AnnualFee = 0;
     }
 
-    public CheckingsAccount(int annualFee, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
+    public CheckingsAccount (int annualFee, string accountID, 
+    string accountType, double currentBalance) : 
+    base (accountID, accountType, currentBalance)
     {
         AnnualFee = annualFee;
     }
@@ -57,13 +62,20 @@ class CheckingsAccount : BankAccounts, // interface class
 
 class CdAccounts : BankAccounts, // interface class
 {
-    public CdAccounts() : base ()
-    {
+    public double AnnualInterestRate { get; set; }
+    public double EarlyWithdrawPenalty { get; set; }
 
+    public CdAccounts () : base ()
+    {
+        AnnualInterestRate = 0;
+        EarlyWithdrawPenalty = 0;
     }
 
-    public CdAccounts(string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
+    public CdAccounts (double annualInterestRate, double earlyWithdrawPenalty, 
+    string accountID, string accountType, double currentBalance) : 
+    base (accountID, accountType, currentBalance)
     {
-
+        AnnualInterestRate = annualInterestRate;
+        EarlyWithdrawPenalty = earlyWithdrawPenalty;
     }
 }
