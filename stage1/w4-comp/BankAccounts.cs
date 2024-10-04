@@ -51,9 +51,10 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
         WithdrawAmount = withdrawAmount;
     }
 
-    public double Deposit(double depositAmount)
+    public override double Deposit(double depositAmount)
     {
-        depositAmount = 32;
+        CurrentBalance += depositAmount;
+        return CurrentBalance
     }
 
     public double Withdraw()

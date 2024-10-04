@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/music-oop/music-oop.csproj",
+      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage1/music-oop/music-oop.csproj",
       "projectName": "music-oop",
-      "projectPath": "/Users/tyler/Repos/pathways-mac/music-oop/music-oop.csproj",
+      "projectPath": "/Users/tyler/Repos/pathways-mac/stage1/music-oop/music-oop.csproj",
       "packagesPath": "/Users/tyler/.nuget/packages/",
-      "outputPath": "/Users/tyler/Repos/pathways-mac/music-oop/obj/",
+      "outputPath": "/Users/tyler/Repos/pathways-mac/stage1/music-oop/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tyler/.nuget/NuGet/NuGet.Config"

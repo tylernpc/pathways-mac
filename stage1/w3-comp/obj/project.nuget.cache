@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wwfZD1LLnjuAyiRk74EUsyviFGVILhRXLYDQL+XrNMU5Tky1fRih6YRRNFQPbzboczuPg86hZIFmOcB77CoMwA==",
+  "dgSpecHash": "LsBMCG8ge0KZiYK+PYOwRsib5qAXnrm/YZRycXovWqV77ykQ5/94RjK1AI7JorRu9/3ud/k/Paouuh45/pdQHQ==",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/w3-comp/w3-comp.csproj",
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage1/w3-comp/w3-comp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

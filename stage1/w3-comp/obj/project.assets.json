@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/w3-comp/w3-comp.csproj",
+      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage1/w3-comp/w3-comp.csproj",
       "projectName": "w3-comp",
-      "projectPath": "/Users/tyler/Repos/pathways-mac/w3-comp/w3-comp.csproj",
+      "projectPath": "/Users/tyler/Repos/pathways-mac/stage1/w3-comp/w3-comp.csproj",
       "packagesPath": "/Users/tyler/.nuget/packages/",
-      "outputPath": "/Users/tyler/Repos/pathways-mac/w3-comp/obj/",
+      "outputPath": "/Users/tyler/Repos/pathways-mac/stage1/w3-comp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tyler/.nuget/NuGet/NuGet.Config"
