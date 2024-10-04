@@ -36,7 +36,8 @@ class Program
 
                         if (userPromptOption == "DEPOSIT")
                         {
-
+                            Console.Write("Enter a deposit amount: ");
+                            double depositAmount = Convert.ToDouble(Console.ReadLine());
                         }
                         else if (userPromptOption == "WITHDRAW")
                         {
@@ -48,7 +49,6 @@ class Program
                             Console.WriteLine(savings);
                         }
                     }
-
                 }
                 if (userPromptAccountType == "CHECKING")
                 {
@@ -71,7 +71,6 @@ class Program
                             Console.WriteLine(checking);
                         }
                     }
-
                 }
                 if (userPromptAccountType == "CD")
                 {
