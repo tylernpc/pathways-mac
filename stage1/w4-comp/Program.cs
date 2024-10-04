@@ -1,6 +1,4 @@
-﻿using System.Security;
-
-namespace w4comp;
+﻿namespace w4comp;
 class Program
 {
     static void Main(string[] args)

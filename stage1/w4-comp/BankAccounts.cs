@@ -69,7 +69,6 @@ public class SavingsAccount : BankAccount, IAnnualInterest
     public override string ToString()
     {
         return $"Account ID {AccountID} | Account Type: {AccountType}, Account Balance: {CurrentBalance}, Interest Earned: {CalculateAnnualInterest()}";
-;
     }
 }
 
@@ -143,6 +142,5 @@ public class CDAccount : BankAccount, IAnnualInterest
     public override string ToString()
     {
         return $"Account ID {AccountID} | Account Type: {AccountType}, Account Balance: {CurrentBalance}, Interest Earned: {CalculateAnnualInterest()}";
-;
     }
 }
