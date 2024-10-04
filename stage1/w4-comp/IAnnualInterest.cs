@@ -1,4 +1,4 @@
 public interface IAnnualInterest
 {
-    public abstract void CalculateAnnualInterest(double currentBalance, double interestRate);
+    public abstract double CalculateAnnualInterest(double currentBalance, double interestRate);
 }

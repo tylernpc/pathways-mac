@@ -31,8 +31,6 @@ public abstract class BankAccounts
     }
 }
 
-
-
 public class SavingsAccount : BankAccounts, IAnnualInterest
 {
     public double AnnualInterestRate { get; set; }
@@ -63,9 +61,9 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
         return CurrentBalance;
     }
 
-    public void CalculateAnnualInterest(double currentBalance, double annualInterestRate)
+    public double CalculateAnnualInterest(double currentBalance, double annualInterestRate)
     {
-        Console.WriteLine($"Your current balance is {currentBalance} and your interest rate is {annualInterestRate}");
+        return currentBalance * annualInterestRate;
     }
 
     public override string ToString()
@@ -73,8 +71,6 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
         return $"{base.ToString()} This is in the savings field";
     }
 }
-
-
 
 public class CheckingsAccount : BankAccounts
 {
@@ -110,8 +106,6 @@ public class CheckingsAccount : BankAccounts
     }
 }
 
-
-
 public class CdAccounts : BankAccounts, IAnnualInterest
 {
     public double AnnualInterestRate { get; set; }
@@ -140,12 +134,13 @@ public class CdAccounts : BankAccounts, IAnnualInterest
     public override double Withdraw(double withdrawAmount)
     {
         CurrentBalance -= withdrawAmount;
+        CurrentBalance -= withdrawAmount * 0.1;
         return CurrentBalance;
     }
 
-    public void CalculateAnnualInterest(double currentBalance, double annualInterestRate)
+    public double CalculateAnnualInterest(double currentBalance, double annualInterestRate)
     {
-        Console.WriteLine($"Your current balance is {currentBalance} and your interest rate is {annualInterestRate}");
+        return currentBalance * annualInterestRate;
     }
 
     public override string ToString()
