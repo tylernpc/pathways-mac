@@ -24,14 +24,29 @@ class Program
                 string userPromptAccountType = Console.ReadLine().ToUpper();
                 Console.Write("Account ID: ");
                 string userAccountID = Console.ReadLine();
+                string userPromptOption = "";
 
                 // checks what type of account they have, then checks if their ID matches up
                 if (userPromptAccountType == "SAVINGS")
                 {
                     if (accountID == userAccountID)
                     {
-                        BankAccount savings = new SavingsAccount(0.05, 0, accountID, accountType, currentBalance);
-                        Console.WriteLine(savings);
+                        Console.Write("Would you like to Deposit, Withdraw, or just View : ");
+                        userPromptOption = Console.ReadLine().ToUpper();
+
+                        if (userPromptOption == "DEPOSIT")
+                        {
+
+                        }
+                        else if (userPromptOption == "WITHDRAW")
+                        {
+
+                        }
+                        else if (userPromptOption == "VIEW")
+                        {
+                            BankAccount savings = new SavingsAccount(0.05, 0, accountID, accountType, currentBalance);
+                            Console.WriteLine(savings);
+                        }
                     }
 
                 }
@@ -39,8 +54,22 @@ class Program
                 {
                     if (accountID == userAccountID)
                     {
-                        BankAccount checking = new CheckingAccount(accountID, accountType, currentBalance);
-                        Console.WriteLine(checking);
+                        Console.Write("Would you like to Deposit, Withdraw, or just View : ");
+                        userPromptOption = Console.ReadLine().ToUpper();
+
+                        if (userPromptOption == "DEPOSIT")
+                        {
+
+                        }
+                        else if (userPromptOption == "WITHDRAW")
+                        {
+
+                        }
+                        else if (userPromptOption == "VIEW")
+                        {
+                            BankAccount checking = new CheckingAccount(accountID, accountType, currentBalance);
+                            Console.WriteLine(checking);
+                        }
                     }
 
                 }
@@ -48,8 +77,22 @@ class Program
                 {
                     if (accountID == userAccountID)
                     {
-                        BankAccount cdAccounts = new CDAccount(0.05, 0.10, accountID, accountType, currentBalance);
-                        accounts.Add(cdAccounts);
+                        Console.Write("Would you like to Deposit, Withdraw, or just View : ");
+                        userPromptOption = Console.ReadLine().ToUpper();
+
+                        if (userPromptOption == "DEPOSIT")
+                        {
+
+                        }
+                        else if (userPromptOption == "WITHDRAW")
+                        {
+
+                        }
+                        else if (userPromptOption == "VIEW")
+                        {
+                            BankAccount cdAccounts = new CDAccount(0.05, 0.10, accountID, accountType, currentBalance);
+                            accounts.Add(cdAccounts);
+                        }
                     }
                 }
             }
