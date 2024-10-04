@@ -1,17 +1,17 @@
-public abstract class BankAccounts
+public abstract class BankAccount
 {
     public string AccountID { get; set; }
     public string AccountType { get; set; }
     public double CurrentBalance { get; set; }
 
-    public BankAccounts ()
+    public BankAccount ()
     {
         AccountID = "";
         AccountType = "";
         CurrentBalance = 0;
     }
 
-    public BankAccounts (string accountID, string accountType, double currentBalance)
+    public BankAccount (string accountID, string accountType, double currentBalance)
     {
         AccountID = accountID;
         AccountType = accountType;
@@ -20,7 +20,8 @@ public abstract class BankAccounts
 
     public double Deposit(double depositAmount)
     {
-        return CurrentBalance + depositAmount;
+        CurrentBalance += depositAmount;
+        return CurrentBalance;
     }
 
     public abstract double Withdraw (double withdrawAmount);
@@ -31,65 +32,63 @@ public abstract class BankAccounts
     }
 }
 
-public class SavingsAccount : BankAccounts, IAnnualInterest
+public class SavingsAccount : BankAccount, IAnnualInterest
 {
     public double AnnualInterestRate { get; set; }
     public double WithdrawAmount { get; set; }
 
     public SavingsAccount() : base ()
     {
-        AnnualInterestRate = 0.05;
+        AnnualInterestRate = 0;
         AccountType = "Savings";
     }
 
-    public SavingsAccount (double annualInterestRate, double withdrawAmount, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
+    public SavingsAccount (
+        double annualInterestRate, 
+        double withdrawAmount, 
+        string accountID, 
+        string accountType, 
+        double currentBalance) 
+        : base (accountID, accountType, currentBalance)
     {
         AnnualInterestRate = annualInterestRate;
         WithdrawAmount = withdrawAmount;
     }
 
-    public double Deposit(double depositAmount)
-    {
-        CurrentBalance += depositAmount;
-        return CurrentBalance;
-    }
-
     public override double Withdraw(double withdrawAmount)
     {
         CurrentBalance -= withdrawAmount;
         return CurrentBalance;
     }
 
-    public double CalculateAnnualInterest(double currentBalance, double annualInterestRate)
+    public double CalculateAnnualInterest()
     {
-        return CurrentBalance * annualInterestRate;
+        return CurrentBalance * AnnualInterestRate;
     }
 
     public override string ToString()
     {
-        return $"{base.ToString()} Account Balance: {CurrentBalance}";
+        return $"{base.ToString()} here's how much you've made off of interest {CalculateAnnualInterest()}";
     }
 }
 
-public class CheckingsAccount : BankAccounts
+public class CheckingAccount : BankAccount
 {
     public int AnnualFee { get; set; }
 
-    public CheckingsAccount () : base ()
+    public CheckingAccount () : base ()
     {
-        AnnualFee = 0;
+        AnnualFee = 50;
         AccountType = "Checkings";
     }
 
-    public CheckingsAccount (int annualFee, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
+    public CheckingAccount ( 
+        string accountID, 
+        string accountType, 
+        double currentBalance) 
+        : base (accountID, accountType, currentBalance)
     {
-        AnnualFee = annualFee;
-    }
 
-    public double Deposit(double depositAmount)
-    {
-        CurrentBalance += depositAmount;
-        return CurrentBalance;
     }
 
     public override double Withdraw(double withdrawAmount)
@@ -100,44 +99,44 @@ public class CheckingsAccount : BankAccounts
 
     public override string ToString()
     {
-        return $"{base.ToString()} Account Balance: {CurrentBalance}";
+        return $"{base.ToString()} you have an annual fee of {AnnualFee}";
     }
 }
 
-public class CdAccounts : BankAccounts, IAnnualInterest
+public class CDAccount : BankAccount, IAnnualInterest
 {
     public double AnnualInterestRate { get; set; }
     public double EarlyWithdrawPenalty { get; set; }
 
-    public CdAccounts () : base ()
+    public CDAccount () : base ()
     {
-        AnnualInterestRate = 0.075;
-        EarlyWithdrawPenalty = 0;
+        AnnualInterestRate = 0;
+        EarlyWithdrawPenalty = 0.1;
         AccountType = "CD";
     }
 
-    public CdAccounts (double annualInterestRate, double earlyWithdrawPenalty, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
+    public CDAccount (
+    double annualInterestRate, 
+    double earlyWithdrawPenalty, 
+    string accountID, 
+    string accountType, 
+    double currentBalance) 
+    : base (accountID, accountType, currentBalance)
     {
         AnnualInterestRate = annualInterestRate;
         EarlyWithdrawPenalty = earlyWithdrawPenalty;
     }
 
-    public double Deposit(double depositAmount)
-    {
-        CurrentBalance += depositAmount;
-        return CurrentBalance;
-    }
-
     public override double Withdraw(double withdrawAmount)
     {
         CurrentBalance -= withdrawAmount;
-        CurrentBalance -= withdrawAmount * 0.1;
+        CurrentBalance -= withdrawAmount * EarlyWithdrawPenalty;
         return CurrentBalance;
     }
 
-    public double CalculateAnnualInterest(double currentBalance, double annualInterestRate)
+    public double CalculateAnnualInterest()
     {
-        return CurrentBalance * annualInterestRate;
+        return CurrentBalance * AnnualInterestRate;
     }
 
     public override string ToString()
