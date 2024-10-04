@@ -1,4 +1,6 @@
-﻿namespace w4comp;
+﻿using System.Security;
+
+namespace w4comp;
 class Program
 {
     static void Main(string[] args)
@@ -17,6 +19,7 @@ class Program
                 string accountType = parts[1].Trim();
                 double currentBalance = Convert.ToDouble(parts[2]);
 
+                // places items into the list
                 if (accountType.ToUpper() == "SAVINGS")
                 {
                     BankAccount savings = new SavingsAccount(0.05, 0, accountID, accountType, currentBalance);
@@ -55,19 +58,16 @@ class Program
 
                 if (userPromptOption == "DEPOSIT")
                 {
-                    if (account is SavingsAccount savingsAccount)
+                    Console.Write("Enter deposit amount: ");
+                    double depositAmount = Convert.ToDouble(Console.ReadLine());
+                    if (depositAmount <= 0)
                     {
-                        Console.Write("Enter deposit amount: ");
-                        double depositAmount = Convert.ToDouble(Console.ReadLine());
-                        if (depositAmount <= 0)
-                        {
-                            Console.WriteLine("Please enter a valid deposit amount greater than 0.");
-                        }
-                        else
-                        {
-                            account.Deposit(depositAmount);
-                            Console.WriteLine($"New balance: {account.CurrentBalance}");
-                        }
+                        Console.WriteLine("Please enter a valid deposit amount greater than 0.");
+                    }
+                    else
+                    {
+                        account.Deposit(depositAmount);
+                        Console.WriteLine($"New balance: {account.CurrentBalance}");
                     }
                 }
                 else if (userPromptOption == "WITHDRAW")
