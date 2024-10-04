@@ -27,7 +27,7 @@ public abstract class BankAccounts
 
     public override string ToString ()
     {
-        return $"Account ID {AccountID} | Account Type: {AccountType}, Current Balance: {CurrentBalance}";
+        return $"Account ID {AccountID} | Account Type: {AccountType},";
     }
 }
 
@@ -63,12 +63,12 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
 
     public double CalculateAnnualInterest(double currentBalance, double annualInterestRate)
     {
-        return currentBalance * annualInterestRate;
+        return CurrentBalance * annualInterestRate;
     }
 
     public override string ToString()
     {
-        return $"{base.ToString()} This is in the savings field";
+        return $"{base.ToString()} Account Balance: {CurrentBalance}";
     }
 }
 
@@ -102,7 +102,7 @@ public class CheckingsAccount : BankAccounts
 
     public override string ToString()
     {
-        return $"{base.ToString()} This is in the checkings field";
+        return $"{base.ToString()} Account Balance: {CurrentBalance}";
     }
 }
 
@@ -140,11 +140,11 @@ public class CdAccounts : BankAccounts, IAnnualInterest
 
     public double CalculateAnnualInterest(double currentBalance, double annualInterestRate)
     {
-        return currentBalance * annualInterestRate;
+        return CurrentBalance * annualInterestRate;
     }
 
     public override string ToString()
     {
-        return $"{base.ToString()} This is in the cd field";
+        return $"{base.ToString()} Account Balance: {CurrentBalance}";
     }
 }
