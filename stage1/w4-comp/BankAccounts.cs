@@ -51,14 +51,15 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
         WithdrawAmount = withdrawAmount;
     }
 
-    public override double Deposit(double depositAmount)
+    public double Deposit(double depositAmount)
     {
         CurrentBalance += depositAmount;
-        return CurrentBalance
+        return CurrentBalance;
     }
 
-    public double Withdraw()
+    public override double Withdraw(double withdrawAmount)
     {
+        CurrentBalance -= withdrawAmount;
         return CurrentBalance;
     }
 
@@ -93,12 +94,13 @@ public class CheckingsAccount : BankAccounts
 
     public double Deposit(double depositAmount)
     {
-        depositAmount = 32;
-        return Deposit;
+        CurrentBalance += depositAmount;
+        return CurrentBalance;
     }
 
-    public double Withdraw()
+    public override double Withdraw(double withdrawAmount)
     {
+        CurrentBalance -= withdrawAmount;
         return CurrentBalance;
     }
 
@@ -131,11 +133,13 @@ public class CdAccounts : BankAccounts, IAnnualInterest
 
     public double Deposit(double depositAmount)
     {
-        depositAmount = 32;
+        CurrentBalance += depositAmount;
+        return CurrentBalance;
     }
 
-    public double Withdraw()
+    public override double Withdraw(double withdrawAmount)
     {
+        CurrentBalance -= withdrawAmount;
         return CurrentBalance;
     }
 
