@@ -27,7 +27,7 @@ public abstract class BankAccounts
 
     public override string ToString ()
     {
-        return $"Account ID {AccountID} | Account Type: {AccountType},";
+        return $"Account ID {AccountID} | Account Type: {AccountType}, Account Balance: {CurrentBalance}";
     }
 }
 
@@ -39,6 +39,7 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
     public SavingsAccount() : base ()
     {
         AnnualInterestRate = 0;
+        AccountType = "Savings";
     }
 
     public SavingsAccount (double annualInterestRate, double withdrawAmount, 
@@ -79,6 +80,7 @@ public class CheckingsAccount : BankAccounts
     public CheckingsAccount () : base ()
     {
         AnnualFee = 0;
+        AccountType = "Checkings";
     }
 
     public CheckingsAccount (int annualFee, string accountID, 
@@ -115,6 +117,7 @@ public class CdAccounts : BankAccounts, IAnnualInterest
     {
         AnnualInterestRate = 0;
         EarlyWithdrawPenalty = 0;
+        AccountType = "CD";
     }
 
     public CdAccounts (double annualInterestRate, double earlyWithdrawPenalty, 
