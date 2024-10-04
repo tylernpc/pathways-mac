@@ -1,1 +1,3 @@
 TL22,Savings,90000
+JR43,Checking,120000
+AE68,CD,400000

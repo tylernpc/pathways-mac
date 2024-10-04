@@ -141,6 +141,6 @@ public class CDAccount : BankAccount, IAnnualInterest
 
     public override string ToString()
     {
-        return $"{base.ToString()} Account Balance: {CurrentBalance}";
+        return $"{base.ToString()}";
     }
 }
