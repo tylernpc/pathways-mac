@@ -38,13 +38,11 @@ public class SavingsAccount : BankAccounts, IAnnualInterest
 
     public SavingsAccount() : base ()
     {
-        AnnualInterestRate = 0;
+        AnnualInterestRate = 0.05;
         AccountType = "Savings";
     }
 
-    public SavingsAccount (double annualInterestRate, double withdrawAmount, 
-    string accountID, string accountType, double currentBalance) : 
-    base (accountID, accountType, currentBalance)
+    public SavingsAccount (double annualInterestRate, double withdrawAmount, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
     {
         AnnualInterestRate = annualInterestRate;
         WithdrawAmount = withdrawAmount;
@@ -83,9 +81,7 @@ public class CheckingsAccount : BankAccounts
         AccountType = "Checkings";
     }
 
-    public CheckingsAccount (int annualFee, string accountID, 
-    string accountType, double currentBalance) : 
-    base (accountID, accountType, currentBalance)
+    public CheckingsAccount (int annualFee, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
     {
         AnnualFee = annualFee;
     }
@@ -115,14 +111,12 @@ public class CdAccounts : BankAccounts, IAnnualInterest
 
     public CdAccounts () : base ()
     {
-        AnnualInterestRate = 0;
+        AnnualInterestRate = 0.075;
         EarlyWithdrawPenalty = 0;
         AccountType = "CD";
     }
 
-    public CdAccounts (double annualInterestRate, double earlyWithdrawPenalty, 
-    string accountID, string accountType, double currentBalance) : 
-    base (accountID, accountType, currentBalance)
+    public CdAccounts (double annualInterestRate, double earlyWithdrawPenalty, string accountID, string accountType, double currentBalance) : base (accountID, accountType, currentBalance)
     {
         AnnualInterestRate = annualInterestRate;
         EarlyWithdrawPenalty = earlyWithdrawPenalty;

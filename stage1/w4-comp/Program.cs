@@ -1,6 +1,4 @@
-﻿using System.Security.Principal;
-
-namespace w4comp;
+﻿namespace w4comp;
 
 class Program
 {
