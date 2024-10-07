@@ -1,6 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-
 public abstract class Membership
 {
     public string MembershipID { get; set; }
