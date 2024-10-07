@@ -33,6 +33,14 @@ public abstract class Membership
         return accumulatedTotal;
     }
 
+    public double Return(double accumulatedTotal, double newReturn)
+    {
+        accumulatedTotal -= newReturn;
+        return accumulatedTotal;
+    }
+
+    public abstract double CashbackRewards();
+
     public override string ToString()
     {
         return $"{MembershipID}| {EmailAddress}, Type of Membership: {TypeOfMembership}, Annual Fee: {AnnualFee}, Total Spend: {TotalAmountOfSpend}";

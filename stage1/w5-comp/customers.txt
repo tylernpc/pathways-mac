@@ -1,6 +1,6 @@
 membershipID,emailAddress,typeOfMembership,annualFee,totalAmountOfSpend
 
 tl22,tyler@dpl.com,executive,300
-jr43,joe@dpl.com,regular,200
+jr43,joe@dpl.com,standard,200
 ae68,alec@dpl.com,non-profit,50
 jk10,jon@dpl.com,corporate,1000
