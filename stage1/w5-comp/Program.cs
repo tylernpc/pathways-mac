@@ -1,9 +1,8 @@
 ﻿namespace CompChallenge;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World");
+        // four types of memberships
     }
 }

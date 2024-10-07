@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/bin/Debug/net7.0/comp-challenge
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/bin/Debug/net7.0/comp-challenge.deps.json
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/bin/Debug/net7.0/comp-challenge.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/bin/Debug/net7.0/comp-challenge.dll
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/bin/Debug/net7.0/comp-challenge.pdb
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.dll
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/refint/comp-challenge.dll
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.pdb
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/comp-challenge.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage1/w5-comp/obj/Debug/net7.0/ref/comp-challenge.dll
