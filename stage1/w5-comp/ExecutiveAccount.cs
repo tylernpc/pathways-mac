@@ -13,4 +13,9 @@ public class ExecutiveAccount : Membership, ISpecialOffer
         }
         return executiveCashBack;
     }
+
+    public void SpecialOffer()
+    {
+        Console.WriteLine($"Executive Special Offer: {AnnualFee * 0.50}");
+    }
 }

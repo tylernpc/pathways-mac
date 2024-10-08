@@ -23,19 +23,20 @@ public class NonProfitAccount : Membership
     {
         TypeOfNonProfitMembership = typeOfNonProfitMembership;
     }
-
+    
     public override double CashbackRewards()
     {
+        double nonProfitCashBack = 0;
+
+        if (TypeOfNonProfitMembership == "MILITARY" || TypeOfNonProfitMembership == "EDUCATIONAL")
+        {
+            nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
+        }
+        else
+        {
+            nonProfitCashBack = TotalAmountOfSpend * 0.01; // 1% cashback hard coded
+        }
         
-        double executiveCashBack = 0;
-        if (TotalAmountOfSpend < 1000)
-        {
-            executiveCashBack = TotalAmountOfSpend * 0.05; // 5% Cashback hard coded
-        }
-        if (TotalAmountOfSpend > 1000)
-        {
-            executiveCashBack = TotalAmountOfSpend * 0.07; // 7% Cashback hard coded
-        }
-        return executiveCashBack;
+        return nonProfitCashBack;
     }
 }
