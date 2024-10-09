@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CompChallenge;
 class Program
@@ -67,15 +68,29 @@ class Program
         }
         Console.WriteLine("File Loaded");
 
-
-        /*
-        // user prompts for account creation
+        // CRUD operations
+        Console.Write("What (C/R/U/D) operation would you like to select?");
+        string userCrudChoice = Console.ReadLine().ToUpper();
+        if (userCrudChoice == "C")
+        {
+            // user prompts for account creation
         Console.Write("Please provide an email address: ");
         emailAddress = Console.ReadLine();
         Console.Write("What type of membership would you like to select: ");
         typeOfMembership = Console.ReadLine();
-        */
-        
+        }
+        else if (userCrudChoice == "R")
+        {
+
+        }
+        else if (userCrudChoice == "U")
+        {
+
+        }
+        else if (userCrudChoice == "D")
+        {
+
+        }    
     }
 
     // methods below
