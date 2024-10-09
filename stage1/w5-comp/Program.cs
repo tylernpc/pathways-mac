@@ -78,10 +78,11 @@ class Program
                     if (typeOfMembership == "STANDARD")
                     {
                         customer = new StandardAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend);
+                        customers.Add(customer);
                     }
                     else if (typeOfMembership == "EXECUTIVE")
                     {
-                        customer
+                    
                     }
                     else if (typeOfMembership == "NONPROFIT")
                     {
