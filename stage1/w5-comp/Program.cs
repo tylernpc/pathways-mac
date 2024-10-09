@@ -19,6 +19,9 @@ class Program
         int annualFee = 0;
         double monthlySpend = 0;
         string userCrudChoice;
+        string accountID;
+        string accountEmail;
+        double totalAmountOfSpend = 0;
 
         do
         {
@@ -29,11 +32,11 @@ class Program
                 {
                     // reads the delimited file, and splits them into their respective parts
                     string[] parts = line.Split(',');
-                    string accountID = parts[0].Trim();
-                    string accountEmail = parts[1].Trim();
+                    accountID = parts[0].Trim();
+                    accountEmail = parts[1].Trim();
                     typeOfMembership = parts[2].Trim();
                     annualFee = Convert.ToInt16(parts[3].Trim());
-                    double totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
+                    totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
 
                     Membership customer = null;
                     // places items into the list
@@ -47,7 +50,7 @@ class Program
                         customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
                         customers.Add(customer);
                     }
-                    else if (typeOfMembership.ToUpper() == "NON-PROFIT")
+                    else if (typeOfMembership.ToUpper() == "NONPROFIT")
                     {
                         string typeOfNonProfitMembership = parts[5].Trim();
                         customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
@@ -65,11 +68,29 @@ class Program
                 userCrudChoice = Console.ReadLine().ToUpper();
                 if (userCrudChoice == "C")
                 {
+                    Membership customer = null;
                     // user prompts for account creation
                     Console.Write("Please provide an email address: ");
                     emailAddress = Console.ReadLine();
                     Console.Write("What type of membership would you like to select: ");
                     typeOfMembership = Console.ReadLine();
+
+                    if (typeOfMembership == "STANDARD")
+                    {
+                        customer = new StandardAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend);
+                    }
+                    else if (typeOfMembership == "EXECUTIVE")
+                    {
+
+                    }
+                    else if (typeOfMembership == "NONPROFIT")
+                    {
+
+                    }
+                    else if (typeOfMembership == "CORPORATE")
+                    {
+
+                    }
                 }
                 else if (userCrudChoice == "R")
                 {
