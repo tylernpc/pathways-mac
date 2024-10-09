@@ -19,11 +19,13 @@ class Program
         int annualFee = 0;
         double monthlySpend = 0;
 
+        /*
         // user prompts for account creation
         Console.Write("Please provide an email address: ");
         emailAddress = Console.ReadLine();
         Console.Write("What type of membership would you like to select: ");
         typeOfMembership = Console.ReadLine();
+        */
 
         // Load Portion
         using (StreamReader sr = File.OpenText("customers.txt"))
@@ -38,31 +40,32 @@ class Program
                 typeOfMembership = parts[2].Trim();
                 annualFee = Convert.ToInt16(parts[3].Trim());
                 double totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
+                string typeOfNonProfitMembership = parts[5].Trim();
 
                 // places items into the list
                 if (typeOfMembership.ToUpper() == "STANDARD")
                 {
                     Membership customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                    Membership.Add(customer);
+                    customers.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "EXECUTIVE")
                 {
-                    BankAccount checking = new CheckingAccount(accountID, accountType, currentBalance);
-                    accounts.Add(checking);
+                    Membership customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                    customers.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "NON-PROFIT")
                 {
-                    BankAccount cdAccount = new CDAccount(0.05, 0.10, accountID, accountType, currentBalance);
-                    accounts.Add(cdAccount);
+                    Membership customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
+                    customers.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "COPORATE")
                 {
-
+                    Membership customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                    customers.Add(customer);
                 }
             }
         }
-
-       
+        // Console.WriteLine();
     }
 
     // methods below

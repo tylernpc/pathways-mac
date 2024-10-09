@@ -7,13 +7,13 @@ public class NonProfitAccount : Membership
         TypeOfNonProfitMembership = "";
     }
 
-    public NonProfitAccount(
-        string typeOfNonProfitMembership, 
+    public NonProfitAccount( 
         string membershipID, 
         string emailAddress, 
         string typeOfMembership, 
         int annualFee, 
-        double totalAmountOfSpend) 
+        double totalAmountOfSpend,
+        string typeOfNonProfitMembership) 
         : base (
             membershipID, 
             emailAddress, 
