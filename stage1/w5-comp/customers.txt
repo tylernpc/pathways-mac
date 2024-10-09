@@ -3,4 +3,12 @@ jr43,joe@dpl.com,standard,200,320.32
 ae68,alec@dpl.com,non-profit,50,10000.23
 jk10,jon@dpl.com,corporate,1000,300000.34
 
+Standard Account
 string membershipID, string emailAddress, string typeOfMembership, int annualFee, double totalAmountOfSpend
+
+Executive
+
+Non-profit
+string typeOfNonProfitMembership, string membershipID, string emailAddress, string typeOfMembership, int annualFee, double totalAmountOfSpend
+
+Corporate

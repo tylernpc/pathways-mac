@@ -42,7 +42,7 @@ class Program
                 // places items into the list
                 if (typeOfMembership.ToUpper() == "STANDARD")
                 {
-                    Membership customer = new StandardAccount(randomID, );
+                    Membership customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
                     Membership.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "EXECUTIVE")
