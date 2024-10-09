@@ -23,12 +23,16 @@ public class NonProfitAccount : Membership
     {
         TypeOfNonProfitMembership = typeOfNonProfitMembership;
     }
-    
+
     public override double CashbackRewards()
     {
         double nonProfitCashBack = 0;
 
-        if (TypeOfNonProfitMembership == "MILITARY" || TypeOfNonProfitMembership == "EDUCATIONAL")
+        if (TypeOfNonProfitMembership == "MILITARY")
+        {
+            nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
+        }
+        else if (TypeOfNonProfitMembership == "EDUCATIONAL")
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
         }
@@ -38,5 +42,10 @@ public class NonProfitAccount : Membership
         }
         
         return nonProfitCashBack;
+    }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()}, {TypeOfNonProfitMembership}";
     }
 }
