@@ -72,8 +72,8 @@ class Program
                     // user prompts for account creation
                     Console.Write("Please provide an email address: ");
                     emailAddress = Console.ReadLine();
-                    Console.Write("What type of membership would you like to select: ");
-                    typeOfMembership = Console.ReadLine();
+                    Console.Write("What type of membership would you like to select (Standard/Executive/NonProfit/Corporate): ");
+                    typeOfMembership = Console.ReadLine().ToUpper();
 
                     if (typeOfMembership == "STANDARD")
                     {
@@ -81,7 +81,7 @@ class Program
                     }
                     else if (typeOfMembership == "EXECUTIVE")
                     {
-
+                        customer
                     }
                     else if (typeOfMembership == "NONPROFIT")
                     {
