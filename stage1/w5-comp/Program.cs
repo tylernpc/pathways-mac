@@ -1,4 +1,6 @@
-﻿namespace CompChallenge;
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace CompChallenge;
 class Program
 {
     // main program
@@ -40,32 +42,36 @@ class Program
                 typeOfMembership = parts[2].Trim();
                 annualFee = Convert.ToInt16(parts[3].Trim());
                 double totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
-                string typeOfNonProfitMembership = parts[5].Trim();
-
+                
+                Membership customer = null;
                 // places items into the list
                 if (typeOfMembership.ToUpper() == "STANDARD")
                 {
-                    Membership customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                    customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
                     customers.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "EXECUTIVE")
                 {
-                    Membership customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                    customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
                     customers.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "NON-PROFIT")
                 {
-                    Membership customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
+                    string typeOfNonProfitMembership = parts[5].Trim();
+                    customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
                     customers.Add(customer);
                 }
                 else if (typeOfMembership.ToUpper() == "COPORATE")
                 {
-                    Membership customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                    customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
                     customers.Add(customer);
                 }
             }
+            // foreach (var customer in customers)
+            // {
+            //     Console.WriteLine(customer.ToString());
+            // }
         }
-        // Console.WriteLine();
     }
 
     // methods below
