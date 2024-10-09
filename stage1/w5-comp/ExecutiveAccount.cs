@@ -1,5 +1,10 @@
 public class ExecutiveAccount : Membership, ISpecialOffer
 {
+    public ExecutiveAccount(string membershipID, string emailAddress, string typeOfMembership, int annualFee, double totalAmountOfSpend) : base (membershipID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend)
+    {
+        
+    }
+
     public override double CashbackRewards()
     {
         double executiveCashBack = 0;
