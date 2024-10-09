@@ -21,15 +21,7 @@ class Program
         int annualFee = 0;
         double monthlySpend = 0;
 
-        /*
-        // user prompts for account creation
-        Console.Write("Please provide an email address: ");
-        emailAddress = Console.ReadLine();
-        Console.Write("What type of membership would you like to select: ");
-        typeOfMembership = Console.ReadLine();
-        */
-
-        // Load Portion
+        // initial load
         using (StreamReader sr = File.OpenText("customers.txt"))
         {
             string line = "";
@@ -42,8 +34,8 @@ class Program
                 typeOfMembership = parts[2].Trim();
                 annualFee = Convert.ToInt16(parts[3].Trim());
                 double totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
-                
                 Membership customer = null;
+
                 // places items into the list
                 if (typeOfMembership.ToUpper() == "STANDARD")
                 {
@@ -67,11 +59,23 @@ class Program
                     customers.Add(customer);
                 }
             }
+            // this foreach just reads out each line of the file in the console
             // foreach (var customer in customers)
             // {
             //     Console.WriteLine(customer.ToString());
             // }
         }
+        Console.WriteLine("File Loaded");
+
+
+        /*
+        // user prompts for account creation
+        Console.Write("Please provide an email address: ");
+        emailAddress = Console.ReadLine();
+        Console.Write("What type of membership would you like to select: ");
+        typeOfMembership = Console.ReadLine();
+        */
+        
     }
 
     // methods below
