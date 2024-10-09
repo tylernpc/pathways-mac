@@ -1,7 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography.X509Certificates;
-
-namespace CompChallenge;
+﻿namespace CompChallenge;
 class Program
 {
     // main program
@@ -21,76 +18,76 @@ class Program
         string typeOfMembership;
         int annualFee = 0;
         double monthlySpend = 0;
+        string userCrudChoice;
 
-        // initial load
-        using (StreamReader sr = File.OpenText("customers.txt"))
+        do
         {
-            string line = "";
-            while ((line = sr.ReadLine()) != null)
+            using (StreamReader sr = File.OpenText("customers.txt"))
             {
-                // reads the delimited file, and splits them into their respective parts
-                string[] parts = line.Split(',');
-                string accountID = parts[0].Trim();
-                string accountEmail = parts[1].Trim();
-                typeOfMembership = parts[2].Trim();
-                annualFee = Convert.ToInt16(parts[3].Trim());
-                double totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
-                Membership customer = null;
+                string line = "";
+                while ((line = sr.ReadLine()) != null)
+                {
+                    // reads the delimited file, and splits them into their respective parts
+                    string[] parts = line.Split(',');
+                    string accountID = parts[0].Trim();
+                    string accountEmail = parts[1].Trim();
+                    typeOfMembership = parts[2].Trim();
+                    annualFee = Convert.ToInt16(parts[3].Trim());
+                    double totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
 
-                // places items into the list
-                if (typeOfMembership.ToUpper() == "STANDARD")
-                {
-                    customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                    customers.Add(customer);
+                    Membership customer = null;
+                    // places items into the list
+                    if (typeOfMembership.ToUpper() == "STANDARD")
+                    {
+                        customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                        customers.Add(customer);
+                    }
+                    else if (typeOfMembership.ToUpper() == "EXECUTIVE")
+                    {
+                        customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                        customers.Add(customer);
+                    }
+                    else if (typeOfMembership.ToUpper() == "NON-PROFIT")
+                    {
+                        string typeOfNonProfitMembership = parts[5].Trim();
+                        customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
+                        customers.Add(customer);
+                    }
+                    else if (typeOfMembership.ToUpper() == "COPORATE")
+                    {
+                        customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                        customers.Add(customer);
+                    }
                 }
-                else if (typeOfMembership.ToUpper() == "EXECUTIVE")
+
+                // CRUD operations
+                Console.Write("What (C/R/U/D/Q) operation would you like to select? ");
+                userCrudChoice = Console.ReadLine().ToUpper();
+                if (userCrudChoice == "C")
                 {
-                    customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                    customers.Add(customer);
+                    // user prompts for account creation
+                    Console.Write("Please provide an email address: ");
+                    emailAddress = Console.ReadLine();
+                    Console.Write("What type of membership would you like to select: ");
+                    typeOfMembership = Console.ReadLine();
                 }
-                else if (typeOfMembership.ToUpper() == "NON-PROFIT")
+                else if (userCrudChoice == "R")
                 {
-                    string typeOfNonProfitMembership = parts[5].Trim();
-                    customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
-                    customers.Add(customer);
+                    foreach (var customer in customers)
+                    {
+                        Console.WriteLine(customer.ToString());
+                    }
                 }
-                else if (typeOfMembership.ToUpper() == "COPORATE")
+                else if (userCrudChoice == "U")
                 {
-                    customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                    customers.Add(customer);
+
+                }
+                else if (userCrudChoice == "D")
+                {
+
                 }
             }
-            // this foreach just reads out each line of the file in the console
-            // foreach (var customer in customers)
-            // {
-            //     Console.WriteLine(customer.ToString());
-            // }
-        }
-        Console.WriteLine("File Loaded");
-
-        // CRUD operations
-        Console.Write("What (C/R/U/D) operation would you like to select?");
-        string userCrudChoice = Console.ReadLine().ToUpper();
-        if (userCrudChoice == "C")
-        {
-            // user prompts for account creation
-        Console.Write("Please provide an email address: ");
-        emailAddress = Console.ReadLine();
-        Console.Write("What type of membership would you like to select: ");
-        typeOfMembership = Console.ReadLine();
-        }
-        else if (userCrudChoice == "R")
-        {
-
-        }
-        else if (userCrudChoice == "U")
-        {
-
-        }
-        else if (userCrudChoice == "D")
-        {
-
-        }    
+        } while (!(userCrudChoice == "Q"));
     }
 
     // methods below
