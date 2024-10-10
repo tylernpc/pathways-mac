@@ -4,6 +4,13 @@ class Program
     // main program
     static void Main(string[] args)
     {
+        string userChoice;
+        do
+        {
+            Console.Write("Are you a manager or customer? ");
+            userChoice = Console.ReadLine().ToUpper();
+        } while (userChoice != "MANAGER" && userChoice != "CUSTOMER");
+
         // Primary List
         List<Membership> customers = new List<Membership>();
 
@@ -57,93 +64,149 @@ class Program
             }
         }
 
-        do
+        if (userChoice == "MANAGER")
         {
-            // CRUD operations
-            Console.Write("What (C/R/U/D/Q/S) operation would you like to select? ");
-            userCrudChoice = Console.ReadLine().ToUpper();
-            if (userCrudChoice == "C")
+            do
             {
-                CreateCustomer(customers);
-            }
-            else if (userCrudChoice == "R")
-            {
-                DisplayCustomers(customers);
-            }
-            else if (userCrudChoice == "U")
-            {
-                DisplayCustomers(customers);
-
-                Console.Write("Please enter a User ID: ");
-                accountID = Console.ReadLine().ToUpper();
-
-                Membership foundCustomer = null;
-                foreach (var customer in customers)
+                // CRUD operations
+                Console.Write("What (C/R/U/D/Q/S) operation would you like to select? ");
+                userCrudChoice = Console.ReadLine().ToUpper();
+                if (userCrudChoice == "C")
                 {
-                    if (customer.MembershipID.ToUpper() == accountID)
-                    {
-                        foundCustomer = customer;
-                        break;
-                    }
-                }
-                
-                if (foundCustomer != null)
-                {
-
                     CreateCustomer(customers);
                 }
-                else
+                else if (userCrudChoice == "R")
                 {
-                    Console.WriteLine("Customer not found");
+                    DisplayCustomers(customers);
                 }
-            }
-            else if (userCrudChoice == "D")
-            {
-                DisplayCustomers(customers);
+                else if (userCrudChoice == "U")
+                {
+                    DisplayCustomers(customers);
 
-                Console.Write("Please enter a User ID to delete: ");
-                accountID = Console.ReadLine().ToUpper();
+                    Console.Write("Please enter a User ID: ");
+                    accountID = Console.ReadLine().ToUpper();
 
-                Membership customerToDelete = null;
-                foreach (var customer in customers)
-                {
-                    if (customer.MembershipID.ToUpper() == accountID)
-                    {
-                        customerToDelete = customer;
-                        break;
-                    }
-                }
-
-                if (customerToDelete != null)
-                {
-                    customers.Remove(customerToDelete);
-                    Console.WriteLine("Customer deleted successfully.");
-                }
-                else
-                {
-                    Console.WriteLine("Customer not found.");
-                }
-            }
-            else if (userCrudChoice == "S")
-            {
-                using (StreamWriter sw = new StreamWriter("customers.txt"))
-                {
+                    Membership foundCustomer = null;
                     foreach (var customer in customers)
                     {
-                        string line;
-                        if (customer is NonProfitAccount nonProfitCustomer)
+                        if (customer.MembershipID.ToUpper() == accountID)
                         {
-                            line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend},{nonProfitCustomer.TypeOfNonProfitMembership}";
+                            foundCustomer = customer;
+                            break;
                         }
-                        else
-                        {
-                            line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
-                        }
-                        sw.WriteLine(line);
+                    }
+
+                    if (foundCustomer != null)
+                    {
+
+                        CreateCustomer(customers);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Customer not found");
                     }
                 }
+                else if (userCrudChoice == "D")
+                {
+                    DisplayCustomers(customers);
+
+                    Console.Write("Please enter a User ID to delete: ");
+                    accountID = Console.ReadLine().ToUpper();
+
+                    Membership customerToDelete = null;
+                    foreach (var customer in customers)
+                    {
+                        if (customer.MembershipID.ToUpper() == accountID)
+                        {
+                            customerToDelete = customer;
+                            break;
+                        }
+                    }
+
+                    if (customerToDelete != null)
+                    {
+                        customers.Remove(customerToDelete);
+                        Console.WriteLine("Customer deleted successfully.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Customer not found.");
+                    }
+                }
+                else if (userCrudChoice == "S")
+                {
+                    using (StreamWriter sw = new StreamWriter("customers.txt"))
+                    {
+                        foreach (var customer in customers)
+                        {
+                            string line;
+                            if (customer is NonProfitAccount nonProfitCustomer)
+                            {
+                                line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend},{nonProfitCustomer.TypeOfNonProfitMembership}";
+                            }
+                            else
+                            {
+                                line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
+                            }
+                            sw.WriteLine(line);
+                        }
+                    }
+                    Console.WriteLine("Save Successful.");
+                }
+            } while (!(userCrudChoice == "Q"));
+        }
+        if (userChoice == "CUSTOMER")
+        {
+            // the read out would ideally never be there for someone but since we're demoing I left it in
+            DisplayCustomers(customers);
+
+            Console.Write("Please enter your ID: ");
+            accountID = Console.ReadLine().Trim().ToUpper();
+
+            Membership foundCustomer = null;
+            foreach (var customer in customers)
+            {
+                if (customer.MembershipID.ToUpper() == accountID)
+                {
+                    foundCustomer = customer;
+                    break;
+                }
             }
-        } while (!(userCrudChoice == "Q"));
+
+            if (foundCustomer != null)
+            {
+                do
+                {
+                    Console.Write("Would you like to (L/P/T/A/Q) ");
+                    userChoice = Console.ReadLine().ToUpper();
+                } while (userChoice != "L" && userChoice != "P" && userChoice != "T" && userChoice != "A" && userChoice != "Q");
+
+                if (userChoice == "L")
+                {
+                    //  ignore for now
+                }
+                else if (userChoice == "P")
+                {
+                    
+                }
+                else if (userChoice == "T")
+                {
+
+                }
+                else if (userChoice == "A")
+                {
+
+                }
+                else if (userChoice == "Q")
+                {
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("Customer not found");
+            }
+        }
     }
 
     // methods below
