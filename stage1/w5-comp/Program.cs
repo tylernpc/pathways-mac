@@ -88,12 +88,11 @@ class Program
                 else if (typeOfMembership == "NONPROFIT")
                 {
                     string typeOfNonProfitMembershipSet;
-
+                    // user validation for nonprofit type
                     do
                     {
                         Console.Write("Is this non-profit Educational, Military, or Neither? ");
                         string typeOfNonProfitMembership = Console.ReadLine().ToUpper();
-
 
                         if (typeOfNonProfitMembership == "EDUCATIONAL")
                         {
@@ -112,7 +111,8 @@ class Program
                             Console.Write("Please enter a valid option: Educational or Military. ");
                         }
                     } while (true);
-                    customers.Add(new NonProfitAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership));
+
+                    customers.Add(new NonProfitAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembershipSet));
                 }
                 else if (typeOfMembership == "CORPORATE")
                 {

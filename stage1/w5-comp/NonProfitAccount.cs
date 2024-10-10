@@ -36,7 +36,7 @@ public class NonProfitAccount : Membership
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
         }
-        else
+        else if (TypeOfNonProfitMembership == "Neither")
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.01; // 1% cashback hard coded
         }
