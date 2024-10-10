@@ -100,7 +100,7 @@ class Program
 
                     if (foundCustomer != null)
                     {
-
+                        customers.Remove(foundCustomer);
                         CreateCustomer(customers);
                     }
                     else
@@ -175,28 +175,30 @@ class Program
                     }
                     else if (userChoice == "P")
                     {
-                        Console.Write("Enter the amount you would like to purchase: ");
                         double purchaseAmount;
-
-                        while (!double.TryParse(Console.ReadLine(), out purchaseAmount) || purchaseAmount <= 0)
+                        do
                         {
-                            Console.Write("Please enter a valid purchase greater than zero: ");
+                            Console.Write("Enter the amount you would like to purchase: ");
                         }
+                        while (!double.TryParse(Console.ReadLine(), out purchaseAmount) || purchaseAmount <= 0);
 
                         foundCustomer.TotalAmountOfSpend = foundCustomer.Purchase(foundCustomer.TotalAmountOfSpend, purchaseAmount);
                         Console.WriteLine("Purchase Successful.");
                     }
                     else if (userChoice == "T")
                     {
-                        Console.Write("Enter the amount you would like to return: ");
                         double returnAmount;
-
-                        while (!double.TryParse(Console.ReadLine(), out returnAmount) || returnAmount <= 0)
+                        do
                         {
-                            Console.Write("Please enter a valid return greater than zero: ");
+                            Console.Write("Enter the amount you would like to return: ");
                         }
+                        while (!double.TryParse(Console.ReadLine(), out returnAmount) || returnAmount <= 0);
 
-                        if (foundCustomer.TotalAmountOfSpend == 0)
+                        if (returnAmount > foundCustomer.TotalAmountOfSpend)
+                        {
+                            Console.WriteLine($"You cannot return more than your current total spend of {foundCustomer.TotalAmountOfSpend}.");
+                        }
+                        else
                         {
                             foundCustomer.TotalAmountOfSpend = foundCustomer.Return(foundCustomer.TotalAmountOfSpend, returnAmount);
                             Console.WriteLine("Return Successful.");
@@ -306,7 +308,7 @@ class Program
 
     static void UserSave(List<Membership> customers)
     {
-        using (StreamWriter sw = new StreamWriter("customers.txt"))
+        using (StreamWriter sw = new StreamWriter("new.txt"))
         {
             foreach (var customer in customers)
             {

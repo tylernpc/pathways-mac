@@ -4,4 +4,4 @@ ae68,alec@dpl.com,nonprofit,50,10000.23,Educational
 jk10,jon@dpl.com,corporate,1000,300000.34
 917be,johnny.appleseed@gmail.com,STANDARD,200,0
 e284b,jaden@dpl.com,Nonprofit,50,0,Educational
-de27a,bart@dpl.com,Standard,200,0
+702f3,joe.bar@dpl.com,Nonprofit,50,0,Neither
