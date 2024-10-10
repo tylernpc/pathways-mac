@@ -194,12 +194,18 @@ class Program
                             Console.Write("Please enter a valid return greater than zero: ");
                         }
 
-                        foundCustomer.TotalAmountOfSpend = foundCustomer.Return(foundCustomer.TotalAmountOfSpend, returnAmount);
-                        Console.WriteLine("Return Successful.");
+                        if (foundCustomer.TotalAmountOfSpend == 0)
+                        {
+                            foundCustomer.TotalAmountOfSpend = foundCustomer.Return(foundCustomer.TotalAmountOfSpend, returnAmount);
+                            Console.WriteLine("Return Successful.");
+                        }
                     }
                     else if (userChoice == "A")
                     {
-                        Console.Write("What would you like to im: ");
+                        foreach (var customer in customers)
+                        {
+                            Console.WriteLine(foundCustomer.CashbackRewards().ToString());
+                        }
                     }
                     else if (userChoice == "S")
                     {
