@@ -74,7 +74,7 @@ class Program
                 // user prompts for account creation
                 Console.Write("Please provide an email address: ");
                 emailAddress = Console.ReadLine();
-                Console.Write("What type of membership would you like to select (Standard/Executive/NonProfit/Corporate): ");
+                Console.Write("What type of membership would you like to select (Standard/Executive/Nonprofit/Corporate): ");
                 typeOfMembership = Console.ReadLine().ToUpper();
 
                 if (typeOfMembership == "STANDARD")
@@ -88,23 +88,26 @@ class Program
                 else if (typeOfMembership == "NONPROFIT")
                 {
                     string typeOfNonProfitMembershipSet;
-                    // user validation for nonprofit type
+                    // user validation for nonprofit
                     do
                     {
-                        Console.Write("Is this non-profit Educational, Military, or Neither? ");
+                        Console.Write("Is this nonprofit Educational, Military, or Neither? ");
                         string typeOfNonProfitMembership = Console.ReadLine().ToUpper();
 
                         if (typeOfNonProfitMembership == "EDUCATIONAL")
                         {
                             typeOfNonProfitMembershipSet = "Educational";
+                            break;
                         }
                         else if (typeOfNonProfitMembership == "MILITARY")
                         {
                             typeOfNonProfitMembershipSet = "Military";
+                            break;
                         }
                         else if (typeOfNonProfitMembership == "NEITHER")
                         {
                             typeOfNonProfitMembershipSet = "Neither";
+                            break;
                         }
                         else
                         {
