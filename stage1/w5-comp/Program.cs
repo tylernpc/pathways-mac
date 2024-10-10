@@ -202,10 +202,7 @@ class Program
                     }
                     else if (userChoice == "A")
                     {
-                        foreach (var customer in customers)
-                        {
-                            Console.WriteLine(foundCustomer.CashbackRewards().ToString());
-                        }
+                        Console.WriteLine(foundCustomer.CashbackRewards().ToString());
                     }
                     else if (userChoice == "S")
                     {

@@ -7,6 +7,7 @@ public class CorporateAccount : Membership
     
     public override double CashbackRewards()
     {
-        return TotalAmountOfSpend * 0.02; // 2% Cashback hard coded
+        var cashback = (TotalAmountOfSpend * 0.02); // 2% Cashback hard coded
+        return Math.Round(cashback, 2);
     }
 }

@@ -28,7 +28,6 @@ public class NonProfitAccount : Membership
     public override double CashbackRewards()
     {
         double nonProfitCashBack = 0;
-
         if (TypeOfNonProfitMembership == "Military")
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
@@ -41,8 +40,7 @@ public class NonProfitAccount : Membership
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.01; // 1% cashback hard coded
         }
-        
-        return nonProfitCashBack;
+        return Math.Round(nonProfitCashBack);
     }
 
     public override string ToString()

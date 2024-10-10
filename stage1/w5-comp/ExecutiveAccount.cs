@@ -16,7 +16,7 @@ public class ExecutiveAccount : Membership, ISpecialOffer
         {
             executiveCashBack = TotalAmountOfSpend * 0.07; // 7% Cashback hard coded
         }
-        return executiveCashBack;
+        return Math.Round(executiveCashBack, 2);
     }
 
     public void SpecialOffer()
