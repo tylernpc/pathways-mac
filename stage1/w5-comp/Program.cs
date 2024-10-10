@@ -308,7 +308,7 @@ class Program
 
     static void UserSave(List<Membership> customers)
     {
-        using (StreamWriter sw = new StreamWriter("new.txt"))
+        using (StreamWriter sw = new StreamWriter("customers.txt"))
         {
             foreach (var customer in customers)
             {
