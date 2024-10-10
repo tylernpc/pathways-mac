@@ -28,11 +28,11 @@ public class NonProfitAccount : Membership
     {
         double nonProfitCashBack = 0;
 
-        if (TypeOfNonProfitMembership == "MILITARY")
+        if (TypeOfNonProfitMembership == "Military")
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
         }
-        else if (TypeOfNonProfitMembership == "EDUCATIONAL")
+        else if (TypeOfNonProfitMembership == "Educational")
         {
             nonProfitCashBack = TotalAmountOfSpend * 0.02; // doubled cashback hard coded, if Military or Educational Non-Profit
         }

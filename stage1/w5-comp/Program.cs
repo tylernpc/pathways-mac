@@ -4,7 +4,7 @@ class Program
     // main program
     static void Main(string[] args)
     {
-        // c - incomplete
+        // c - complete
         // r - incomplete
         // u - incomplete
         // d - incomplete
@@ -23,91 +23,116 @@ class Program
         string accountEmail;
         double totalAmountOfSpend = 0;
 
+        using (StreamReader sr = File.OpenText("customers.txt"))
+        {
+            string line = "";
+            while ((line = sr.ReadLine()) != null)
+            {
+                // reads the delimited file, and splits them into their respective parts
+                string[] parts = line.Split(',');
+                accountID = parts[0].Trim();
+                accountEmail = parts[1].Trim();
+                typeOfMembership = parts[2].Trim();
+                annualFee = Convert.ToInt16(parts[3].Trim());
+                totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
+
+                Membership customer = null;
+                // places items into the list
+                if (typeOfMembership.ToUpper() == "STANDARD")
+                {
+                    customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                }
+                else if (typeOfMembership.ToUpper() == "EXECUTIVE")
+                {
+                    customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                }
+                else if (typeOfMembership.ToUpper() == "NONPROFIT")
+                {
+                    string typeOfNonProfitMembership = parts[5].Trim();
+                    customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
+                }
+                else if (typeOfMembership.ToUpper() == "COPORATE")
+                {
+                    customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
+                }
+
+                if (customer != null)
+                {
+
+                }
+            }
+        }
+
         do
         {
-            using (StreamReader sr = File.OpenText("customers.txt"))
+            // CRUD operations
+            Console.Write("What (C/R/U/D/Q) operation would you like to select? ");
+            userCrudChoice = Console.ReadLine().ToUpper();
+            if (userCrudChoice == "C")
             {
-                string line = "";
-                while ((line = sr.ReadLine()) != null)
+                Membership customer = null;
+                // user prompts for account creation
+                Console.Write("Please provide an email address: ");
+                emailAddress = Console.ReadLine();
+                Console.Write("What type of membership would you like to select (Standard/Executive/NonProfit/Corporate): ");
+                typeOfMembership = Console.ReadLine().ToUpper();
+
+                if (typeOfMembership == "STANDARD")
                 {
-                    // reads the delimited file, and splits them into their respective parts
-                    string[] parts = line.Split(',');
-                    accountID = parts[0].Trim();
-                    accountEmail = parts[1].Trim();
-                    typeOfMembership = parts[2].Trim();
-                    annualFee = Convert.ToInt16(parts[3].Trim());
-                    totalAmountOfSpend = Convert.ToDouble(parts[4].Trim());
-
-                    Membership customer = null;
-                    // places items into the list
-                    if (typeOfMembership.ToUpper() == "STANDARD")
-                    {
-                        customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                        customers.Add(customer);
-                    }
-                    else if (typeOfMembership.ToUpper() == "EXECUTIVE")
-                    {
-                        customer = new ExecutiveAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                        customers.Add(customer);
-                    }
-                    else if (typeOfMembership.ToUpper() == "NONPROFIT")
-                    {
-                        string typeOfNonProfitMembership = parts[5].Trim();
-                        customer = new NonProfitAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership);
-                        customers.Add(customer);
-                    }
-                    else if (typeOfMembership.ToUpper() == "COPORATE")
-                    {
-                        customer = new StandardAccount(accountID, accountEmail, typeOfMembership, annualFee, totalAmountOfSpend);
-                        customers.Add(customer);
-                    }
+                    customers.Add(new StandardAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend));
                 }
-
-                // CRUD operations
-                Console.Write("What (C/R/U/D/Q) operation would you like to select? ");
-                userCrudChoice = Console.ReadLine().ToUpper();
-                if (userCrudChoice == "C")
+                else if (typeOfMembership == "EXECUTIVE")
                 {
-                    Membership customer = null;
-                    // user prompts for account creation
-                    Console.Write("Please provide an email address: ");
-                    emailAddress = Console.ReadLine();
-                    Console.Write("What type of membership would you like to select (Standard/Executive/NonProfit/Corporate): ");
-                    typeOfMembership = Console.ReadLine().ToUpper();
-
-                    if (typeOfMembership == "STANDARD")
-                    {
-                        customer = new StandardAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend);
-                        customers.Add(customer);
-                    }
-                    else if (typeOfMembership == "EXECUTIVE")
-                    {
-                    
-                    }
-                    else if (typeOfMembership == "NONPROFIT")
-                    {
-
-                    }
-                    else if (typeOfMembership == "CORPORATE")
-                    {
-
-                    }
+                    customers.Add(new ExecutiveAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend));
                 }
-                else if (userCrudChoice == "R")
+                else if (typeOfMembership == "NONPROFIT")
                 {
-                    foreach (var customer in customers)
+                    string typeOfNonProfitMembershipSet;
+
+                    do
                     {
-                        Console.WriteLine(customer.ToString());
-                    }
-                }
-                else if (userCrudChoice == "U")
-                {
+                        Console.Write("Is this non-profit Educational, Military, or Neither? ");
+                        string typeOfNonProfitMembership = Console.ReadLine().ToUpper();
 
-                }
-                else if (userCrudChoice == "D")
-                {
 
+                        if (typeOfNonProfitMembership == "EDUCATIONAL")
+                        {
+                            typeOfNonProfitMembershipSet = "Educational";
+                        }
+                        else if (typeOfNonProfitMembership == "MILITARY")
+                        {
+                            typeOfNonProfitMembershipSet = "Military";
+                        }
+                        else if (typeOfNonProfitMembership == "NEITHER")
+                        {
+                            typeOfNonProfitMembershipSet = "Neither";
+                        }
+                        else
+                        {
+                            Console.Write("Please enter a valid option: Educational or Military. ");
+                        }
+                    } while (true);
+                    customers.Add(new NonProfitAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembership));
                 }
+                else if (typeOfMembership == "CORPORATE")
+                {
+                    customers.Add(new CorporateAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend));
+                }
+            }
+            else if (userCrudChoice == "R")
+            {
+                foreach (var customer in customers)
+                {
+                    Console.WriteLine(customer.ToString());
+                }
+            }
+            else if (userCrudChoice == "U")
+            {
+
+            }
+            else if (userCrudChoice == "D")
+            {
+
             }
         } while (!(userCrudChoice == "Q"));
     }
