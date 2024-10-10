@@ -21,6 +21,6 @@ public class ExecutiveAccount : Membership, ISpecialOffer
 
     public void SpecialOffer()
     {
-        Console.WriteLine($"Executive Special Offer: {AnnualFee * 0.50}");
+        Console.WriteLine($"Thank you for a being a member! Our special off is {AnnualFee * 0.5} off your next annual payment!");
     }
 }

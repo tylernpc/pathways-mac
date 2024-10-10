@@ -1,4 +1,6 @@
-﻿namespace CompChallenge;
+﻿using System.Reflection;
+
+namespace CompChallenge;
 class Program
 {
     // main program
@@ -202,7 +204,15 @@ class Program
                     }
                     else if (userChoice == "A")
                     {
-                        Console.WriteLine(foundCustomer.CashbackRewards().ToString());
+                        if (foundCustomer is ISpecialOffer specialOfferCustomer)
+                        {
+                            Console.WriteLine(foundCustomer.CashbackRewards().ToString());
+                            specialOfferCustomer.SpecialOffer();
+                        }
+                        else
+                        {
+                            Console.WriteLine(foundCustomer.CashbackRewards().ToString());
+                        }
                     }
                     else if (userChoice == "S")
                     {

@@ -13,6 +13,6 @@ public class StandardAccount : Membership, ISpecialOffer
 
     public void SpecialOffer()
     {
-        Console.WriteLine($"Standard Special Offer: {AnnualFee * 0.25}");
+        Console.WriteLine($"Thank you for a being a member! Our special off is {AnnualFee * 0.25} off your next annual payment!");
     }
 }
