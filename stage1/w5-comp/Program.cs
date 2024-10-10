@@ -4,11 +4,6 @@ class Program
     // main program
     static void Main(string[] args)
     {
-        // c - complete
-        // r - incomplete
-        // u - incomplete
-        // d - incomplete
-
         // Primary List
         List<Membership> customers = new List<Membership>();
 
@@ -91,7 +86,7 @@ class Program
                         break;
                     }
                 }
-
+                
                 if (foundCustomer != null)
                 {
 
