@@ -7,7 +7,7 @@ class Program
         string userChoice;
         do
         {
-            Console.Write("Are you a manager or customer? ");
+            Console.Write("Are you a Manager or Customer? ");
             userChoice = Console.ReadLine().ToUpper();
         } while (userChoice != "MANAGER" && userChoice != "CUSTOMER");
 
@@ -200,7 +200,16 @@ class Program
                 }
                 else if (userChoice == "T")
                 {
+                    Console.Write("Enter the amount you would like to return: ");
+                    double returnAmount;
 
+                    while (!double.TryParse(Console.ReadLine(), out returnAmount) || returnAmount <= 0)
+                    {
+                        Console.Write("Please enter a valid return greater than zero: ");
+                    }
+
+                    foundCustomer.TotalAmountOfSpend = foundCustomer.Return(foundCustomer.TotalAmountOfSpend, returnAmount);
+                    Console.WriteLine("Return Successful.");
                 }
                 else if (userChoice == "A")
                 {
