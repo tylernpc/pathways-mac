@@ -187,7 +187,16 @@ class Program
                 }
                 else if (userChoice == "P")
                 {
-                    
+                    Console.Write("Enter the amount you would like to purchase: ");
+                    double purchaseAmount;
+
+                    while (!double.TryParse(Console.ReadLine(), out purchaseAmount) || purchaseAmount <= 0)
+                    {
+                        Console.Write("Please enter a valid purchase greater than zero: ");
+                    }
+
+                    foundCustomer.TotalAmountOfSpend = foundCustomer.Purchase(foundCustomer.TotalAmountOfSpend, purchaseAmount);
+                    Console.WriteLine("Purchase Successful.");
                 }
                 else if (userChoice == "T")
                 {
