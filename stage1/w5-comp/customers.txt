@@ -1,5 +1,6 @@
 tl22,tyler@dpl.com,executive,300,6000.03
 jr43,joe@dpl.com,standard,200,320.32
-ae68,alec@dpl.com,nonprofit,50,10000.23
+ae68,alec@dpl.com,nonprofit,50,10000.23,Educational
 jk10,jon@dpl.com,corporate,1000,300000.34
 917be,johnny.appleseed@gmail.com,STANDARD,200,0
+e284b,jaden@dpl.com,Nonprofit,50,0,Educational

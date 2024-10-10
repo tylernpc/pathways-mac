@@ -135,7 +135,15 @@ class Program
                 {
                     foreach (var customer in customers)
                     {
-                        string line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
+                        string line;
+                        if (customer is NonProfitAccount nonProfitCustomer)
+                        {
+                            line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend},{nonProfitCustomer.TypeOfNonProfitMembership}";
+                        }
+                        else
+                        {
+                            line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
+                        }
                         sw.WriteLine(line);
                     }
                 }
@@ -168,11 +176,11 @@ class Program
 
         if (typeOfMembership == "STANDARD")
         {
-            customers.Add(new StandardAccount(randomID, emailAddress, typeOfMembership, 200, totalAmountOfSpend));
+            customers.Add(new StandardAccount(randomID, emailAddress, "Standard", 200, totalAmountOfSpend));
         }
         else if (typeOfMembership == "EXECUTIVE")
         {
-            customers.Add(new ExecutiveAccount(randomID, emailAddress, typeOfMembership, 300, totalAmountOfSpend));
+            customers.Add(new ExecutiveAccount(randomID, emailAddress, "Executive", 300, totalAmountOfSpend));
         }
         else if (typeOfMembership == "NONPROFIT")
         {
@@ -204,11 +212,11 @@ class Program
                 }
             } while (true);
 
-            customers.Add(new NonProfitAccount(randomID, emailAddress, typeOfMembership, 50, totalAmountOfSpend, typeOfNonProfitMembershipSet));
+            customers.Add(new NonProfitAccount(randomID, emailAddress, "Nonprofit", 50, totalAmountOfSpend, typeOfNonProfitMembershipSet));
         }
         else if (typeOfMembership == "CORPORATE")
         {
-            customers.Add(new CorporateAccount(randomID, emailAddress, typeOfMembership, 1000, totalAmountOfSpend));
+            customers.Add(new CorporateAccount(randomID, emailAddress, "Corporate", 1000, totalAmountOfSpend));
         }
     }
 
