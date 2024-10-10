@@ -100,7 +100,8 @@ class Program
 
                 if (foundCustomer != null)
                 {
-                    Console.Write("Please enter : ");
+                    
+                    CreateCustomer(customers);
                 }
                 else
                 {
@@ -143,11 +144,11 @@ class Program
 
         if (typeOfMembership == "STANDARD")
         {
-            customers.Add(new StandardAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend));
+            customers.Add(new StandardAccount(randomID, emailAddress, typeOfMembership, 200, totalAmountOfSpend));
         }
         else if (typeOfMembership == "EXECUTIVE")
         {
-            customers.Add(new ExecutiveAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend));
+            customers.Add(new ExecutiveAccount(randomID, emailAddress, typeOfMembership, 300, totalAmountOfSpend));
         }
         else if (typeOfMembership == "NONPROFIT")
         {
@@ -179,11 +180,11 @@ class Program
                 }
             } while (true);
 
-            customers.Add(new NonProfitAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend, typeOfNonProfitMembershipSet));
+            customers.Add(new NonProfitAccount(randomID, emailAddress, typeOfMembership, 50, totalAmountOfSpend, typeOfNonProfitMembershipSet));
         }
         else if (typeOfMembership == "CORPORATE")
         {
-            customers.Add(new CorporateAccount(randomID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend));
+            customers.Add(new CorporateAccount(randomID, emailAddress, typeOfMembership, 1000, totalAmountOfSpend));
         }
     }
 
