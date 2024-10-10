@@ -135,23 +135,7 @@ class Program
                 }
                 else if (userCrudChoice == "S")
                 {
-                    using (StreamWriter sw = new StreamWriter("customers.txt"))
-                    {
-                        foreach (var customer in customers)
-                        {
-                            string line;
-                            if (customer is NonProfitAccount nonProfitCustomer)
-                            {
-                                line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend},{nonProfitCustomer.TypeOfNonProfitMembership}";
-                            }
-                            else
-                            {
-                                line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
-                            }
-                            sw.WriteLine(line);
-                        }
-                    }
-                    Console.WriteLine("Save Successful.");
+                    UserSave(customers);
                 }
             } while (!(userCrudChoice == "Q"));
         }
@@ -177,48 +161,51 @@ class Program
             {
                 do
                 {
-                    Console.Write("Would you like to (L/P/T/A/Q) ");
-                    userChoice = Console.ReadLine().ToUpper();
-                } while (userChoice != "L" && userChoice != "P" && userChoice != "T" && userChoice != "A" && userChoice != "Q");
-
-                if (userChoice == "L")
-                {
-                    //  ignore for now
-                }
-                else if (userChoice == "P")
-                {
-                    Console.Write("Enter the amount you would like to purchase: ");
-                    double purchaseAmount;
-
-                    while (!double.TryParse(Console.ReadLine(), out purchaseAmount) || purchaseAmount <= 0)
+                    do
                     {
-                        Console.Write("Please enter a valid purchase greater than zero: ");
-                    }
+                        Console.WriteLine("Would you like to (L = List out / P = Purchase / T = Return / A = Apply Cashback / Q = Quit / S = Save) ");
+                        userChoice = Console.ReadLine().ToUpper();
+                    } while (userChoice != "L" && userChoice != "P" && userChoice != "T" && userChoice != "A" && userChoice != "Q");
 
-                    foundCustomer.TotalAmountOfSpend = foundCustomer.Purchase(foundCustomer.TotalAmountOfSpend, purchaseAmount);
-                    Console.WriteLine("Purchase Successful.");
-                }
-                else if (userChoice == "T")
-                {
-                    Console.Write("Enter the amount you would like to return: ");
-                    double returnAmount;
-
-                    while (!double.TryParse(Console.ReadLine(), out returnAmount) || returnAmount <= 0)
+                    if (userChoice == "L")
                     {
-                        Console.Write("Please enter a valid return greater than zero: ");
+                        DisplayCustomers(customers);
                     }
+                    else if (userChoice == "P")
+                    {
+                        Console.Write("Enter the amount you would like to purchase: ");
+                        double purchaseAmount;
 
-                    foundCustomer.TotalAmountOfSpend = foundCustomer.Return(foundCustomer.TotalAmountOfSpend, returnAmount);
-                    Console.WriteLine("Return Successful.");
-                }
-                else if (userChoice == "A")
-                {
+                        while (!double.TryParse(Console.ReadLine(), out purchaseAmount) || purchaseAmount <= 0)
+                        {
+                            Console.Write("Please enter a valid purchase greater than zero: ");
+                        }
 
-                }
-                else if (userChoice == "Q")
-                {
+                        foundCustomer.TotalAmountOfSpend = foundCustomer.Purchase(foundCustomer.TotalAmountOfSpend, purchaseAmount);
+                        Console.WriteLine("Purchase Successful.");
+                    }
+                    else if (userChoice == "T")
+                    {
+                        Console.Write("Enter the amount you would like to return: ");
+                        double returnAmount;
 
-                }
+                        while (!double.TryParse(Console.ReadLine(), out returnAmount) || returnAmount <= 0)
+                        {
+                            Console.Write("Please enter a valid return greater than zero: ");
+                        }
+
+                        foundCustomer.TotalAmountOfSpend = foundCustomer.Return(foundCustomer.TotalAmountOfSpend, returnAmount);
+                        Console.WriteLine("Return Successful.");
+                    }
+                    else if (userChoice == "A")
+                    {
+                        Console.Write("What would you like to im: ");
+                    }
+                    else if (userChoice == "S")
+                    {
+                        UserSave(customers);
+                    }
+                } while (!(userChoice == "Q"));
             }
             else
             {
@@ -302,5 +289,26 @@ class Program
         {
             Console.WriteLine(customer.ToString());
         }
+    }
+
+    static void UserSave(List<Membership> customers)
+    {
+        using (StreamWriter sw = new StreamWriter("customers.txt"))
+        {
+            foreach (var customer in customers)
+            {
+                string line;
+                if (customer is NonProfitAccount nonProfitCustomer)
+                {
+                    line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend},{nonProfitCustomer.TypeOfNonProfitMembership}";
+                }
+                else
+                {
+                    line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
+                }
+                sw.WriteLine(line);
+            }
+        }
+        Console.WriteLine("Save Successful.");
     }
 }
