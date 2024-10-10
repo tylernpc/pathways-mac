@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/bin/Debug/net7.0/W5-Postgres
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/bin/Debug/net7.0/W5-Postgres.deps.json
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/bin/Debug/net7.0/W5-Postgres.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/bin/Debug/net7.0/W5-Postgres.dll
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/bin/Debug/net7.0/W5-Postgres.pdb
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.csproj.AssemblyReference.cache
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.dll
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/refint/W5-Postgres.dll
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.pdb
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/W5-Postgres.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/unstaged/W5-Postgres/obj/Debug/net7.0/ref/W5-Postgres.dll
