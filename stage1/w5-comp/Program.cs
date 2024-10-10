@@ -73,17 +73,11 @@ class Program
             }
             else if (userCrudChoice == "R")
             {
-                foreach (var customer in customers)
-                {
-                    Console.WriteLine(customer.ToString());
-                }
+                DisplayCustomers(customers);
             }
             else if (userCrudChoice == "U")
             {
-                foreach (var customer in customers)
-                {
-                    Console.WriteLine(customer.ToString());
-                }
+                DisplayCustomers(customers);
 
                 Console.Write("Please enter a User ID: ");
                 accountID = Console.ReadLine().ToUpper();
@@ -100,7 +94,7 @@ class Program
 
                 if (foundCustomer != null)
                 {
-                    
+
                     CreateCustomer(customers);
                 }
                 else
@@ -110,12 +104,44 @@ class Program
             }
             else if (userCrudChoice == "D")
             {
+                DisplayCustomers(customers);
 
+                Console.Write("Please enter a User ID to delete: ");
+                accountID = Console.ReadLine().ToUpper();
+
+                Membership customerToDelete = null;
+                foreach (var customer in customers)
+                {
+                    if (customer.MembershipID.ToUpper() == accountID)
+                    {
+                        customerToDelete = customer;
+                        break;
+                    }
+                }
+
+                if (customerToDelete != null)
+                {
+                    customers.Remove(customerToDelete);
+                    Console.WriteLine("Customer deleted successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Customer not found.");
+                }
             }
             else if (userCrudChoice == "S")
             {
+                using (StreamWriter sw = new StreamWriter("customers.txt"))
+                {
+                    foreach (var customer in customers)
+                    {
+                        string line = $"{customer.MembershipID},{customer.EmailAddress},{customer.TypeOfMembership},{customer.AnnualFee},{customer.TotalAmountOfSpend}";
+                        sw.WriteLine(line);
+                    }
+                }
 
             }
+
         } while (!(userCrudChoice == "Q"));
     }
 
@@ -188,4 +214,11 @@ class Program
         }
     }
 
+    static void DisplayCustomers(List<Membership> customers)
+    {
+        foreach (var customer in customers)
+        {
+            Console.WriteLine(customer.ToString());
+        }
+    }
 }
