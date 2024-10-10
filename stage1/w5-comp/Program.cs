@@ -139,9 +139,7 @@ class Program
                         sw.WriteLine(line);
                     }
                 }
-
             }
-
         } while (!(userCrudChoice == "Q"));
     }
 
