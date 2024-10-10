@@ -2,8 +2,9 @@ public class NonProfitAccount : Membership
 {
     public string TypeOfNonProfitMembership { get; set; }
 
-    public NonProfitAccount() : base ()
+    public NonProfitAccount(string membershipID, string emailAddress, string typeOfMembership, int annualFee, double totalAmountOfSpend) : base (membershipID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend)
     {
+        annualFee = 50;
         TypeOfNonProfitMembership = "";
     }
 

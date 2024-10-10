@@ -2,7 +2,7 @@ public class ExecutiveAccount : Membership, ISpecialOffer
 {
     public ExecutiveAccount(string membershipID, string emailAddress, string typeOfMembership, int annualFee, double totalAmountOfSpend) : base (membershipID, emailAddress, typeOfMembership, annualFee, totalAmountOfSpend)
     {
-        
+        annualFee = 300;
     }
 
     public override double CashbackRewards()
