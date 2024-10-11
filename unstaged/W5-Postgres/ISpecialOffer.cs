@@ -1,4 +1,0 @@
-interface ISpecialOffer
-{
-    void SpecialOffer();
-}
