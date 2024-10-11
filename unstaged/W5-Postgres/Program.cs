@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-
-namespace CompChallenge;
+﻿namespace CompChallenge;
 class Program
 {
     // main program
