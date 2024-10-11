@@ -4,6 +4,24 @@ class Program
     // main program
     static void Main(string[] args)
     {
+
+        Console.Write("Ignore all the code? ");
+        string testUserChoice = Console.ReadLine();
+
+        if (testUserChoice == "Y" || testUserChoice == "y")
+        {
+            string connec
+        }
+
+
+
+
+
+
+
+
+
+
         string userChoice;
         do
         {
