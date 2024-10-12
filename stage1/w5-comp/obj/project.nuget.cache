@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "haRYgZm+CaYFSuJ4FyRBtGDNlEWvMRn36fQOsJwQ8lOJzEwPDb4iS1Dgr3e7FFyE1jSNVRnQxfkSPsn93ODsww==",
+  "dgSpecHash": "v0+iD9i0Vvk=",
   "success": true,
   "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage1/w5-comp/comp-challenge.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/tyler/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/tyler/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/tyler/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
