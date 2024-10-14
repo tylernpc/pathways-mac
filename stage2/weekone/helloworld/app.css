@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    margin: 2em 0em 0em 2em;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 20px rgb(0, 238, 143), 0px 0px 40px rgb(255, 255, 255);
+}
+
+h3 {
+    padding-bottom: 7px;
+}
+
+button {
+    background-color: rgb(159, 204, 54);
+    border-color: transparent;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 45px 12px 45px;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 20px rgb(0, 238, 143), 0px 0px 40px rgb(255, 255, 255);
+}
+
+.hero-section {
+    margin: 1em 0em 0em 4em;
+}
+
+.element {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+
+#fName {
+    color: black;
+    margin-bottom: 7px;
+}
+
+#displayName {
+    padding-top: 7px;
+    margin-left: 4em;
+}
