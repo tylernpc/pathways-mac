@@ -1,26 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello World</title>
+        <link rel="stylesheet" href="app.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <link rel="stylesheet" href="app.css">
-</head>
+    <body>
+        <h1>Hello, World!</h1>
+        <div class="hero-section">
+            <form action="">
+                <h3 for="fName">What's your name earthling:</h3>
+                <input type="text" id="fName" name="fName" name="fName" /><br />
+            </form>
+            <button type="button" onclick="updateName()">Click</button>
+        </div>
 
-<body>
-    <h1>Hello, World!</h1>
-    <div class="hero-section">
-        <form action="">
-            <h3 for="fName">What's your name earthling:</h3>
-            <input type="text" id="fName" name="fName" name="fName"><br>
-        </form>
-        <button type="button" onclick="updateName()">Click</button>
-    </div>
-
-    <p id="displayName"></p>
-    <img class="element" src="https://cdn-icons-png.flaticon.com/512/6989/6989447.png" alt="Alien from mars">
-</body>
-<script src="app.js"></script>
-
+        <p id="displayName"></p>
+        <img
+            class="element"
+            src="https://cdn-icons-png.flaticon.com/512/6989/6989447.png"
+            alt="Alien from mars"
+        />
+    </body>
+    <script src="app.js"></script>
 </html>
