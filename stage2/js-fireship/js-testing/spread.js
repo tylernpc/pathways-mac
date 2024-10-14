@@ -29,4 +29,6 @@ const obj4 = {
     twelve: 'n',
     thirteen: 'd',
 }
+console.log(obj4.twelve);
 // NOTE: depending on where you put the spread syntax will overwrite certain things. in this case c from obj3 is overwritten
+// objects are being merged
