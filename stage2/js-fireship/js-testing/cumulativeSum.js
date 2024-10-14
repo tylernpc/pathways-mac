@@ -10,4 +10,10 @@ function cumulativeArray(arr) {
     return mainNum;
 }
 
+// faster way to do this
+const sum = [1,2,3].reduce((acc, cur) => acc + cur);
+// .reduce utilizes only one value, it then has the accumumated value and currnet value.
+// it then uses an arrow function to add then current number to the accumulated number
+
 console.log(cumulativeArray(mainArray));
+console.log(sum);
