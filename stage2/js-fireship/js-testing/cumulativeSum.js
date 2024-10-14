@@ -4,8 +4,10 @@ let cumulativeNum;
 const mainArray = [1, 2, 3];
 
 function cumulativeArray(arr) {
-    mainNum + cumulativeNum;z
-    return mainNum
+    for (let i = 0; i < arr.length; i++) {
+        mainNum += arr[i];
+    }
+    return mainNum;
 }
 
 console.log(cumulativeArray(mainArray));
