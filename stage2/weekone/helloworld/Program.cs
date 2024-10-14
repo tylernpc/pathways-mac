@@ -11,8 +11,8 @@ class Program
         Console.WriteLine("Please enter your age: ");
         int age = Convert.ToInt32(Console.ReadLine());
 
-
-        UserName(firstName, lastName, age);
+        UserName user = new UserName(firstName, lastName, age);
+        Console.WriteLine(user);
     }
 }
 
@@ -38,6 +38,6 @@ public class UserName
 
     public override string ToString()
     {
-        return $"First Name: {FirstName}, Last Name: {LastName}, and Age: {Age}";
+        return $"First Name: {FirstName}, Last Name: {LastName}, Age: {Age}";
     }
 }
