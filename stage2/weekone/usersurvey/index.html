@@ -9,46 +9,58 @@
     <body>
         <h1>User Survey</h1>
 
-        <form class="name portion">
+        <form class="name-portion">
             <label for="fName">First Name: </label>
             <input type="text" id="fName" name="fName" required />
             <label for="lName">Last Name: </label>
             <input type="text" id="lName" name="lName" required /><br />
         </form>
 
-        <label for="cars">Choose a car: </label>
-        <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="porsche">Porsche</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
+        <div class="car-portion">
+            <label for="cars">Choose a car: </label>
+            <select name="cars" id="cars">
+                <option value="" selected disabled hidden>Select</option>
+                <option value="volvo">Volvo</option>
+                <option value="porsche">Porsche</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
 
-        <input type="radio" id="color_red" name="color" value="Red" />
-        <label for="color_red">Red</label>
-        <input type="radio" id="color_silver" name="color" value="Silver" />
-        <label for="color_silver">Silver</label>
-        <input type="radio" id="color_green" name="color" value="Green" />
-        <label for="color_green">Green</label>
+        <div class="color-portion">
+            <input type="radio" id="color_red" name="color" value="Red" />
+            <label for="color_red">Red</label>
+            <input type="radio" id="color_silver" name="color" value="Silver" />
+            <label for="color_silver">Silver</label>
+            <input type="radio" id="color_green" name="color" value="Green" />
+            <label for="color_green">Green</label>
+        </div>
 
-        <input type="checkbox" id="addon1" name="addon1" value="Heated Seats" />
-        <label for="addon1">Heated Seats</label>
-        <input
-            type="checkbox"
-            id="addon2"
-            name="addon2"
-            value="Ventilated Seats"
-        />
-        <label for="addon2">Ventilated Seats</label>
-        <input
-            type="checkbox"
-            id="addon3"
-            name="addon3"
-            value="Heated Steering Wheel"
-        />
-        <label for="addon3">Heated Steering Wheel</label><br />
+        <div class="addon-portion">
+            <input
+                type="checkbox"
+                id="addon1"
+                name="addon1"
+                value="Heated Seats"
+            />
+            <label for="addon1">Heated Seats</label>
+            <input
+                type="checkbox"
+                id="addon2"
+                name="addon2"
+                value="Ventilated Seats"
+            />
+            <label for="addon2">Ventilated Seats</label>
+            <input
+                type="checkbox"
+                id="addon3"
+                name="addon3"
+                value="Heated Steering Wheel"
+            />
+            <label for="addon3">Heated Steering Wheel</label><br />
+        </div>
 
-        <input type="submit" value="submit" />
+        <input id="submit-btn" type="submit" value="submit" />
     </body>
     <script src="app.js"></script>
 </html>
