@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+
+/* Regular 400, Bold 700, ExtraBold 800 */
+
+body {
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Inter', sans-serif;
+    width: Regular 400;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: hsl(36, 100%, 99%);
+}
+
+a:visited {
+    color: hsl(36, 100%, 99%);
+}
+  
+a:hover {
+    color: hsl(36, 100%, 99%);
+}
+  
+a:active {
+    color: hsl(36, 100%, 99%);
+}
+
+li {
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .website {
+        max-width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+        
+    .logo-div {
+        margin: 1.5em 0em 0em 1.5em;
+        padding: 0em;
+    }
+        
+    .hamburger-div {
+        margin: 2em 1.5em 0em 0em;
+    }
+        
+    .nav-list {
+        display: none;
+    }
+        
+    .wrapper {
+        margin: 20px 20px;
+        margin-top: 30px;
+    }
+        
+    .hero-img {
+        background-image: url(images/image-web-3-mobile.jpg);
+        max-width: 686px;
+        height: 350px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: -2em;
+    }
+
+    .hero-title {
+        padding-left: 20px;
+        font-size: 50px;
+        margin-bottom: 0em;
+    }
+
+    .hero-paragraph {
+        color: hsl(236, 13%, 42%);
+        padding-left: 20px;
+        word-spacing: 2px;
+        line-height: 1.5;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    .other-articles {
+        background-color: hsl(240, 100%, 5%);
+        color: hsl(36, 100%, 99%);
+        max-width: 90%;
+        margin: 20px;
+    }
+
+    .container-other-articles {
+        padding: 1px 10px 1px 1px;
+    } 
+
+    .cta-button {
+        border-color: transparent;
+        background-color: hsl(5, 85%, 63%);
+        color:hsl(36, 100%, 99%);
+        padding: 15px 35px 15px 35px;
+        margin-left: 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    .other-articles-new {
+        color: hsl(35, 77%, 62%);
+        font-family: 'Inter', sans-serif;
+        padding: 0px 0px 0px 20px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    h4 {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 1.475em;
+    }
+
+    .other-articles-paragraph {
+        padding-left: 20px;
+        color: hsl(233, 8%, 79%);
+        margin-top: 0;
+        font-size: 1.1em;
+        line-height: 2;
+    }
+
+    .lines {
+        margin: 20px 20px;
+    }
+
+    .last-articles-numbers {
+        color:hsl(236, 13%, 42%);
+    }
+
+    .other-info {
+        max-width: 100%;
+    }
+
+    .image-text-container {
+        padding-top: 60px;
+        padding-left: 20px;
+        display: flex;
+    }
+
+    .text-container {
+        padding-left: 20px;
+    }
+
+    .last-articles-numbers {
+        font-size: 3em;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        color: hsl(233, 8%, 79%);
+    }
+
+    h5 {
+        margin-top: 0.75em;
+        margin-bottom: 0em;
+        font-size: 1.25em;
+    }
+
+    .last-articles-p {
+        margin-top: 0.5em;
+        color: hsl(236, 13%, 42%);
+        font-size: 15px;
+        padding-right: 20px;
+        line-height: 2;
+    }
+
+    .attribution {
+        margin-bottom: 3em;
+        color: black;
+    }
+
+    .other-info-image {
+        height: 11em;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .big-container {
+        
+    }
+
+    .logo-div {
+        margin: 1.5em 0em 0em 1.5em;
+    }
+
+    .hamburger-div {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        display: flex;
+        margin: 1.5em 0em 0em 1.5em;
+        padding: 0em;
+    }
+
+    .nav-list-item {
+        padding: 20px;
+        color: red;
+    }
+
+    .hero-img {
+        background-image: url(images/image-web-3-desktop.jpg);
+        max-width: 686px;
+        height: 350px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: -2em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    a:link {
+        color: hsl(0, 0%, 0%);
+    }
+    
+    a:visited {
+        color: hsl(0, 0%, 0%);
+    }
+      
+    a:hover {
+        color: hsl(0, 0%, 0%);
+    }
+      
+    a:active {
+        color: hsl(0, 0%, 0%);
+    }
+}
