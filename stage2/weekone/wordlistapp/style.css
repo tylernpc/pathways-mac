@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.montserrat-<uniquifier > {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0em;
+    padding: 0em;
+}
+
+body {
+    display: flex;
+}
+
+h1 {
+    margin: 2em 0em 1em 0em;
+}
+
+h3 {
+    padding: 0em 1em;
+}
+
+.userprompt-section {
+    margin: 1em 0em 0em 4em;
+    outline: solid red 2px;
+}
+
+.output-section {
+    display: flex;
+    margin: 9em 0em 0em 4em;
+    outline: solid red 2px;
+}
+
+#UserInputWord {
+    margin-bottom: 1em;
+}
