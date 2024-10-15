@@ -6,7 +6,7 @@
     text-transform: lowercase;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
     color: white;
 }
@@ -30,24 +30,18 @@ select {
     color: black;
 }
 
-#addon1 {
-    border: solid red 2px;
-}
-
 .name-portion {
     display: flex;
     flex-direction: column;
     margin: 0em 12em 1em 12em;
 }
 
-.color-portion {
-    margin-top: 2em;
-}
-
-.addon-portion {
-    margin-top: 2em;
-}
-
+.color-portion,
+.addon-portion,
 .submit-btn {
     margin-top: 2em;
+}
+
+.textBox {
+    margin-top: 1em;
 }

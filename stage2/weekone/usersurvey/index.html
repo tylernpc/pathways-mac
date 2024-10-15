@@ -1,66 +1,62 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Survey</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <h1>User Survey</h1>
 
-        <form class="name-portion">
-            <label for="fName">First Name: </label>
-            <input type="text" id="fName" name="fName" required />
-            <label for="lName">Last Name: </label>
-            <input type="text" id="lName" name="lName" required /><br />
-        </form>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="car-portion">
-            <label for="cars">Choose a car: </label>
-            <select name="cars" id="cars">
-                <option value="" selected disabled hidden>Select</option>
-                <option value="volvo">Volvo</option>
-                <option value="porsche">Porsche</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-        </div>
+<body>
+    <h1>User Survey</h1>
 
-        <div class="color-portion">
-            <input type="radio" id="color_red" name="color" value="Red" />
-            <label for="color_red">Red</label>
-            <input type="radio" id="color_silver" name="color" value="Silver" />
-            <label for="color_silver">Silver</label>
-            <input type="radio" id="color_green" name="color" value="Green" />
-            <label for="color_green">Green</label>
-        </div>
+    <form class="name-portion">
+        <label for="fName">First Name: </label>
+        <input type="text" id="fName" name="fName" required />
+        <label for="lName">Last Name: </label>
+        <input type="text" id="lName" name="lName" required /><br />
+    </form>
 
-        <div class="addon-portion">
-            <input
-                type="checkbox"
-                id="addon1"
-                name="addon1"
-                value="Heated Seats"
-            />
-            <label for="addon1">Heated Seats</label>
-            <input
-                type="checkbox"
-                id="addon2"
-                name="addon2"
-                value="Ventilated Seats"
-            />
-            <label for="addon2">Ventilated Seats</label>
-            <input
-                type="checkbox"
-                id="addon3"
-                name="addon3"
-                value="Heated Steering Wheel"
-            />
-            <label for="addon3">Heated Steering Wheel</label><br />
-        </div>
+    <div class="car-portion">
+        <label for="cars">Choose a car: </label>
+        <select name="cars" id="cars">
+            <option value="" selected disabled hidden>Select</option>
+            <option value="volvo">Volvo</option>
+            <option value="porsche">Porsche</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+
+    <div class="color-portion">
+        <input type="radio" id="car_color" name="color" value="Red" />
+        <label for="color_red">Red</label>
+        <input type="radio" id="car_color" name="color" value="Silver" />
+        <label for="color_silver">Silver</label>
+        <input type="radio" id="car_color" name="color" value="Green" />
+        <label for="color_green">Green</label>
+    </div>
+
+    <div class="addon-portion">
+        <input type="checkbox" id="addon1" name="addon1" value="Heated Seats" />
+        <label for="addon1">Heated Seats</label>
+        <input type="checkbox" id="addon2" name="addon2" value="Ventilated Seats" />
+        <label for="addon2">Ventilated Seats</label>
+        <input type="checkbox" id="addon3" name="addon3" value="Heated Steering Wheel" />
+        <label for="addon3">Heated Steering Wheel</label><br />
+    </div>
+
+    <div class="textBox">
+        <label for="textBox">
+            Please leave a comment on why you want this car:
+        </label>
+        <br />
+        <input type="text" id="textBox" name="textBox" />
 
         <input id="submit-btn" type="submit" value="submit" />
-    </body>
-    <script src="app.js"></script>
+    </div>
+</body>
+<script src="app.js"></script>
+
 </html>

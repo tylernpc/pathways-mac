@@ -1,8 +1,10 @@
-let userFirstName = document.getElementById("fName").value;
-let userLastName = document.getElementById("lName").value;
-
-document.getElementById("submit-btn").addEventListener("click", displayVehicle);
-
-function displayVehicle() {
-  alert(`Hello, ${userFirstName} ${userLastName}`);
-}
+document.getElementById("submit-btn").addEventListener("click", function (event) {
+  
+  let textBoxValue = document.getElementById("textBox").value;
+  
+  if (textBoxValue === "") {
+      alert("Please leave a comment!");
+  } else {
+      alert("Worked");
+  }
+});
