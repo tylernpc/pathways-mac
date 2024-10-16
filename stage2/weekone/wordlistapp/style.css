@@ -38,6 +38,7 @@ h3 {
     border-color: transparent;
     border-radius: 15px;
     color: white;
+    cursor: pointer;
     padding: 7px 13px;
 }
 
@@ -60,6 +61,7 @@ h3 {
     border-color: transparent;
     border-radius: 15px;
     color: white;
+    cursor: pointer;
     margin-top: 1em;
     padding: 7px 13px;
 }
