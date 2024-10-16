@@ -21,6 +21,7 @@ body {
 
 h1 {
     margin: 2em 0em 1em 0em;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -29,8 +30,9 @@ h3 {
 
 .firstlist-section,
 .secondlist-section {
-    text-align: center;
     padding: 10px;
+    text-align: center;
+    text-transform: lowercase;
 }
 
 .select-btn {

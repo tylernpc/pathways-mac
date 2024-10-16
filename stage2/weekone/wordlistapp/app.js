@@ -1,5 +1,7 @@
-document.getElementById("submit-btn").addEventListener("submit", myFunction);
+document.getElementById("submit-btn").addEventListener("click", addToList);
 
-function myFunction() {
-  console.log("worked");
+function addToList() {
+  console.log("hello, world");
 }
+
+const userInput = document.getElementById("UserInputWord").value;
