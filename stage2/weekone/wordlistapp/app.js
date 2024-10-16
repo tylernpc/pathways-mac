@@ -1,13 +1,15 @@
-document.getElementById("submit-btn").addEventListener("click", addToList);
+document.getElementById("userPromptForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  addToList(); 
+});
 
 function addToList() {
   const userInput = document.getElementById("UserInputWord").value.trim();
   const userSelection = document.getElementById("UserSelection").value;
 
-  validateUserInput(userInput);
-  validateUserSelection(userSelection);
-
-  listLogic(userInput, userSelection);
+  if (validateUserInput(userInput) && validateUserSelection(userSelection)) {
+    listLogic(userInput, userSelection);
+  }  
 }
 
 function listLogic(userInput, userSelection) {
@@ -19,7 +21,7 @@ function listLogic(userInput, userSelection) {
     tableRef = document.getElementById("myList2");
   }
 
-  const newRow = tableRef.inserRow();
+  const newRow = tableRef.insertRow();
   const newCell = newRow.insertCell(0);
   newCell.textContent = userInput;
 
@@ -27,9 +29,10 @@ function listLogic(userInput, userSelection) {
   document.getElementById("UserSelection").value = "";
 }
 
+// validation
 function validateUserInput(userInput) {
-  if (userInput == "") {
-    wordExist = false;
+  if (userInput == "") { 
+    return false;
   }
   return true;
 }
@@ -40,4 +43,18 @@ function validateUserSelection(userSelection) {
     return false;
   }
   return true;
+}
+
+// clear logic
+document.getElementById("clear-btn-1").addEventListener("click", function() {
+  clearList("myList1");
+});
+
+document.getElementById("clear-btn-2").addEventListener("click", function() {
+  clearList("myList2");
+});
+
+function clearList(listId) {
+  const tableRef = document.getElementById(listId);
+  tableRef.innerHTML = ""; 
 }
