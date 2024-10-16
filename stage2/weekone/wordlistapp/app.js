@@ -1,5 +1,5 @@
-document.getElementById("submit-btn").addEventListener("click", myFunction);
+document.getElementById("submit-btn").addEventListener("submit", myFunction);
 
 function myFunction() {
-  console.log("hello, it worked");
+  console.log("worked");
 }
