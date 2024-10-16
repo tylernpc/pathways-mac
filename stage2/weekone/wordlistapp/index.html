@@ -8,25 +8,32 @@
     </head>
     <body>
         <div class="userprompt-section">
-            <h1>Two lists, <br />Two words</h1>
+            <h1>
+                Two <span class="whiteout">lists,</span> <br />Two
+                <span class="whiteout">words</span>
+            </h1>
             <label for="UserInputWord">Input a Word: </label>
             <input type="text" id="UserInputWord" required />
             <br />
             <label for="">List one Or List two</label>
-            <select name="OneTwo">
+            <select class="select-btn" name="OneTwo">
                 <option value="" selected disabled hidden>Select</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
             </select>
+            <br />
+            <input id="submit-btn" type="submit" value="Add Word" />
         </div>
-
         <div class="output-section">
             <div class="firstlist-section">
                 <h3>First List</h3>
+                <input id="clear-btn" type="submit" value="Clear List" />
             </div>
-            <div class=""></div>
 
-            <h3>Second List</h3>
+            <div class="secondlist-section">
+                <h3>Second List</h3>
+                <input id="clear-btn" type="submit" value="Clear List" />
+            </div>
         </div>
     </body>
 </html>

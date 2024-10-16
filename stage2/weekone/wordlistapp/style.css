@@ -15,6 +15,8 @@
 
 body {
     display: flex;
+    background-color: background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
 }
 
 h1 {
@@ -25,17 +27,49 @@ h3 {
     padding: 0em 1em;
 }
 
-.userprompt-section {
-    margin: 1em 0em 0em 4em;
-    outline: solid red 2px;
+.firstlist-section,
+.secondlist-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.select-btn {
+    background-color: black;
+    border-color: transparent;
+    border-radius: 15px;
+    color: white;
+    padding: 7px 13px;
 }
 
 .output-section {
     display: flex;
     margin: 9em 0em 0em 4em;
-    outline: solid red 2px;
+}
+
+.whiteout {
+    color: white;
+}
+
+.userprompt-section {
+    margin: 0em 0em 0em 4em;
+}
+
+#clear-btn,
+#submit-btn {
+    background-color: black;
+    border-color: transparent;
+    border-radius: 15px;
+    color: white;
+    margin-top: 1em;
+    padding: 7px 13px;
+}
+#submit-btn {
+    background-color: white;
+    color: black;
 }
 
 #UserInputWord {
     margin-bottom: 1em;
+    border-color: transparent;
+    border-radius: 5px;
 }
