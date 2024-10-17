@@ -8,8 +8,13 @@
 
 body {
     display: flex;
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    background-color: #ff9a8b;
+    background-image: linear-gradient(
+        90deg,
+        #ff9a8b 0%,
+        #ff6a88 55%,
+        #ff99ac 100%
+    );
 }
 
 h1 {
@@ -75,7 +80,8 @@ h3 {
     border-radius: 5px;
 }
 
-#clear-btn-1, #clear-btn-2 {
+#clear-btn-1,
+#clear-btn-2 {
     background-color: rgb(255, 255, 255);
     margin-top: 1em;
     padding: 7px 13px;
@@ -90,17 +96,18 @@ table {
     width: 100%;
 }
 
-table, th, td {
-    border: 1px solid black;
+table,
+th,
+td {
+    border-radius: 10px;
     padding: 8px;
-    text-align: left;
 }
 
 th {
-    background-color: #FF6A88;
+    background-color: #ff6a88;
     color: white;
 }
 
 td {
-    background-color: #FF99AC;
+    background-color: #ff99ac;
 }
