@@ -32,14 +32,77 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(10_000, 2022);
 
 // objects
-let employee: {
+// type alias
+type Employee = {
     readonly id: number,
     name: string,
     retire: (date: Date) => void
-} = { 
+}
+
+let employee: Employee = { 
     id: 1, 
     name: 'Tyler',
     retire: (date: Date) => {
         console.log(date);
     }
 };
+
+// union types
+function kgToLbs(weight: number | string): number {
+    // narrowing
+    if (typeof weight === 'number')
+        return weight * 2.2;
+    else {
+        return parseInt(weight) * 2.2;
+    }
+}
+
+kgToLbs(10);
+kgToLbs('10kg');
+
+// intersection types
+type Draggable = {
+    drag: () => void
+};
+
+type Resizable = {
+    resize: () => void
+};
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+    drag: () => {},
+    resize: () => {}
+};
+
+// literal types
+type Quantity = 50 | 100; // literal type, can be a string also
+let quantity: Quantity = 50;
+
+type Metric = 'cm' | 'inch';
+
+// nullable types
+function greet(name: string | null | undefined) {
+    if (name)
+        console.log(name.toUpperCase());
+    else
+        console.log('Hola!');
+}
+
+greet(undefined); 
+
+type Customer = {
+    birthday: Date
+};
+// optional chaining
+function getCustomer(id: number): Customer | null | undefined {
+    return id === 0 ? null : { birthday: new Date() };
+}
+
+let customer = getCustomer(0);
+if (customer !== null && customer !== undefined)
+    console.log(customer.birthday);
+
+// or
+console.log(customer?.birthday?.getFullYear); // executed only if customer is not null or undefined
