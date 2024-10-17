@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Word List</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="userprompt-section">
+            <h1>
+                Two <span class="whiteout">lists,</span> <br />Two
+                <span class="whiteout">words</span>
+            </h1>
+            <form id="userPromptForm">
+                <label for="UserInputWord">Input a Word: </label>
+                <input type="text" id="UserInputWord" required />
+                <br />
+                <label for="">List one Or List two</label>
+                <select class="select-btn" id="UserSelection" name="OneTwo">
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                </select>
+                <br />
+                <input id="submit-btn" type="submit" value="Add Word" />
+            </form>
+        </div>
+
+        <div class="output-section">
+            <div class="firstlist-section">
+                <h3>First List</h3>
+                <table id="myList1"></table>
+                <input id="clear-btn-1" type="submit" value="Clear List" />
+            </div>
+
+            <div class="secondlist-section">
+                <h3>Second List</h3>
+                <table id="myList2"></table>
+                <input id="clear-btn-2" type="submit" value="Clear List" />
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
