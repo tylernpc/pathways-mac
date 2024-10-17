@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>" TO DO "</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/checkbox.png">
 </head>
+
 <body>
-    <h1>To<span class="colored-logo-portion">Do</span></h1>
+    <h1 class="title-text">"Here is a TO<span class="colored-logo-portion">Do</span> List"</h1>
+
+    <div class="wrapper">
+        <button class="add-btn" id="add-btn">"Add Item"</button>
+        <table>
+            <td></td>
+        </table>
+    </div>
+
+
+
+    <div class="custom-cursor"></div>
 </body>
-<script src="app.js"></script>
+<script>
+    document.addEventListener('mousemove', function (e) {
+        let cursor = document.querySelector('.custom-cursor');
+        cursor.style.top = e.pageY + 'px';
+        cursor.style.left = e.pageX + 'px';
+    });
+</script>
+<script src="dist/app.js"></script>
+
 </html>
