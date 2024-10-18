@@ -8,6 +8,10 @@ function addItem() {
   const newItem = document.createElement("div");
   newItem.setAttribute("contenteditable", "true");
 
+  const newImg = document.createElement('img');
+  newImg.src = 'images/Trash_Full.png';
+  document.getElementById('body')?.appendChild(newImg);
+
   const node = document.createTextNode("type here!");
   newItem.appendChild(node);
 
@@ -16,9 +20,9 @@ function addItem() {
 }
 
 function selectItem() {
-  console.log("hola world");
+  console.log('hola world');
 }
 
 function deleteItem() {
-  console.log("delete world");
+  console.log('adios world');
 }
