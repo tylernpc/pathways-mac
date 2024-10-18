@@ -40,7 +40,7 @@ table {
 }
 
 .wrapper {
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(22, 22, 22);
     outline: solid rgb(77, 77, 77) 2px;
     border-radius: 15px;
     height: 200px;
@@ -48,12 +48,6 @@ table {
     text-align: center;
     width: 350px;
 }
-
-
-
-
-
-
 
 /* stolen css, https://codepen.io/thebabydino/pen/rNPOpJK */
 @property --k {
@@ -88,8 +82,8 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 12.5px; /* Set width of the circle */
-    height: 12.5px; /* Set height of the circle */
+    width: 10px; /* Set width of the circle */
+    height: 10px; /* Set height of the circle */
     background-color: rgba(92, 92, 92, 0.15);
     border: 2px solid rgba(255, 255, 255, 0.661); /* Transparent circle */
     border-radius: 50%; /* Make it a circle */
