@@ -1,25 +1,35 @@
-const myElement = document
-  .getElementById("add-btn")
-  ?.addEventListener("click", () => {
-    addItem();
-  });
+const userInput = document.querySelector('.user-input');
+const addButton = document.querySelector('.add-btn');
+const todoList = document.querySelector('.todo-list');
 
-function addItem() {
-  const newItem = document.createElement('div');
-  const trashBtn = document.createElement("button");
-  newItem.setAttribute('contenteditable', 'true');
-  trashBtn.innerHTML = '<i class="fas fa-plus-circle fa-lg"></i>';
+addButton.addEventListener('click', function(event) {
+    event.preventDefault();
 
-  const node = document.createTextNode('type here!');
-  newItem.appendChild(node);
+    if (userInput.value.trim() === ""){
+        alert('Please input a value');
+        return;
+    }
 
-  const table = document.getElementById('find-me');
-  table?.appendChild(newItem);
+    // creating top layer of todo, li subitem will go inside
+    const topItem = document.createElement('div');
+    topItem.classList.add('todo');
 
-  trashBtn.classList.add('trash-btn');
-  table.appendChild(trashBtn);
-}
+    // creating the list item
+    const subItem = document.createElement('li');
+    subItem.innerText = userInput.value.trim();
+    subItem.classList.add('todo-item');
+    topItem.appendChild(subItem);
 
-function deleteItem() {
-  document.getElementById('trash-btn');
-}
+    // creating a trash button
+    const trashButton = document.createElement('button');
+    trashButton.classList.add('trash-btn');
+    trashButton.innerText = 'Delete';
+    topItem.appendChild(trashButton);
+    todoList.appendChild(topItem);
+
+    trashButton.addEventListener('click', function() {
+        topItem.remove();
+    });
+
+    userInput.value = '';
+});

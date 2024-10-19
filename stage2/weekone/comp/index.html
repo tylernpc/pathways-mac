@@ -10,15 +10,18 @@
 </head>
 
 <body>
-    <h1 class="title-text">"Here is a TO<span class="colored-logo-portion">Do</span> List"</h1>
+    <header>
+        <h1>v3. todolist</h1>    
+    </header>
+
+    <form action="">
+        <input type="text" class="user-input">
+        <button class="add-btn">add</button>
+    </form>
 
     <div class="wrapper">
-        <button class="add-btn" id="add-btn">'Add Item'</button>
-        <table id="find-me">
-            <i class="fas fa-plus-circle fa-lg"></i>
-        </table>
+        <ul class="todo-list"></ul>
     </div>
-    <div class="custom-cursor"></div>
 </body>
 <script>
     document.addEventListener('mousemove', function (e) {
