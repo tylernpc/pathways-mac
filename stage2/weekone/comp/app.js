@@ -19,6 +19,7 @@ addButton.addEventListener('click', function(event) {
     subItem.innerText = userInput.value.trim();
     subItem.classList.add('todo-item');
     topItem.appendChild(subItem);
+    subItem.setAttribute("contenteditable", "true");
 
     // creating a trash button
     const trashButton = document.createElement('button');

@@ -13,6 +13,10 @@ body {
     color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
 table {
     margin-left: auto;
     margin-right: auto;
@@ -30,10 +34,6 @@ table {
     color: white;
     font-weight: 700;
     text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 20px rgb(255, 255, 255), 0px 0px 40px rgb(255, 255, 255);
-}
-
-.find-me {
-    display: flex;
 }
 
 .title-text {
@@ -110,14 +110,4 @@ h1 {
     pointer-events: none;
     /* Prevent the cursor from interacting with elements */
     z-index: 10000;
-}
-
-/* youtube video css */
-.trash-btn {
-    background-image: image(rgb(0 0 0 / 25%)), url("images/Trash_Full.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-color: transparent;
-    font-size: 1.5rem;
-    padding: 1rem;
 }
