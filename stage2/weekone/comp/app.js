@@ -27,6 +27,7 @@ addButton.addEventListener("click", function (event) {
   topItem.appendChild(subItem);
   subItem.setAttribute("contenteditable", "true");
 
+  // keeps it less than 55 characters, weird slice activity though
   subItem.addEventListener("input", function () {
     if (subItem.innerText.length > 55) {
       subItem.innerText = subItem.innerText.slice(0, 55);
@@ -36,16 +37,28 @@ addButton.addEventListener("click", function (event) {
   // creating a trash button
   const trashButton = document.createElement("button");
   trashButton.classList.add("trash-btn");
-  trashButton.innerText = "Delete";
+  trashButton.innerText = "Junk";
   topItem.appendChild(trashButton);
   todoList.appendChild(topItem);
 
   // creating a complete button
   const completeButton = document.createElement("button");
+  completeButton.classList.add("complete-btn");
+  completeButton.innerText = "Done";
+  topItem.appendChild(completeButton);
+  todoList.appendChild(topItem);
 
   trashButton.addEventListener("click", function () {
     topItem.remove();
   });
 
+  // completeButton.addEventListener("click", functino() {
+  //   topItem.
+  // })
+
   userInput.value = "";
 });
+
+function completedItem() {
+
+}
