@@ -52,13 +52,19 @@ addButton.addEventListener("click", function (event) {
     topItem.remove();
   });
 
-  // completeButton.addEventListener("click", functino() {
-  //   topItem.
-  // })
+  completeButton.addEventListener("click", function () {
+    completedItem(subItem);
+  });
 
   userInput.value = "";
 });
 
-function completedItem() {
-
+function completedItem(subItem) {
+  if (subItem.style.textDecoration === "line-through") {
+    subItem.style.textDecoration = "none";
+    subItem.setAttribute("contenteditable", true);
+  } else {
+    subItem.style.textDecoration = "line-through";
+    subItem.setAttribute("contenteditable", "false");
+  }
 }
