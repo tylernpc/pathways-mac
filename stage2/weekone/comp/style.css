@@ -130,10 +130,14 @@ h1 {
     z-index: 10000;
 }
 
-.user-input:focus, .todo-item:focus {
-    outline: none; /* Remove default outline */
-    border: 2px solid hsl(calc(var(--k)*1turn), 95%, 65%); /* Add a border */
-    border-radius: 10px; /* Adjust this value to change the roundness */
+.user-input:focus,
+.todo-item:focus {
+    outline: none;
+    /* Remove default outline */
+    border: 2px solid hsl(calc(var(--k)*1turn), 95%, 65%);
+    /* Add a border */
+    border-radius: 10px;
+    /* Adjust this value to change the roundness */
     background-clip: padding-box;
     animation: k 4s linear infinite;
 }
@@ -144,6 +148,11 @@ h1 {
     }
 }
 
+/* MOBILE STUFF BELOW */
 @media only screen and (max-device-width: 480px) {
-    * { cursor: none; }
+    * {
+        cursor: none;
+        user-zoom: fixed;
+        touch-action: none;
+    }
 }
