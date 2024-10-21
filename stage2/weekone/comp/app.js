@@ -35,7 +35,7 @@ addButton.addEventListener("click", function (event) {
     if (subItem.innerText.length > 55) {
       subItem.innerText = subItem.innerText.slice(0, 55);
     }
-  });
+  }); 
 
   // creating a trash button
   const trashButton = document.createElement("button");
