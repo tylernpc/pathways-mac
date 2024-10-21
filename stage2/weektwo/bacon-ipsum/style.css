@@ -117,3 +117,8 @@ input[type="button"]:hover {
     font-family: 'Georgia', serif;
     /* Serif font for formatted output */
 }
+
+.output-json, .output-formatted {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}

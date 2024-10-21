@@ -14,6 +14,12 @@ async function getBaconIpsum() {
   let jsonData = await response.json();
 
   document.getElementById("output-json").innerHTML = JSON.stringify(jsonData);
+
+  for (let para in jsonData) {
+    document.getElementById("output-formatted").innerHTML +=
+      "<p>" + jsonData[para] + "</p>";
+  }
+  
   return true;
 }
 
@@ -32,5 +38,5 @@ function getNumOfParas() {
 }
 
 function getStartWithLorem() {
-  return document.getElementById('startLorem').value === "Yes";
+  return document.getElementById("startLorem").value === "Yes";
 }
