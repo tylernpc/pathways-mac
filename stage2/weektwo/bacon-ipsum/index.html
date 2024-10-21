@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacon Ipsum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Bacon Ipsum</h1>
+    <div class="menu-wrapper">
+        <form id="baconForm">
+            <h4>Menu:</h4>
+            <label for="typeOfMeat"><b>Type: all</b> for meat only or <b>filler</b> for meat mixed with
+                miscellaneous ‘lorem ipsum’ filler.</label>
+            <select name="typeOfMeat" id="typeOfMeat">
+                <option disabled selected value> Select an option </option>
+                <option value="All">All</option>
+                <option value="Filler">Filler</option>
+            </select>
+            <br><br>
+            <label for="numOfParas"><b>Paras:</b> optional number of paragraphs, defaults to 5.</label>
+            <select name="numOfParas" id="numOfParas">
+                <option disabled selected value> Select an option </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br><br>
+            <label for="startLorem"><b>Start-with-lorem:</b> start the first paragraph with ‘Bacon ipsum dolor sit
+                amet’.
+            </label>
+            <select name="startLorem" id="startLorem">
+                <option disabled selected value> Select an option </option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br><br>
+            <input type="button" value="Submit" onclick="getBaconIpsum()">
+        </form>
+
+        <div class="output-json" id="output-json"></div>
+        <div class="output-formatted" id="output-formatted"></div>
+    </div>
+</body>
+
+</html>
