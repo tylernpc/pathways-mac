@@ -2,25 +2,28 @@ const userInput = document.querySelector(".user-input");
 const addButton = document.querySelector(".add-btn");
 const todoList = document.querySelector(".todo-list");
 
+// userinput limiter to 55 characters
 userInput.addEventListener("input", function () {
   if (userInput.value.length > 55) {
     userInput.value = userInput.value.slice(0, 55);
   }
 });
 
+// main event/logic
 addButton.addEventListener("click", function (event) {
-  event.preventDefault();
+  event.preventDefault(); // so the submit doesn't refresh the page
 
+  // blank checker
   if (userInput.value.trim() === "") {
     alert("Please input a value");
     return;
   }
 
-  // creating top layer of todo, li subitem will go inside
+  // creating top layer of todo, li subitem will go inside | imagine this is a bucket
   const topItem = document.createElement("div");
   topItem.classList.add("single-item");
 
-  // creating the list item
+  // creating the list item | imagine this is a item inside of the bucket
   const subItem = document.createElement("li");
   subItem.innerText = userInput.value.trim();
   subItem.classList.add("todo-item");
@@ -37,6 +40,7 @@ addButton.addEventListener("click", function (event) {
   // creating a trash button
   const trashButton = document.createElement("button");
   trashButton.classList.add("trash-btn");
+  trashButton.style.margin = "0em 0em 1em 0em";
   trashButton.innerText = "Junk";
   topItem.appendChild(trashButton);
   todoList.appendChild(topItem);
@@ -65,6 +69,7 @@ function completedItem(subItem) {
     subItem.setAttribute("contenteditable", true);
   } else {
     subItem.style.textDecoration = "line-through";
+    subItem.style.overflow = "hidden";
     subItem.setAttribute("contenteditable", "false");
   }
 }
