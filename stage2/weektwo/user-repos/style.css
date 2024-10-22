@@ -1,0 +1,19 @@
+* {
+    font-family: arial;
+    margin: 0em;
+    padding: 0em;
+}
+
+h1 {
+    margin: 4em;
+}
+
+.input-field {
+    margin-left: 4em;
+}
+
+#output-json {
+    margin: 4em;
+    width: 92%;
+    overflow: hidden;
+}
