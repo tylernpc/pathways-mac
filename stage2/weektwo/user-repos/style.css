@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -52,6 +50,8 @@ h1 {
 .output-field {
     width: 100%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 #output-json p {
@@ -64,6 +64,7 @@ h1 {
 #output-json a {
     text-decoration: none;
     color: #333;
+    display: flex;
 }
 
 #output-json a:hover {

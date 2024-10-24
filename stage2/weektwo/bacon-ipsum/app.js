@@ -10,8 +10,9 @@ async function getBaconIpsum() {
     apiString = `https://baconipsum.com/api/?type=${typeOfMeat}&paras=${numOfParas}`;
   }
 
-  let response = await fetch(apiString);
-  let jsonData = await response.json();
+  let response = await fetch(apiString); // string
+
+  let jsonData = await response.json(); // converts string to json format - json data
 
   document.getElementById("output-json").innerHTML = JSON.stringify(jsonData);
 
