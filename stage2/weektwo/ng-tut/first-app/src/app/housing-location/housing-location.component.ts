@@ -8,7 +8,6 @@ import { HousingLocation } from "../housing-location";
   imports: [],
   template: `
     <section class="listing">
-      <a [routerLink]="['/details', housingLocation.id]">Learn More</a>
       <img
         class="listing-photo"
         [src]="housingLocation.photo"
