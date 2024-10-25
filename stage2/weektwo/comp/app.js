@@ -8,17 +8,10 @@ function mainLogic() {
   const [startDateStr, endDateStr] = dateString.split(" - ");
 
   const startDate = new Date(startDateStr);
-  const endDate = new Date(endDateStr);
 
-  const userBeginYear = startDate.getFullYear();
-  const userBeginMonth = startDate.getMonth() + 1;
-  const userBeginDay = startDate.getDate();
-
-  const userEndYear = endDate.getFullYear();
-  const userEndMonth = endDate.getMonth() + 1;
-  const userEndDay = endDate.getDate();
-
-  const informationTableBody = document.getElementById("information");
+  const dateYear = startDate.getFullYear();
+  const dateMonth = startDate.getMonth() + 1;
+  const dateDay = startDate.getDate();
 
   // logical issue with this being a first of the month thing, for this example I am not taking that into account
   const weekCheck = userEndDay - userBeginDay;
@@ -26,26 +19,26 @@ function mainLogic() {
     alert("Please only select a date range between 5 days");
   } else {
     async function retrieveJson() {
-      let apiBeginString = `${userBeginYear}-${userBeginMonth}-${userBeginDay}`;
-      response = await fetch(apiBeginString);
-      jsonBeginData = await response.json();
-      return jsonBeginData;
-    }
-    async function retrieveMiddleJson() {
       for (let i = userBeginDay + 1; i < userEndDay; i++) {
         let apiMiddleString = `${userEndYear}-${userEndMonth}-${i}`;
         response = await fetch(apiMiddleString);
-        jsonMiddleData = await response.json();
-        return jsonMiddleData;
+        jsonData = await response.json();
+        return jsonData;
       }
     }
-    async function retrieveEndJson() {
-      let apiEndString = `${userEndYear}-${userEndMonth}-${userEndDay}`;
-      response = await fetch(apiEndString);
-      jsonEndData = await response.json();
-      return jsonEndData;
-    }
-    const rows = [];
+
+    const informationTableBody = document.getElementById("information");
+    // 1st step | choose data
+    let 
+  
+
+
+    // 2nd step | create data
+    const rows = [ [ticker, sentimentScore, sentiment] ]
+
+
+
+    // 3rd step | loop through data
     rows.forEach((row) => {
       const tr = document.createElement("tr");
       row.forEach((cellText) => {
