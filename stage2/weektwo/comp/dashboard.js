@@ -9,13 +9,7 @@
   const myChart = new Chart(ctx, {
     type: "line",
     data: {
-      labels: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-      ],
+      labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       datasets: [
         {
           data: [21345, 18483, 24003, 23489, 24092],

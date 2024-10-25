@@ -3,7 +3,7 @@ let response;
 let jsonData;
 let apiString;
 
-function getUserDate() {
+function mainLogic() {
   const dateString = document.getElementById("userDateRange").value;
   const [startDateStr, endDateStr] = dateString.split(" - ");
 
@@ -18,24 +18,42 @@ function getUserDate() {
   const userEndMonth = endDate.getMonth() + 1;
   const userEndDay = endDate.getDate();
 
+  const informationTableBody = document.getElementById("information");
+
   // logical issue with this being a first of the month thing, for this example I am not taking that into account
   const weekCheck = userEndDay - userBeginDay;
   if (weekCheck >= 5 || weekCheck < 4) {
     alert("Please only select a date range between 5 days");
   } else {
-    let apiBeginString = `${userBeginYear}-${userBeginMonth}-${userBeginDay}`;
-    
-    for (let i = userBeginDay + 1; i < userEndDay; i++) {
-      let apiMiddleDay = i;
-      console.log(`${userEndYear}-${userEndMonth}-${apiMiddleDay}`); // this is the api key
+    async function retrieveJson() {
+      let apiBeginString = `${userBeginYear}-${userBeginMonth}-${userBeginDay}`;
+      response = await fetch(apiBeginString);
+      jsonBeginData = await response.json();
+      return jsonBeginData;
     }
-    let apiEndString = `${userEndYear}-${userEndMonth}-${userEndDay}`;
-    
+    async function retrieveMiddleJson() {
+      for (let i = userBeginDay + 1; i < userEndDay; i++) {
+        let apiMiddleString = `${userEndYear}-${userEndMonth}-${i}`;
+        response = await fetch(apiMiddleString);
+        jsonMiddleData = await response.json();
+        return jsonMiddleData;
+      }
+    }
+    async function retrieveEndJson() {
+      let apiEndString = `${userEndYear}-${userEndMonth}-${userEndDay}`;
+      response = await fetch(apiEndString);
+      jsonEndData = await response.json();
+      return jsonEndData;
+    }
+    const rows = [];
+    rows.forEach((row) => {
+      const tr = document.createElement("tr");
+      row.forEach((cellText) => {
+        const td = document.createElement("td");
+        td.textContent = cellText;
+        tr.appendChild(td);
+      });
+      informationTableBody.appendChild(tr);
+    });
   }
 }
-
-// async function fetchMarketSentiment() {
-//   apiString = `https://tradestie.com/api/v1/apps/reddit?date=${userBeginYear}-10-24`;
-//   response = await fetch(apiString);
-//   jsonData = await response.json();
-// }
