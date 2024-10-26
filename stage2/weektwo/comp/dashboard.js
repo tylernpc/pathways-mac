@@ -1,10 +1,9 @@
 (() => {
   "use strict";
 
-  // api logic
   let response;
   let jsonData;
-  let sentimentScores = []; // Array to store sentiment scores for the chart
+  let sentimentScores = [];
 
   async function mainLogic() {
     const dateString = document.getElementById("userDateRange").value;
@@ -14,45 +13,71 @@
     const endDate = new Date(endDateStr);
 
     const startDateYear = startDate.getFullYear();
-    const startDateMonth = startDate.getMonth() + 1;
+    const startDateMonth = (startDate.getMonth() + 1).toString().padStart(2, '0'); // Ensure two-digit month
     const startDateDay = startDate.getDate();
     const endDateDay = endDate.getDate();
 
     const weekCheck = endDateDay - startDateDay;
     if (weekCheck >= 5 || weekCheck < 4) {
       alert("Please only select a date range between 5 days");
-    } else {
-      async function retrieveJson(dateString) {
-        response = await fetch(dateString);
-        return await response.json();
-      }
-
-      const informationTableBody = document.getElementById("information");
-      sentimentScores = []; // Clear previous scores before populating new data
-
-      for (let i = startDateDay + 1; i < endDateDay; i++) {
-        let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${startDateMonth}-${i}`;
-        jsonData = await retrieveJson(apiMainString);
-
-        const ticker = jsonData.ticker;
-        const sentimentScore = jsonData.sentiment_score;
-        const sentiment = jsonData.sentiment;
-
-        // Add sentiment score to the array
-        sentimentScores.push(sentimentScore);
-
-        // Create table row
-        const row = [ticker, sentimentScore, sentiment];
-        const tr = document.createElement("tr");
-        row.forEach((cellText) => {
-          const td = document.createElement("td");
-          td.textContent = cellText;
-          tr.appendChild(td);
-        });
-        informationTableBody.appendChild(tr);
-      }
-      updateChart(sentimentScores); // Update chart with new data
+      return; // Exit if the check fails
     }
+
+    async function retrieveJson(dateString) {
+      const proxyUrl = "https://api.allorigins.win/get?url=";
+      const apiUrl = `${proxyUrl}${encodeURIComponent(dateString)}`;
+  
+      try {
+          response = await fetch(apiUrl);
+          if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+          const jsonResponse = JSON.parse(data.contents); // Parse the JSON from the response
+  
+          console.log('API Response:', jsonResponse); // Log the API response for debugging
+          return jsonResponse;
+      } catch (error) {
+          console.error('Error fetching data:', error);
+          alert('Failed to fetch data. Please check the console for more details.');
+          return null; // Return null if there was an error
+      }
+    }
+
+    const informationTableBody = document.getElementById("information");
+    informationTableBody.innerHTML = ""; // Clear previous rows
+    sentimentScores = []; // Clear previous scores before populating new data
+
+    // Loop through the date range
+    for (let i = startDateDay; i <= endDateDay; i++) {
+      let formattedDate = `${startDateYear}-${startDateMonth}-${i.toString().padStart(2, '0')}`; // Ensure two-digit day
+      let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${formattedDate}`;
+      
+      jsonData = await retrieveJson(apiMainString);
+
+      if (!jsonData) continue; // Skip if there's an error
+
+      // Adjust based on the actual structure of jsonData
+      console.log(`Data for ${formattedDate}:`, jsonData); // Log data for each date
+      const ticker = jsonData.ticker || "N/A";
+      const sentimentScore = jsonData.sentiment_score || 0;
+      const sentiment = jsonData.sentiment || "Unknown";
+
+      // Add sentiment score to the array
+      sentimentScores.push(sentimentScore);
+
+      // Create table row
+      const row = [ticker, sentimentScore, sentiment];
+      const tr = document.createElement("tr");
+      row.forEach((cellText) => {
+        const td = document.createElement("td");
+        td.textContent = cellText;
+        tr.appendChild(td);
+      });
+      informationTableBody.appendChild(tr);
+    }
+
+    updateChart(sentimentScores); // Update chart with new data
   }
 
   // Chart configuration
@@ -60,7 +85,7 @@
   const myChart = new Chart(ctx, {
     type: "line",
     data: {
-      labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], // Adjust labels as needed
       datasets: [
         {
           data: [],

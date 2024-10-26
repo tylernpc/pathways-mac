@@ -11,8 +11,6 @@
 
     <!-- self provided html -->
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <!-- BE READY TO DELETE -->
-    <!-- <script src="app.js"></script> -->
     <!-- I created this bootstrap.css, remember it was first thing in the body with style tags -->
     <link rel="stylesheet" href="bootstrap.css">
     <script src="../assets/js/color-modes.js"></script>
@@ -239,14 +237,14 @@
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Market Sentiment</h1>
                     <div class="date-range">
-                        <input type="text" name="datefilter" value="Select Weekly Range " id="userDateRange" />
-                        <button onclick="mainLogic()">Get Sentiment</button>
+                        <input type="text" name="datefilter" placeholder="MON - FRI" id="userDateRange" />
+                        <input type="button" onclick="mainLogic()" value="Get Sentiment">
                     </div>
                 </div>
 
                 <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-                <h2>Section title</h2>
+                <h2>Sentiment Data</h2>
                 <div class="table-responsive small">
                     <table class="table table-striped table-sm">
                         <thead>
@@ -257,20 +255,12 @@
                             </tr>
                         </thead>
                         <tbody id="information">
-                            <tr>
-                                <td>GME</td>
-                                <td>0.01</td>
-                                <td>Bullish</td>
-                            </tr>
-                            <tr>
-                                <td>QQQ</td>
-                                <td>-0.061</td>
-                                <td>Bearish</td>
-                            </tr>
+                            <!-- NEW DATA HERE -->
                         </tbody>
                     </table>
                 </div>
             </main>
+
         </div>
     </div>
     <!-- date range script -->
@@ -301,9 +291,5 @@
     integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp"
     crossorigin="anonymous"></script>
 <script src="dashboard.js"></script>
-
-<!-- BE READY TO DELETE -->
-<!-- <script type="module" src="app.js"></script>
-<script type="module" src="dashboard.js"></script> -->
 
 </html>
