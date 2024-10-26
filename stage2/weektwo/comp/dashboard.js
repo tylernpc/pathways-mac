@@ -31,7 +31,7 @@
       sentimentScores = []; // Clear previous scores before populating new data
 
       for (let i = startDateDay + 1; i < endDateDay; i++) {
-        let apiMainString = `${startDateYear}-${startDateMonth}-${i}`;
+        let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${startDateMonth}-${i}`;
         jsonData = await retrieveJson(apiMainString);
 
         const ticker = jsonData.ticker;
