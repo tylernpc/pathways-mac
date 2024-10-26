@@ -1,12 +1,10 @@
-// import { mainLogic } from "./app";
-
 (() => {
   "use strict";
-
 
   // api logic
   let response;
   let jsonData;
+  let sentimentScores = []; // Array to store sentiment scores for the chart
 
   async function mainLogic() {
     const dateString = document.getElementById("userDateRange").value;
@@ -30,6 +28,7 @@
       }
 
       const informationTableBody = document.getElementById("information");
+      sentimentScores = []; // Clear previous scores before populating new data
 
       for (let i = startDateDay + 1; i < endDateDay; i++) {
         let apiMainString = `${startDateYear}-${startDateMonth}-${i}`;
@@ -39,8 +38,11 @@
         const sentimentScore = jsonData.sentiment_score;
         const sentiment = jsonData.sentiment;
 
-        const row = [ticker, sentimentScore, sentiment];
+        // Add sentiment score to the array
+        sentimentScores.push(sentimentScore);
 
+        // Create table row
+        const row = [ticker, sentimentScore, sentiment];
         const tr = document.createElement("tr");
         row.forEach((cellText) => {
           const td = document.createElement("td");
@@ -49,20 +51,19 @@
         });
         informationTableBody.appendChild(tr);
       }
+      updateChart(sentimentScores); // Update chart with new data
     }
   }
-  // api logic
 
-  
+  // Chart configuration
   const ctx = document.getElementById("myChart");
-
   const myChart = new Chart(ctx, {
     type: "line",
     data: {
       labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       datasets: [
         {
-          data: [21345, 18483, 24003, 23489, 24092],
+          data: [],
           lineTension: 0,
           backgroundColor: "transparent",
           borderColor: "#007bff",
@@ -82,4 +83,13 @@
       },
     },
   });
+
+  // Function to update the chart with new data
+  function updateChart(sentimentScores) {
+    myChart.data.datasets[0].data = sentimentScores;
+    myChart.update();
+  }
+
+  // Expose mainLogic to the global scope
+  window.mainLogic = mainLogic;
 })();
