@@ -19,32 +19,30 @@ async function mainLogic() {
   if (weekCheck >= 5 || weekCheck < 4) {
     alert("Please only select a date range between 5 days");
   } else {
-    async function retrieveJson(tylerstring) {
-      response = await fetch(tylerstring);
-      return await response.json();
-    }
-
-    const informationTableBody = document.getElementById("information");
-
+    // main programming logic
     for (let i = startDateDay + 1; i < endDateDay; i++) {
-      let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${String(
-        startDateMonth
-      ).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
-      jsonData = await retrieveJson(apiMainString);
+      async function retrieveJson() {
+        let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${String(startDateMonth).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
+        
+        // make the call
+        response = await fetch(apiMainString);
+        jsonData = await response.json();
 
-      const ticker = jsonData.ticker;
-      const sentimentScore = jsonData.sentiment_score;
-      const sentiment = jsonData.sentiment;
+        for (let i = 0; i < jsonData.length; i++) {
+          let ticker = jsonData[i].ticker;
+          let sentimentScore = jsonData[i].sentiment_score;
+          let sentiment = jsonData[i].sentiment;
 
-      const row = [ticker, sentimentScore, sentiment];
-
-      const tr = document.createElement("tr");
-      row.forEach((cellText) => {
-        const td = document.createElement("td");
-        td.textContent = cellText;
-        tr.appendChild(td);
-      });
-      informationTableBody.appendChild(tr);
+          console.log(
+            "Ticker:",
+            ticker,
+            "Sentiment Score:",
+            sentimentScore,
+            "Sentiment:",
+            sentiment
+          );
+        }
+      }
     }
   }
 }

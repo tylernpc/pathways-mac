@@ -33,3 +33,15 @@
     },
   });
 })();
+
+// const informationTableBody = document.getElementById("information");
+
+//   const row = [ticker, sentimentScore, sentiment];
+
+//   const tr = document.createElement("tr");
+//   row.forEach((cellText) => {
+//     const td = document.createElement("td");
+//     td.textContent = cellText;
+//     tr.appendChild(td);
+//   });
+//   informationTableBody.appendChild(tr);
