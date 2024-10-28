@@ -19,29 +19,31 @@ async function mainLogic() {
   if (weekCheck >= 5 || weekCheck < 4) {
     alert("Please only select a date range between 5 days");
   } else {
-    // main programming logic
+    // Main programming logic
+    async function retrieveJson(apiMainString) {
+      response = await fetch(apiMainString);
+      return await response.json();
+    }
+
     for (let i = startDateDay + 1; i < endDateDay; i++) {
-      async function retrieveJson() {
-        let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${String(startDateMonth).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
-        
-        // make the call
-        response = await fetch(apiMainString);
-        jsonData = await response.json();
+        let apiMainString = `https://cors-anywhere.herokuapp.com/https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${String(startDateMonth).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
 
-        for (let i = 0; i < jsonData.length; i++) {
-          let ticker = jsonData[i].ticker;
-          let sentimentScore = jsonData[i].sentiment_score;
-          let sentiment = jsonData[i].sentiment;
+      // Retrieve data and log each entry
+      jsonData = await retrieveJson(apiMainString);
 
-          console.log(
-            "Ticker:",
-            ticker,
-            "Sentiment Score:",
-            sentimentScore,
-            "Sentiment:",
-            sentiment
-          );
-        }
+      for (let j = 0; j < jsonData.length; j++) {
+        let ticker = jsonData[j].ticker;
+        let sentimentScore = jsonData[j].sentiment_score;
+        let sentiment = jsonData[j].sentiment;
+
+        console.log(
+          "Ticker:",
+          ticker,
+          "Sentiment Score:",
+          sentimentScore,
+          "Sentiment:",
+          sentiment
+        );
       }
     }
   }
