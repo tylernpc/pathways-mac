@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj": {}
+    "/Users/tyler/Repos/pathways-mac/stage1/accumulator-problem-mac/accumulator-problem.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj": {
+    "/Users/tyler/Repos/pathways-mac/stage1/accumulator-problem-mac/accumulator-problem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj",
+        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage1/accumulator-problem-mac/accumulator-problem.csproj",
         "projectName": "accumulator-problem",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj",
+        "projectPath": "/Users/tyler/Repos/pathways-mac/stage1/accumulator-problem-mac/accumulator-problem.csproj",
         "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/obj/",
+        "outputPath": "/Users/tyler/Repos/pathways-mac/stage1/accumulator-problem-mac/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tyler/.nuget/NuGet/NuGet.Config"
@@ -33,6 +33,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -49,12 +54,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kYvf1zR4ZY2aaGkXy10yXcbqJeFw4dv2RnyCQWDyoQu3i7WfIuCOCO4PjmLQ9HFN96WN6vnMCfINNOqQR7hejA==",
+  "dgSpecHash": "qm0/qpfzivE=",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/accumulator-problem-mac/accumulator-problem.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage1/accumulator-problem-mac/accumulator-problem.csproj",
+  "expectedPackageFiles": [
+    "/Users/tyler/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/tyler/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/tyler/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
