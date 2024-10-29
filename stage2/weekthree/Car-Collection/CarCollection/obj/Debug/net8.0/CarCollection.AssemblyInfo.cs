@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarCollection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce9378cb26b28fdedf093444c3d837d5a840ebef")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+657041613970355ef438c948c9da746b490d678a")]
+>>>>>>> refs/remotes/origin/main
 [assembly: System.Reflection.AssemblyProductAttribute("CarCollection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarCollection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
