@@ -1,0 +1,15 @@
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\bin\Debug\net8.0\CarCollection.exe
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\bin\Debug\net8.0\CarCollection.deps.json
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\bin\Debug\net8.0\CarCollection.runtimeconfig.json
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\bin\Debug\net8.0\CarCollection.dll
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\bin\Debug\net8.0\CarCollection.pdb
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.AssemblyInfoInputs.cache
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.AssemblyInfo.cs
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.csproj.CoreCompileInputs.cache
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.sourcelink.json
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.dll
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\refint\CarCollection.dll
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.pdb
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\CarCollection.genruntimeconfig.cache
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Car-Collection\CarCollection\obj\Debug\net8.0\ref\CarCollection.dll
