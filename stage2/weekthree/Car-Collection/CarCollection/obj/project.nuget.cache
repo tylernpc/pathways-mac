@@ -1,12 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "NLKEslmGWfg=",
-=======
-  "dgSpecHash": "4DQbvW4N69A=",
->>>>>>> refs/remotes/origin/main
+  "dgSpecHash": "QwfUni2TkO0=",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj",
+  "projectFilePath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
