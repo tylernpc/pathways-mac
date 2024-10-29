@@ -26,7 +26,7 @@ async function mainLogic() {
     }
 
     for (let i = startDateDay + 1; i < endDateDay; i++) {
-      let apiMainString = `https://cors-anywhere.herokuapp.com/https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${String(
+      let apiMainString = `https://tradestie.com/api/v1/apps/reddit?date=${startDateYear}-${String(
         startDateMonth
       ).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
 
@@ -47,17 +47,6 @@ async function mainLogic() {
           sentiment
         );
       }
-      // const informationTableBody = document.getElementById("information");
-
-      //   const row = [ticker, sentimentScore, sentiment];
-
-      //   const tr = document.createElement("tr");
-      //   row.forEach((cellText) => {
-      //     const td = document.createElement("td");
-      //     td.textContent = cellText;
-      //     tr.appendChild(td);
-      //   });
-      //   informationTableBody.appendChild(tr);
     }
   }
 }
