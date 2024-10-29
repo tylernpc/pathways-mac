@@ -4,15 +4,33 @@
     {
         static void Main(string[] args)
         {
-            Car car = new Car();
+            List<Car> cars = new List<Car>();
+            bool userContinue = false;
 
-            car.Make = GetValidStringInput("Please enter a car manufacture: ");
-            car.Model = GetValidStringInput("Please enter a car model: ");
-            car.Year = GetValidIntInput("Please enter a car year: ");
-            car.Color = GetValidStringInput("Please enter a car color: ");
-            car.Mileage = GetValidIntInput("Please enter the car mileage: ");
-            car.Transmission = GetValidStringInput("Please enter a transmission type: ");
-            car.Price = GetValidDoubleInput("Please enter the vehicle's price: ");
+            do
+            {
+                Car car = new Car();
+
+                car.Make = GetValidStringInput("Please enter a car manufacture: ");
+                car.Model = GetValidStringInput("Please enter a car model: ");
+                car.Year = GetValidIntInput("Please enter a car year: ");
+                car.Color = GetValidStringInput("Please enter a car color: ");
+                car.Mileage = GetValidIntInput("Please enter the car mileage: ");
+                car.Transmission = GetValidStringInput("Please enter a transmission type: ");
+                car.Price = GetValidDoubleInput("Please enter the vehicle's price: ");
+                cars.Add(car);
+
+                Console.Write("Would you like to continue? (Y/N): ");
+                string userContinueInput = Console.ReadLine().ToUpper();
+                userContinue = userContinueInput == "Y";
+
+            } while (userContinue);
+
+            foreach (Car userCar in cars)
+            {
+                Console.WriteLine(userCar);
+                Console.Write(' ');
+            }
         }
 
         public static string GetValidStringInput(string prompt)
