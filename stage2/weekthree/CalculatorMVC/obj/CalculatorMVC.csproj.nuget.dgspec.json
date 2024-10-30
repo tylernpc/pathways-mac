@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator\\Calculator\\Calculator.csproj": {}
+    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\CalculatorMVC\\CalculatorMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator\\Calculator\\Calculator.csproj": {
+    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\CalculatorMVC\\CalculatorMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator\\Calculator\\Calculator.csproj",
-        "projectName": "Calculator",
-        "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\CalculatorMVC\\CalculatorMVC.csproj",
+        "projectName": "CalculatorMVC",
+        "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\CalculatorMVC\\CalculatorMVC.csproj",
         "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator\\Calculator\\obj\\",
+        "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\CalculatorMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",

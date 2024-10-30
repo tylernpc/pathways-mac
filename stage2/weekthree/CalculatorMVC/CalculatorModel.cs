@@ -1,17 +1,17 @@
-﻿namespace Calculator
+﻿namespace CalculatorMVC
 {
-    public class Calculator
+    public class CalculatorModel
     {
         public double FirstNumber { get; set; }
         public double SecondNumber { get; set; }
 
-        public Calculator()
+        public CalculatorModel()
         {
             FirstNumber = 0;
             SecondNumber = 0;
         }
 
-        public Calculator(double firstNumber, double secondNumber)
+        public CalculatorModel(double firstNumber, double secondNumber)
         {
             FirstNumber = firstNumber;
             SecondNumber = secondNumber;
