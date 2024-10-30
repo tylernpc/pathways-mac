@@ -10,8 +10,7 @@
             (double firstNum, double secondNum, string userOperation) = view.UserPrompt();
             model.FirstNumber = firstNum; 
             model.SecondNumber = secondNum;
-            double answer = model.Operation(userOperation);
-            Console.WriteLine(answer);
+            view.Output(model.Operation(userOperation));
         }
     }
 }

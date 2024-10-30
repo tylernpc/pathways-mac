@@ -15,5 +15,10 @@
 
             return (firstNum, secondNum, userOperation);
         }
+
+        public void Output(double total)
+        {
+            Console.Write(total);
+        }
     }
 }
