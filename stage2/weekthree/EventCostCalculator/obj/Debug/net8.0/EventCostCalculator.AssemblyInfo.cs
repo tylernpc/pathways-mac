@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventCostCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef1a344abee9df2c307bad4044c673699656c730")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7928e3c251f001fa6615360b71dd57e92b2a9b90")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventCostCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventCostCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/bin/Debug/net8.0/EventCostCalculator
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/bin/Debug/net8.0/EventCostCalculator.deps.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/bin/Debug/net8.0/EventCostCalculator.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/bin/Debug/net8.0/EventCostCalculator.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/bin/Debug/net8.0/EventCostCalculator.pdb
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.sourcelink.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/refint/EventCostCalculator.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.pdb
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/EventCostCalculator.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/EventCostCalculator/obj/Debug/net8.0/ref/EventCostCalculator.dll
