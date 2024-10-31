@@ -10,12 +10,11 @@ class Program
          * 2 | Retirement 20%
          * 3 | Wedding
          */
+        bool isValidOption = false;
         Console.WriteLine("Hello, are you here for a " +
                           "Graduation Party? Retirement Party? " +
                           "or Wedding?");
         Console.WriteLine("Graduation | Retirement | Wedding");
-        
-        bool isValidOption = false;
 
         do
         {
