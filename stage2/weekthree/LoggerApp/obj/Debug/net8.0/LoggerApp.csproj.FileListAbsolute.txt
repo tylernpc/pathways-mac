@@ -1,0 +1,15 @@
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\bin\Debug\net8.0\LoggerApp.exe
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\bin\Debug\net8.0\LoggerApp.deps.json
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\bin\Debug\net8.0\LoggerApp.runtimeconfig.json
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\bin\Debug\net8.0\LoggerApp.dll
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\bin\Debug\net8.0\LoggerApp.pdb
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.AssemblyInfoInputs.cache
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.AssemblyInfo.cs
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.csproj.CoreCompileInputs.cache
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.sourcelink.json
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.dll
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\refint\LoggerApp.dll
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.pdb
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\LoggerApp.genruntimeconfig.cache
+C:\Users\tyler\source\repos\pathways-mac\stage2\weekthree\LoggerApp\obj\Debug\net8.0\ref\LoggerApp.dll
