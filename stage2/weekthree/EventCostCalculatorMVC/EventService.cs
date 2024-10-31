@@ -1,4 +1,4 @@
-namespace EventCostCalculator;
+namespace EventCostCalculatorMVC;
 
 public class EventService
 {
