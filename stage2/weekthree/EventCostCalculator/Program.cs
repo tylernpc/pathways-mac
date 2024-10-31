@@ -14,7 +14,7 @@ class Program
         Console.WriteLine("Hello, are you here for a " +
                           "Graduation Party? Retirement Party? " +
                           "or Wedding?");
-        Console.WriteLine("Graduation | Retirement | Wedding");
+        Console.WriteLine("Graduation | Retirement | Wedding | Birthday");
 
         do
         {
@@ -40,6 +40,14 @@ class Program
             else if (input == "WEDDING")
             {
                 IEventCostCalculator eventCost = new WeddingCostCalculator();
+                Console.Write("How many guest will you have? ");
+                double totalPrice = eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                Console.Write($"Here is your total price: {totalPrice}");
+                isValidOption = true;
+            }
+            else if (input == "BIRTHDAY")
+            {
+                IEventCostCalculator eventCost = new BirthdayCostCalculator();
                 Console.Write("How many guest will you have? ");
                 double totalPrice = eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
                 Console.Write($"Here is your total price: {totalPrice}");
