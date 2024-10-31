@@ -2,8 +2,12 @@
 
 public class WeddingCostCalculator : IEventCostCalculator
 {
-    public double CalculateCost(double totalPrice)
+    public double CalculateCost(int guestAmount)
     {
-        return (totalPrice * 0.20);
+        double baseVenueCost = 2000;
+        double perPersonCost = 0.05 * guestAmount; // 5% is standard per guest rate for a graduation
+        double eventCost = baseVenueCost + perPersonCost;
+        
+        return (eventCost);
     }
 }

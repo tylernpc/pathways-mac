@@ -2,8 +2,12 @@
 
 public class RetirementCostCalculator : IEventCostCalculator
 {
-    public double CalculateCost(double totalPrice)
+    public double CalculateCost(int guestAmount)
     {
-        return (totalPrice * 0.20);
+        double baseVenueCost = 1500;
+        double perPersonCost = 0.20 * guestAmount; // 20% is standard per guest rate for a graduation
+        double eventCost = baseVenueCost + perPersonCost;
+        
+        return (eventCost);
     }
 }

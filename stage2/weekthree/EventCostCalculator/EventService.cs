@@ -9,8 +9,9 @@ public class EventService
         _eventCostCalculator = eventCostCalculator;
     }
 
-    public void ProcessAmount(double amount)
+    // come back to fix this
+    public void ProcessAmount(int guestAmount)
     {
-        _eventCostCalculator.CalculateCost(amount);
+        _eventCostCalculator.CalculateCost(guestAmount);
     }
 }

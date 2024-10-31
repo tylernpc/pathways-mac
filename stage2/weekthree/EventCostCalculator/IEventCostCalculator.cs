@@ -2,5 +2,5 @@
 
 public interface IEventCostCalculator
 {
-    public double CalculateCost(double totalPrice);
+    public double CalculateCost(int guestAmount);
 }
