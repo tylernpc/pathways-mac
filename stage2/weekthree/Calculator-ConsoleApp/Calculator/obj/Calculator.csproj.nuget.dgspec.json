@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj": {}
+    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj": {
+    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj",
-        "packagesPath": "C:\\Users\\TLe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\obj\\",
+        "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\Calculator.csproj",
+        "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Calculator-ConsoleApp\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TLe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

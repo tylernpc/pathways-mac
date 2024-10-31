@@ -29,7 +29,7 @@
             foreach (Car userCar in cars)
             {
                 Console.WriteLine(userCar);
-                Console.Write(' ');
+                Console.WriteLine(' ');
             }
         }
 

@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj": {}
+    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj": {
+    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj",
+        "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj",
         "projectName": "CarCollection",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj",
-        "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/obj/",
+        "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj",
+        "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tyler/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +61,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 7bb9a0badbc98d43863d60760d360b1fbc885205
         }
       }
     }
