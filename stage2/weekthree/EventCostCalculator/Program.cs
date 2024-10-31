@@ -6,9 +6,9 @@ class Program
     {
         /*
          * Three Events
-         * 1 | Graduation 10%
+         * 1 | Graduation 12%
          * 2 | Retirement 20%
-         * 3 | Wedding
+         * 3 | Wedding 5%
          */
         bool isValidOption = false;
         Console.WriteLine("Hello, are you here for a " +
