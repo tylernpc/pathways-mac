@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "NLKEslmGWfg=",
-=======
-  "dgSpecHash": "4DQbvW4N69A=",
->>>>>>> refs/remotes/origin/main
   "success": true,
   "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj",
   "expectedPackageFiles": [],
