@@ -6,8 +6,8 @@
         {
             /*
              * Three Events
-             * 1 | Graduation
-             * 2 | Retirement
+             * 1 | Graduation 10%
+             * 2 | Retirement 20%
              * 3 | Wedding
              */
             Console.WriteLine();

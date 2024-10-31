@@ -8,27 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tyler\\.nuget\\packages\\": {}
+    "/Users/tyler/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj",
+      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj",
       "projectName": "CarCollection",
-      "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\CarCollection.csproj",
-      "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\obj\\",
+      "projectPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/CarCollection.csproj",
+      "packagesPath": "/Users/tyler/.nuget/packages/",
+      "outputPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Car-Collection/CarCollection/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/tyler/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,20 +65,8 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
->>>>>>> 7bb9a0badbc98d43863d60760d360b1fbc885205
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekthree\\Car-Collection\\CarCollection\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
