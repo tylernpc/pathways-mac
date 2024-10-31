@@ -26,21 +26,24 @@ class Program
             {
                 IEventCostCalculator eventCost = new GraduationCostCalculator();
                 Console.Write("How many guest will you have? ");
-                eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                double totalPrice = eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                Console.Write($"Here is your total price: {totalPrice}");
                 isValidOption = true;
             }
             else if (input == "RETIREMENT")
             {
                 IEventCostCalculator eventCost = new RetirementCostCalculator();
                 Console.Write("How many guest will you have? ");
-                eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                double totalPrice = eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                Console.Write($"Here is your total price: {totalPrice}");
                 isValidOption = true;
             }
             else if (input == "WEDDING")
             {
                 IEventCostCalculator eventCost = new WeddingCostCalculator();
                 Console.Write("How many guest will you have? ");
-                eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                double totalPrice = eventCost.CalculateCost(Convert.ToInt32(Console.ReadLine()));
+                Console.Write($"Here is your total price: {totalPrice}");
                 isValidOption = true;
             }
             else
