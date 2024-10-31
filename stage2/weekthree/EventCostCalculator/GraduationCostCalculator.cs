@@ -1,10 +1,9 @@
-﻿namespace EventCostCalculator
+﻿namespace EventCostCalculator;
+
+public class GraduationCostCalculator : IEventCostCalculator
 {
-    internal class GraduationCostCalculator : IEventCostCalculator
+    public double CalculateCost(double totalPrice)
     {
-        public double CalculateCost(double totalPrice)
-        {
-            return (totalPrice * 0.20);
-        } 
+        return (totalPrice * 0.20);
     }
 }

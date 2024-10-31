@@ -1,7 +1,6 @@
-﻿namespace EventCostCalculator
+﻿namespace EventCostCalculator;
+
+public interface IEventCostCalculator
 {
-    internal interface IEventCostCalculator
-    {
-        public double CalculateCost(double totalPrice);
-    }
+    public double CalculateCost(double totalPrice);
 }
