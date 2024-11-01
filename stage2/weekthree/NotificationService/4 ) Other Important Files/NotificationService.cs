@@ -8,8 +8,8 @@ public class NotificationService : INotificationService
         _notificationService = notificationService;
     }
     
-    public void Email(string typeOfNotification)
+    public void Send(string typeOfNotification)
     {
-        _notificationService.Email(typeOfNotification);
+        _notificationService.Send(typeOfNotification);
     }
 }
