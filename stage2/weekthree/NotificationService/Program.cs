@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        NotificationController main = new NotificationController();
+        main.Start();
     }
 }
