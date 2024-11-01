@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/bin/Debug/net8.0/NotificationService
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/bin/Debug/net8.0/NotificationService.deps.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/bin/Debug/net8.0/NotificationService.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/bin/Debug/net8.0/NotificationService.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/bin/Debug/net8.0/NotificationService.pdb
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.sourcelink.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/refint/NotificationService.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.pdb
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/NotificationService.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/NotificationService/obj/Debug/net8.0/ref/NotificationService.dll
