@@ -7,16 +7,6 @@ public class NotificationController
 
     public void Start()
     {
-        model.NotificationValidation(view.UserInput());
-        var notificationString = view.UserInput();
-        INotificationService notificationType = notificationString switch
-        {
-            "EMAIL" => new EmailService(),
-            // "SMS" => new SmsNotification(),
-            // "PUSH" => new PushNotification(),
-            _ => null
-        };
-        model = new NotificationModel(notificationType);
-        model.Send(new EmailNotification());
+        
     }
 }

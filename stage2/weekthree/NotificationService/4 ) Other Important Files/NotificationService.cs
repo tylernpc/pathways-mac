@@ -12,4 +12,9 @@ public class NotificationService : INotificationService
     {
         _notificationService.Send(typeOfNotification);
     }
+
+    public void SendAsync(NotificationBase notification)
+    {
+        _notificationService.Send("");
+    }
 }
