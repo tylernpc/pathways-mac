@@ -1,7 +1,7 @@
 using Comp._2__Data_Contracts;
 namespace Comp._1__Data_Services;
 
-public class PushServices
+public class PushService
 {
     public void SendPush(PushNotificationDto push)
     {
