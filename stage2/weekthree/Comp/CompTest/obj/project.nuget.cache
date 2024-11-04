@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mrcUJ7cDCCw=",
+  "dgSpecHash": "yqULZJCjS9Y=",
   "success": true,
-  "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/Comp.csproj",
+  "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/CompTest/CompTest.csproj",
   "expectedPackageFiles": [
     "/Users/tyler/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/Users/tyler/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",
