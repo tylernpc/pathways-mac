@@ -1,6 +1,6 @@
 namespace Comp._2__Data_Contracts;
 
-public class EmailDto
+public class EmailDto : NotificationBase
 {
     public string To { get; set; }
     public string From { get; set; }

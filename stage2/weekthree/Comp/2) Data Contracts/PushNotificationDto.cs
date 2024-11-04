@@ -1,6 +1,6 @@
 namespace Comp._2__Data_Contracts;
 
-public class PushNotificationDto
+public class PushNotificationDto : NotificationBase
 {
     public string Title { get; set; }
     public string Message { get; set; }

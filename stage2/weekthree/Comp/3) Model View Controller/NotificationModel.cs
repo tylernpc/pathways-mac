@@ -24,7 +24,7 @@ public class NotificationModel
     {
         if (EmailData != null)
         {
-            _emailService.SendEmail(EmailData);
+            _emailService.SendAsync(EmailData);
         }
         else
         {
@@ -36,7 +36,7 @@ public class NotificationModel
     {
         if (PushNotificationData != null)
         {
-            _pushService.SendPush(PushNotificationData);
+            _pushService.SendAsync(PushNotificationData);
         }
         else
         {
@@ -48,7 +48,7 @@ public class NotificationModel
     {
         if (SmsData != null)
         {
-            _smsService.SendSms(SmsData);
+            _smsService.SendAsync(SmsData);
         }
         else
         {
@@ -56,3 +56,14 @@ public class NotificationModel
         }
     }
 }
+
+// NotificationBase foo;
+//
+// foo = new SmsDto();
+//
+// string bar = foo switch
+// {
+//     SmsDto s => "SMS",
+//     EmailDto e => "EMAIL",
+//     PushNotificationDto p => "PUSH",
+// };
