@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/bin/Debug/net8.0/Comp
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/bin/Debug/net8.0/Comp.deps.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/bin/Debug/net8.0/Comp.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/bin/Debug/net8.0/Comp.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/bin/Debug/net8.0/Comp.pdb
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.sourcelink.json
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/refint/Comp.dll
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.pdb
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/Comp.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/Debug/net8.0/ref/Comp.dll

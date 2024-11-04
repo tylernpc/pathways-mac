@@ -56,14 +56,3 @@ public class NotificationModel
         }
     }
 }
-
-// NotificationBase foo;
-//
-// foo = new SmsDto();
-//
-// string bar = foo switch
-// {
-//     SmsDto s => "SMS",
-//     EmailDto e => "EMAIL",
-//     PushNotificationDto p => "PUSH",
-// };

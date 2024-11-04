@@ -3,6 +3,13 @@ namespace Comp._3__Model_View_Controller;
 
 public class NotificationView
 {
+    public string UserChoice()
+    {
+        Console.WriteLine("Would you like to Select");
+        Console.Write("Email | Sms | Push: ");
+        return Console.ReadLine();
+    }
+    
     public EmailDto GetEmailInput()
     {
         Console.WriteLine("Enter email notification details:");
