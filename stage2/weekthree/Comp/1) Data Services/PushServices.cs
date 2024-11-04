@@ -3,16 +3,9 @@ namespace Comp._1__Data_Services;
 
 public class PushServices
 {
-    public PushNotificationDto Push { get; set; }
-
-    public PushServices(PushNotificationDto push)
+    public void SendPush(PushNotificationDto push)
     {
-        Push = push;
-    }
-
-    public void SendPush()
-    {
-        Console.WriteLine($"Title: {Push.Title}");
-        Console.WriteLine($"Message: {Push.Message}");
+        Console.WriteLine($"Title: {push.Title}");
+        Console.WriteLine($"Message: {push.Message}");
     }
 }

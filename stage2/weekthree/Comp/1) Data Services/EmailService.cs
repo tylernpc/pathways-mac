@@ -3,17 +3,10 @@ namespace Comp._1__Data_Services;
 
 public class EmailService
 {
-    public EmailDto Email { get; set; }
-
-    public EmailService(EmailDto email)
+    public void SendEmail(EmailDto email)
     {
-        Email = email;
-    }
-
-    public void SendEmail()
-    {
-        Console.WriteLine($"Sending email to: {Email.To}");
-        Console.WriteLine($"Subject: {Email.Subject}");
-        Console.WriteLine($"Body: {Email.Body}");
+        Console.WriteLine($"Sending email to: {email.To}");
+        Console.WriteLine($"Subject: {email.Subject}");
+        Console.WriteLine($"Body: {email.Body}");
     }
 }

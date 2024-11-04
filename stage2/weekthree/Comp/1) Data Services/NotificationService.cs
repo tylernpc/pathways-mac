@@ -11,6 +11,6 @@ public class NotificationService : INotificationService
 
     public void SendAsync(NotificationBase notification)
     {
-        
+        _notificationService.SendAsync(notification);
     }
 }

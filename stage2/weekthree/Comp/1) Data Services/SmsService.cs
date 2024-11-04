@@ -3,17 +3,10 @@ namespace Comp._1__Data_Services;
 
 public class SmsService : NotificationBase
 {
-    public SmsDto Sms { get; set; }
-
-    public SmsService(SmsDto sms)
+    public void SendSms(SmsDto sms)
     {
-        Sms = sms;
-    }
-
-    public void SendSms()
-    {
-        Console.WriteLine($"To: {Sms.To}");
-        Console.WriteLine($"From: {Sms.From}");
-        Console.WriteLine($"Message: {Sms.Message}");
+        Console.WriteLine($"To: {sms.To}");
+        Console.WriteLine($"From: {sms.From}");
+        Console.WriteLine($"Message: {sms.Message}");
     }
 }
