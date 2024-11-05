@@ -1,0 +1,15 @@
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\bin\Debug\net8.0\Bank.exe
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\bin\Debug\net8.0\Bank.deps.json
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\bin\Debug\net8.0\Bank.runtimeconfig.json
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\bin\Debug\net8.0\Bank.dll
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\bin\Debug\net8.0\Bank.pdb
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.AssemblyInfoInputs.cache
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.AssemblyInfo.cs
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.csproj.CoreCompileInputs.cache
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.sourcelink.json
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.dll
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\refint\Bank.dll
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.pdb
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\Bank.genruntimeconfig.cache
+C:\Users\TLe\source\repos\pathways-mac\stage2\weekthree\Bank\obj\Debug\net8.0\ref\Bank.dll
