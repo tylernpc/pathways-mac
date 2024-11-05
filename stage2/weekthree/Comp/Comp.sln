@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comp", "Comp.csproj", "{E12
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompTest", "..\CompTest\CompTest.csproj", "{047ECE7E-1853-4F7C-9EF4-D13FCC40B5C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompTest", "CompTest\CompTest.csproj", "{319372CB-70D7-469D-A7CC-BB733D55CD03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,7 @@ Global
 		{E12D6CA3-2DED-44E8-AD84-E60BE65C09B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E12D6CA3-2DED-44E8-AD84-E60BE65C09B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E12D6CA3-2DED-44E8-AD84-E60BE65C09B0}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{047ECE7E-1853-4F7C-9EF4-D13FCC40B5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{047ECE7E-1853-4F7C-9EF4-D13FCC40B5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{047ECE7E-1853-4F7C-9EF4-D13FCC40B5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,5 +30,11 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D665C6B-6097-43B2-8654-0860207AE0D7}
+=======
+		{319372CB-70D7-469D-A7CC-BB733D55CD03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319372CB-70D7-469D-A7CC-BB733D55CD03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319372CB-70D7-469D-A7CC-BB733D55CD03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319372CB-70D7-469D-A7CC-BB733D55CD03}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 9a852a9721f5693d7f7dbb0e248f70d1dd51dc65
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@
       "coverlet.collector/6.0.0": {
         "type": "package",
         "build": {
-          "build/netstandard1.0/_._": {}
+          "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
       "Microsoft.CodeCoverage/17.8.0": {
@@ -17,7 +17,8 @@
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
         },
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
       "Microsoft.NET.Test.Sdk/17.8.0": {
@@ -33,10 +34,11 @@
           "lib/netcoreapp3.1/_._": {}
         },
         "build": {
-          "build/netcoreapp3.1/_._": {}
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props": {},
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -295,7 +297,7 @@
           }
         },
         "build": {
-          "build/netcoreapp3.1/_._": {}
+          "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
       "NETStandard.Library/2.0.0": {
@@ -310,7 +312,7 @@
           "lib/netstandard1.0/_._": {}
         },
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -351,7 +353,7 @@
           }
         },
         "build": {
-          "build/_._": {}
+          "build/NUnit.props": {}
         }
       },
       "NUnit.Analyzers/3.9.0": {
@@ -360,7 +362,7 @@
       "NUnit3TestAdapter/4.5.0": {
         "type": "package",
         "build": {
-          "build/netcoreapp3.1/_._": {}
+          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
       "System.Reflection.Metadata/1.6.0": {
@@ -374,23 +376,6 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "CompTest/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.NET.Test.Sdk": "17.8.0",
-          "NUnit": "3.14.0",
-          "NUnit.Analyzers": "3.9.0",
-          "NUnit3TestAdapter": "4.5.0",
-          "coverlet.collector": "6.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CompTest.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CompTest.dll": {}
         }
       }
     }
@@ -985,50 +970,43 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "CompTest/1.0.0": {
-      "type": "project",
-      "path": "CompTest/CompTest.csproj",
-      "msbuildProject": "CompTest/CompTest.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CompTest >= 1.0.0"
+      "Microsoft.NET.Test.Sdk >= 17.8.0",
+      "NUnit >= 3.14.0",
+      "NUnit.Analyzers >= 3.9.0",
+      "NUnit3TestAdapter >= 4.5.0",
+      "coverlet.collector >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TLe\\.nuget\\packages\\": {}
+    "/Users/tyler/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj",
-      "projectName": "Comp",
-      "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj",
-      "packagesPath": "C:\\Users\\TLe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\obj\\",
+      "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/CompTest/CompTest.csproj",
+      "projectName": "CompTest",
+      "projectPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/CompTest/CompTest.csproj",
+      "packagesPath": "/Users/tyler/.nuget/packages/",
+      "outputPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/CompTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TLe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/tyler/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/CompTest/CompTest.csproj": {
-              "projectPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/CompTest/CompTest.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1045,6 +1023,28 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[17.8.0, )"
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[3.14.0, )"
+          },
+          "NUnit.Analyzers": {
+            "target": "Package",
+            "version": "[3.9.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
+          "coverlet.collector": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -1061,7 +1061,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
