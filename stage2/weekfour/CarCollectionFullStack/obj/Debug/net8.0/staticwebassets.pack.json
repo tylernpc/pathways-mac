@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CarCollectionFullStack.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CarCollectionFullStack.props",
+      "PackagePath": "build\\CarCollectionFullStack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CarCollectionFullStack.props",
+      "PackagePath": "buildMultiTargeting\\CarCollectionFullStack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CarCollectionFullStack.props",
+      "PackagePath": "buildTransitive\\CarCollectionFullStack.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
