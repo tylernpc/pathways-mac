@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/Comp.csproj": {}
+    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj": {}
   },
   "projects": {
-    "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/Comp.csproj": {
+    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/Comp.csproj",
+        "projectUniqueName": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj",
         "projectName": "Comp",
-        "projectPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/Comp.csproj",
-        "packagesPath": "/Users/tyler/.nuget/packages/",
-        "outputPath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/obj/",
+        "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj",
+        "packagesPath": "C:\\Users\\TLe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tyler/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\TLe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },

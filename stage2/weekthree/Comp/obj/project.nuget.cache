@@ -1,5 +1,11 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "lVjaTuRzjQw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\Comp.csproj",
+  "expectedPackageFiles": [],
+=======
   "dgSpecHash": "mrcUJ7cDCCw=",
   "success": true,
   "projectFilePath": "/Users/tyler/Repos/pathways-mac/stage2/weekthree/Comp/Comp.csproj",
@@ -18,5 +24,6 @@
     "/Users/tyler/.nuget/packages/nunit3testadapter/4.5.0/nunit3testadapter.4.5.0.nupkg.sha512",
     "/Users/tyler/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
+>>>>>>> 9a852a9721f5693d7f7dbb0e248f70d1dd51dc65
   "logs": []
 }

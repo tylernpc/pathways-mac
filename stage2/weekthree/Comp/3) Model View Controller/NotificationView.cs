@@ -7,7 +7,7 @@ public class NotificationView
     {
         Console.WriteLine("Would you like to Select");
         Console.Write("Email | Sms | Push: ");
-        return Console.ReadLine();
+        return Console.ReadLine().ToUpper();
     }
     
     public EmailDto GetEmailInput()
