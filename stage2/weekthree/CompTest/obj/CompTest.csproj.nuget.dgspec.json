@@ -111,7 +111,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\CompTest\\CompTest.csproj": {
+                "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekthree\\Comp\\CompTest\\CompTest.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
