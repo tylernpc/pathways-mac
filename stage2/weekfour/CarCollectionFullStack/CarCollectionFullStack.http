@@ -1,0 +1,6 @@
+@CarCollectionFullStack_HostAddress = http://localhost:5126
+
+GET {{CarCollectionFullStack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
