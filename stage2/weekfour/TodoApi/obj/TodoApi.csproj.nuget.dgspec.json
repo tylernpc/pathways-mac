@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj": {}
+    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj": {
+    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj",
+        "projectUniqueName": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj",
-        "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\obj\\",
+        "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj",
+        "packagesPath": "C:\\Users\\TLe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TLe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
