@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "1NLI3HGHvCRZr+rtK18OR0yiNHneBBcVccTlJRKUNPY=",
+  "Source": "CarCollectionFullStack",
+  "BasePath": "_content/CarCollectionFullStack",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CarCollectionFullStack\\wwwroot",
+      "Source": "CarCollectionFullStack",
+      "ContentRoot": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
+      "BasePath": "_content/CarCollectionFullStack",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
