@@ -1,9 +1,22 @@
-﻿input[type='submit'], button, [aria-label] {
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0em;
+    padding: 0em;
+    font-family: "Poppins", sans-serif;
+    text-transform: lowercase;
+}
+
+/* Auto Generated CSS */
+
+input[type='submit'], button, [aria-label] {
     cursor: pointer;
 }
 
 #editForm {
     display: none;
+    margin-left: 2em;
+    margin-top: 1em;
 }
 
 table {
@@ -20,4 +33,29 @@ th {
 td {
     border: 1px solid;
     padding: 5px;
+}
+
+/* Auto Generated CSS */
+
+h1 {
+    margin: 2em 0em 0em 1em;
+    text-transform: uppercase;
+}
+
+form {
+    margin-left: 2em;
+}
+
+table {
+    margin-left: 2em;
+}
+
+#counter {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+#add-name {
+    border-radius: 20px;
+    padding-left: 7px;
 }

@@ -1,5 +1,5 @@
-﻿const uri = 'api/carcollection';
-let todos = [];
+﻿const uri = 'api/CarItems';
+let cars = [];
 
 function getItems() {
     fetch(uri)
@@ -41,7 +41,7 @@ function deleteItem(id) {
 }
 
 function displayEditForm(id) {
-    const item = todos.find(item => item.id === id);
+    const item = cars.find(item => item.id === id);
 
     document.getElementById('edit-name').value = item.name;
     document.getElementById('edit-id').value = item.id;
@@ -78,13 +78,13 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
+    const name = (itemCount === 1) ? 'car' : 'cars';
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
 
 function _displayItems(data) {
-    const tBody = document.getElementById('todos');
+    const tBody = document.getElementById('cars');
     tBody.innerHTML = '';
 
     _displayCount(data.length);
@@ -99,20 +99,23 @@ function _displayItems(data) {
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
+        editButton.setAttribute('style', 'padding: 8px 40px');
         editButton.setAttribute('onclick', `displayEditForm(${item.id})`);
 
         let deleteButton = button.cloneNode(false);
         deleteButton.innerText = 'Delete';
+        deleteButton.setAttribute('style', 'padding: 8px 30px');
         deleteButton.setAttribute('onclick', `deleteItem(${item.id})`);
 
         let tr = tBody.insertRow();
 
         let td1 = tr.insertCell(0);
-        td1.appendChild(isCompleteCheckbox);
+        td1.setAttribute('style', 'display: none');
 
         let td2 = tr.insertCell(1);
         let textNode = document.createTextNode(item.name);
         td2.appendChild(textNode);
+        td2.setAttribute('style', 'padding: 8px 50px');
 
         let td3 = tr.insertCell(2);
         td3.appendChild(editButton);
@@ -121,5 +124,5 @@ function _displayItems(data) {
         td4.appendChild(deleteButton);
     });
 
-    todos = data;
+    cars = data;
 }
