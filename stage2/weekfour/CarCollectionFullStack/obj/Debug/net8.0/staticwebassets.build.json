@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V4jsHFC3bSokB6166JZVcxrgkouqVCcazupIzx1bS/s=",
+  "Hash": "zw9XTLuo0CoC16fJjG1QE5HSXLw6Aqh7yVU5kcN6tcM=",
   "Source": "CarCollectionFullStack",
   "BasePath": "_content/CarCollectionFullStack",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CarCollectionFullStack\\wwwroot",
       "Source": "CarCollectionFullStack",
-      "ContentRoot": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
       "BasePath": "_content/CarCollectionFullStack",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\css\\style.css",
       "SourceId": "CarCollectionFullStack",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
       "BasePath": "_content/CarCollectionFullStack",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\index.html",
       "SourceId": "CarCollectionFullStack",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
       "BasePath": "_content/CarCollectionFullStack",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\js\\app.js",
+      "Identity": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\js\\app.js",
       "SourceId": "CarCollectionFullStack",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\",
       "BasePath": "_content/CarCollectionFullStack",
       "RelativePath": "js/app.js",
       "AssetKind": "All",

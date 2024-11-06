@@ -6647,19 +6647,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TLe\\.nuget\\packages\\": {}
+    "C:\\Users\\tyler\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\CarCollectionFullStack.csproj",
+      "projectUniqueName": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\CarCollectionFullStack.csproj",
       "projectName": "CarCollectionFullStack",
-      "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\CarCollectionFullStack.csproj",
-      "packagesPath": "C:\\Users\\TLe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\obj\\",
+      "projectPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\CarCollectionFullStack.csproj",
+      "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TLe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
