@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj": {}
+    "/Users/tyler/Repos/pathways-mac/stage2/weekfour/TodoApi/TodoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj": {
+    "/Users/tyler/Repos/pathways-mac/stage2/weekfour/TodoApi/TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj",
+        "projectUniqueName": "/Users/tyler/Repos/pathways-mac/stage2/weekfour/TodoApi/TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\TodoApi.csproj",
-        "packagesPath": "C:\\Users\\TLe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TLe\\source\\repos\\pathways-mac\\stage2\\weekfour\\TodoApi\\obj\\",
+        "projectPath": "/Users/tyler/Repos/pathways-mac/stage2/weekfour/TodoApi/TodoApi.csproj",
+        "packagesPath": "/Users/tyler/.nuget/packages/",
+        "outputPath": "/Users/tyler/Repos/pathways-mac/stage2/weekfour/TodoApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TLe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tyler/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
