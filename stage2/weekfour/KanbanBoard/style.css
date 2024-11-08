@@ -1,0 +1,17 @@
+* {
+    margin: 0em;
+    padding: 0em;
+}
+
+h1 {
+    margin: 3em 0em 10px 2em;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
