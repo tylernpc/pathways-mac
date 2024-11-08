@@ -8,51 +8,29 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 <body>
-<header>
-    <h1>Kanban Board</h1>
-    <!-- todo, doing, done -->
 
-    <div class="container">
-        <div class="board">
-            <div class="todo">
-                <h3>Todo</h3>
-                <div class="mini-container">
-                    <ul>
-                        <li>
-                            Option One
-                            <input type="checkbox" value="None" id="squaredFour" name="check" checked />
-                            <label for="squaredFour"></label>
-                        </li> 
-                        
-                    </ul>
-                </div>
-            </div>
+<h1>Kanban Board</h1>
+<div class="container">
+    <div class="kanban-board">
+
+        <div class="header-label">Todo</div>
+        <div id="Todo">
+            <div id="NewItem">New Item +</div>
+            <div class="list" draggable="true">List Item 1 <a>x</a></div>
+            <div class="list" draggable="true">List Item 2</div>
+            <div class="list" draggable="true">List Item 3</div>
+            <div class="list" draggable="true">List Item 4</div>
+            <div class="list" draggable="true">List Item 5</div>
         </div>
-        
-        <div class="board">
-            <div class="doing">
-                <h3>Doing</h3>
-                <div class="mini-container">
-                    <ul>
-                        <li>Option Two</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="board">
-            <div class="done">
-                <h3>Done</h3>
-                <div class="mini-container">
-                    <ul>
-                        <li>Option Three</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+        <div class="header-label">Working On</div>
+        <div id="WorkinOn"></div>
+
+        <div class="header-label">Complete</div>
+        <div id="Done"></div>
     </div>
+</div>
 
-</header>
-</body>
 <script src="app.js"></script>
+</body>
 </html>
