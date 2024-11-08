@@ -1,7 +1,13 @@
-console.log(); // global
+const http = require("http");
 
-setTimeout();
-clearTimeout();
+const server = http.createServer((req, res) => {
+  if (req.url === "/") {
+    //...
+  }
 
-setInterval();
-clearInterval();
+  if (req.url === "/api/courses") {
+    //...
+  }
+});
+
+server.liten(3000);
