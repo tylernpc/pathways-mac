@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanban</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 <body>
-    <header>
-        <h1>Kanban Board</h1>
-        <!-- todo, doing, done -->
+<header>
+    <h1>Kanban Board</h1>
+    <!-- todo, doing, done -->
 
-        <div class="container">
+    <div class="container">
+        <div class="board">
             <div class="todo">
                 <h3>Todo</h3>
                 <div class="mini-container">
                     <ul>
-                        <li>Option One</li>
+                        <li>
+                            Option One
+                            <input type="checkbox" value="None" id="squaredFour" name="check" checked />
+                            <label for="squaredFour"></label>
+                        </li> 
+                        
                     </ul>
                 </div>
             </div>
-
+        </div>
+        
+        <div class="board">
             <div class="doing">
                 <h3>Doing</h3>
                 <div class="mini-container">
@@ -29,7 +38,9 @@
                     </ul>
                 </div>
             </div>
-
+        </div>
+        
+        <div class="board">
             <div class="done">
                 <h3>Done</h3>
                 <div class="mini-container">
@@ -39,8 +50,9 @@
                 </div>
             </div>
         </div>
-        
-    </header>
+    </div>
+
+</header>
 </body>
 <script src="app.js"></script>
 </html>
