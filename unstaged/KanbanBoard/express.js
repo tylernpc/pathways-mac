@@ -8,15 +8,15 @@ const doing = [];
 const done = [];
 
 app.get("/api/todo", (req, res) => {
-    res.send("Todo end point");
+  res.send("Todo end point");
 });
 
 app.get("/api/doing", (req, res) => {
-    res.send("Doing end point");
+  res.send("Doing end point");
 });
 
 app.get("/api/doing", (req, res) => {
-    res.send("Done end point");
+  res.send("Done end point");
 });
 
 const port = process.env.PORT || 3000;
