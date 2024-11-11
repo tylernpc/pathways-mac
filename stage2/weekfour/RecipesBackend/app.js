@@ -66,9 +66,7 @@ app.put("/api/recipes/:recipe", (req, res) => {
 app.delete("/api/recipes/:recipe", (req, res) => {
   const recipe = recipes.find((r) => r.recipe === parseInt(req.params.recipe));
   if (!recipe) {
-    res
-      .status(404)
-      .send("Apologies, there was no recipe matching that recipe number");
+    res.status(404).send("Apologies, there was no recipe matching that recipe number");
   } else {
     const index = recipes.indexOf(recipe);
     recipes.splice(index, 1);
