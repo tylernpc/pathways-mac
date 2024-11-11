@@ -1,29 +1,6 @@
 let apiString = `http://localhost:3000/api/jobs`;
 
-async function getJobs() {
-  let response = await fetch(apiString);
-  let jsonData = await response.json();
-
-  for (let job of jsonData) {
-    // Check the structure of the job object by logging it
-    console.log(job);
-
-    for (let job of jsonData) {
-      document.getElementById(
-        "output-formatted"
-      ).innerHTML += `<div class="job-item">
-                <p>Company: ${job.companyName || "N/A"}</p>
-                <p>Job Title: ${job.jobTitle || "N/A"}</p>
-                <p>Email: ${job.companyEmail || "N/A"}</p>
-                <p>State: ${job.jobState || "N/A"}</p>
-                <p>Description: ${job.description || "N/A"}</p>
-             </div>`;
-    }
-  }
-
-  console.log(jsonData);
-}
-
+// create function
 async function createJob(jobData) {
   try {
     let response = await fetch(apiString, {
@@ -43,6 +20,41 @@ async function createJob(jobData) {
   }
 }
 
+function utilizeCreateJob() {
+  createJob({
+    companyName: document.getElementById("companyName").value,
+    jobTitle: document.getElementById("jobTitle").value,
+    companyEmail: document.getElementById("companyEmail").value,
+    jobState: document.getElementById("jobState").value,
+    description: document.getElementById("description").value,
+  });
+}
+
+// read function
+async function getJobs() {
+  let response = await fetch(apiString);
+  let jsonData = await response.json();
+
+  for (let job of jsonData) {
+    console.log(job);
+
+    for (let job of jsonData) {
+      document.getElementById(
+        "output-formatted"
+      ).innerHTML += `<div class="job-item">
+                <p>Company: ${job.companyName || "N/A"}</p>
+                <p>Job Title: ${job.jobTitle || "N/A"}</p>
+                <p>Email: ${job.companyEmail || "N/A"}</p>
+                <p>State: ${job.jobState || "N/A"}</p>
+                <p>Description: ${job.description || "N/A"}</p>
+             </div>`;
+    }
+  }
+
+  console.log(jsonData);
+}
+
+// update function
 async function updateJob(jobID, updatedData) {
   try {
     let response = await fetch(`${apiString}/${jobID}`, {
@@ -62,15 +74,7 @@ async function updateJob(jobID, updatedData) {
   }
 }
 
-// Example usage:
-updateJob(1, {
-  companyName: "Updated Company",
-  jobTitle: "Backend Developer",
-  companyEmail: "updatedcompany@email.com",
-  jobState: "NY",
-  description: "An updated description for the job.",
-});
-
+// delete function
 async function deleteJob(jobID) {
   try {
     let response = await fetch(`${apiString}/${jobID}`, {
@@ -86,4 +90,4 @@ async function deleteJob(jobID) {
 }
 
 // Example usage:
-deleteJob(1);
+// deleteJob(1);
