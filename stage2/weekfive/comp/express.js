@@ -17,6 +17,12 @@ const jobs = [
 
 // create operation
 app.post("/api/jobs", (req, res) => {
+  const { error } = validateJobPosting(req.body);
+
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
+
   const job = {
     jobID: jobs.length + 1,
     companyName: req.body.companyName,
@@ -25,6 +31,7 @@ app.post("/api/jobs", (req, res) => {
     jobState: req.body.jobState,
     description: req.body.description,
   };
+
   jobs.push(job);
   res.send(job);
 });
@@ -73,7 +80,7 @@ app.delete("/api/jobs/:job", (req, res) => {
   } else {
     const index = jobs.indexOf(job);
     jobs.splice(index, 1);
-    res.send(index);
+    res.send(jobs);
   }
 });
 
