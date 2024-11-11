@@ -39,6 +39,10 @@ button a {
     font-weight: bold;
 }
 
+.hero {
+    animation: fade-up 0.5s;
+}
+
 .hero-statement {
     color: rgb(33, 33, 33);
     font-family: "Poppins", sans-serif;
@@ -102,6 +106,7 @@ li a {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    /* animation: fade-down 0.5s; */
 }
 
 .ocean {
@@ -156,13 +161,27 @@ p {
     top: -175px;
 }
 
-@keyframes wave {
+@keyframes fade-down {
     0% {
-        margin-left: 0;
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
     }
 
     100% {
-        margin-left: -1600px;
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
     }
 }
 
@@ -175,5 +194,15 @@ p {
 
     50% {
         transform: translate3d(0, 5px, 0);
+    }
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
     }
 }

@@ -1,18 +1,89 @@
-// async function apiLogic() {
-//     let apiString = `/api/jobs`;
+let apiString = `http://localhost:3000/api/jobs`;
 
-//     let response = await fetch(apiString);
-//     let jsonData = await response.json();
+async function getJobs() {
+  let response = await fetch(apiString);
+  let jsonData = await response.json();
 
-//     console.log(jsonData);
-// }
+  for (let job of jsonData) {
+    // Check the structure of the job object by logging it
+    console.log(job);
 
-// app.js - Front-End (Home Page)
-fetch("/api/jobs")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);  // Process job data here and update the UI
-  })
-  .catch((error) => console.log("Error fetching jobs:", error));
+    for (let job of jsonData) {
+      document.getElementById(
+        "output-formatted"
+      ).innerHTML += `<div class="job-item">
+                <p>Company: ${job.companyName || "N/A"}</p>
+                <p>Job Title: ${job.jobTitle || "N/A"}</p>
+                <p>Email: ${job.companyEmail || "N/A"}</p>
+                <p>State: ${job.jobState || "N/A"}</p>
+                <p>Description: ${job.description || "N/A"}</p>
+             </div>`;
+    }
+  }
 
-  // Error fetching jobs: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  console.log(jsonData);
+}
+
+async function createJob(jobData) {
+  try {
+    let response = await fetch(apiString, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jobData),
+    });
+
+    if (!response.ok) throw new Error("Failed to create job");
+
+    const newJob = await response.json();
+    console.log("Job created:", newJob);
+  } catch (error) {
+    console.error("Error creating job:", error);
+  }
+}
+
+async function updateJob(jobID, updatedData) {
+  try {
+    let response = await fetch(`${apiString}/${jobID}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedData),
+    });
+
+    if (!response.ok) throw new Error("Failed to update job");
+
+    const updatedJob = await response.json();
+    console.log("Job updated:", updatedJob);
+  } catch (error) {
+    console.error("Error updating job:", error);
+  }
+}
+
+// Example usage:
+updateJob(1, {
+  companyName: "Updated Company",
+  jobTitle: "Backend Developer",
+  companyEmail: "updatedcompany@email.com",
+  jobState: "NY",
+  description: "An updated description for the job.",
+});
+
+async function deleteJob(jobID) {
+  try {
+    let response = await fetch(`${apiString}/${jobID}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) throw new Error("Failed to delete job");
+
+    console.log("Job deleted");
+  } catch (error) {
+    console.error("Error deleting job:", error);
+  }
+}
+
+// Example usage:
+deleteJob(1);

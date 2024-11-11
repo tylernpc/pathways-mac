@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>applytrack</title>
-    <link rel="stylesheet" href="jobs.css">
+    <link rel="stylesheet" href="post.css">
     <link rel="icon" type="image/x-icon" href="/images/Main_Component.svg">
     <script src="app.js"></script>
 </head>
@@ -30,10 +30,16 @@
     </header>
 
     <div class="hero">
-        <h2 class="hero-statement">Available Jobs</h2>
-        <div id="output-formatted"></div>
+        <h2 class="hero-statement">Have a job? Post it!</h2>
 
-        <div class="ouput-json"></div>
+        <form class="form-look">
+            <input type="text" id="companyName" name="companyName" placeholder="Enter company name">
+            <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title">
+            <input type="text" id="companyEmail" name="companyEmail" placeholder="Enter company email">
+            <input type="text" id="jobState" name="jobState" placeholder="Enter the state e.g. (NE)">
+            <input type="text" id="description" name="description" placeholder="Enter job description">
+        </form>
+
     </div>
 
     <div class="ocean">
