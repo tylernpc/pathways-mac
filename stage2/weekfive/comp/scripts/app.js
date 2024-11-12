@@ -130,15 +130,26 @@ function utilizeCreateUser() {
   });
 }
 
-
-
-
-
-
-
-// login function
+// Login function
 async function login() {
-  let reponse = await fetch(apiUserString);
-  let jsonData = await response.json();
+  try {
+    let response = await fetch(apiUserString, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: document.getElementById("username").value,
+        password: document.getElementById("password").value,
+      }),
+    });
 
+    if (!response.ok) throw new Error("Login failed");
+
+    const loggedInUser = await response.json();
+    console.log("Login successful:", loggedInUser);
+
+  } catch (error) {
+    console.error("Error logging in:", error);
+  }
 }
