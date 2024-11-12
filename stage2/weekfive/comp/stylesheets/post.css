@@ -72,6 +72,7 @@ button a {
     border-color: lightgray;
     border-radius: 4px;
     text-align: center;
+    margin: 1em 0;
 }
 
 .hero {
