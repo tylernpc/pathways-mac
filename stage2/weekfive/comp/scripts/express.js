@@ -11,7 +11,7 @@ const jobs = [
     companyName: "Company A",
     jobTitle: "Software Engineer",
     companyEmail: "companyA@email.com",
-    jobState: "New York",
+    jobState: "NY",
     description:
       "Enjoy a fun, supportive work environment with competitive pay.",
   },

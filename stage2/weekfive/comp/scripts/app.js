@@ -38,6 +38,8 @@ async function getJobs() {
   for (let job of jsonData) {
     console.log(job);
 
+    clearInnerHTML();
+
     for (let job of jsonData) {
       document.getElementById(
         "output-formatted"
@@ -52,6 +54,10 @@ async function getJobs() {
   }
 
   console.log(jsonData);
+}
+
+function clearInnerHTML() {
+  document.getElementById("output-formatted").innerHTML = "";
 }
 
 // update function

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>applytrack</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/post.css">
     <link rel="icon" type="image/x-icon" href="/images/Main_Component.svg">
     <script src="/scripts/app.js"></script>
 </head>
@@ -23,17 +23,21 @@
                     <li><a href="/html/jobs.html">Jobs </a></li>
                     <!-- <li><a href="#">Contact</a></li> -->
                     <button class="login-btn"><a href="/html/login.html">Login</a></button>
-                    <button class="job-btn"><a href="/html/jobs.html">Post a job</a></button>
+                    <button class="job-btn"><a href="/html/post.html">Post a job</a></button>
                 </ul>
             </div>
         </div>
     </header>
 
     <div class="hero">
-        <h2 class="hero-statement">Your journey,<br> organized and optimized</h2>
-        <p>Welcome to applytrack—your one-stop resource for job opportunities.
-            <br> Explore our jobs page to find your next career move, or post a job if you’re an employer seeking talent
-        </p>
+        <h2 class="hero-statement">Sign Up</h2>
+
+        <form class="form-look">
+            <input type="text" id="username" name="username" placeholder="Enter username">
+            <input type="text" id="password" name="password" placeholder="Enter password">
+            <button class="submit-btn" type="submit" onclick="utilizeCreateJob()">Sign Up</button>
+        </form>
+        <p class="sign-up">Already have an account? <a href="/html/login.html">Login</a></p>
     </div>
 
     <div class="ocean">

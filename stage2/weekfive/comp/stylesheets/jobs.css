@@ -10,8 +10,7 @@
 }
 
 body {
-    background: #f2f2f2;
-    background: linear-gradient(0deg, #b0ebff 27%, #f2f2f2 100%);
+    background: #6dacd59e;
     overflow-x: hidden;
 }
 
@@ -50,11 +49,6 @@ button a {
     text-align: center;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 .job-btn {
     color: rgb(31, 31, 31);
 }
@@ -63,10 +57,10 @@ body {
     background-color: #f2f2f2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    padding: 30px;
     margin: 10px;
-    width: 100%;
-    max-width: 400px;
+    width: 500px;
+    max-width:400px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -129,13 +123,20 @@ li a {
     /* animation: fade-down 0.5s; */
 }
 
-.ocean {
+/* .ocean {
     background: #015871;
     bottom: 0;
     height: 5%;
     left: 0;
     position: absolute;
     width: 100%;
+} */
+
+#output-formatted {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center; 
 }
 
 p {

@@ -66,6 +66,14 @@ button a {
     cursor: pointer;
 }
 
+.form-look #jobState {
+    color: gray;
+    padding: 10px 165px;
+    border-color: lightgray;
+    border-radius: 4px;
+    text-align: center;
+}
+
 .hero {
     animation: fade-up 0.5s;
 }
@@ -190,6 +198,10 @@ p {
     right: 0;
     width: 50vw;
     z-index: -1;
+}
+
+.sign-up {
+    margin-top: 1em;
 }
 
 .wave {
