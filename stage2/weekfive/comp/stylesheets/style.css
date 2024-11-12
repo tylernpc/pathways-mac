@@ -41,6 +41,7 @@ button a {
 
 .hero {
     animation: fade-up 0.5s;
+    margin-right: 8em;
 }
 
 .hero-statement {
