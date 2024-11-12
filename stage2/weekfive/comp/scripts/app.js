@@ -1,9 +1,10 @@
-let apiString = `http://localhost:3000/api/jobs`;
+let apiJobString = `http://localhost:3000/api/jobs`;
+let apiUserString = `http://localhost:3000/api/users`;
 
 // create function
 async function createJob(jobData) {
   try {
-    let response = await fetch(apiString, {
+    let response = await fetch(apiJobString, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,13 +27,13 @@ function utilizeCreateJob() {
     jobTitle: document.getElementById("jobTitle").value,
     companyEmail: document.getElementById("companyEmail").value,
     jobState: document.getElementById("jobState").value,
-    description: document.getElementById("description").value,
+    description: document.getElementById("description").value
   });
 }
 
 // read function
 async function getJobs() {
-  let response = await fetch(apiString);
+  let response = await fetch(apiJobString);
   let jsonData = await response.json();
 
   for (let job of jsonData) {
@@ -63,7 +64,7 @@ function clearInnerHTML() {
 // update function
 async function updateJob(jobID, updatedData) {
   try {
-    let response = await fetch(`${apiString}/${jobID}`, {
+    let response = await fetch(`${apiJobString}/${jobID}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -83,7 +84,7 @@ async function updateJob(jobID, updatedData) {
 // delete function
 async function deleteJob(jobID) {
   try {
-    let response = await fetch(`${apiString}/${jobID}`, {
+    let response = await fetch(`${apiJobString}/${jobID}`, {
       method: "DELETE",
     });
 
@@ -97,3 +98,47 @@ async function deleteJob(jobID) {
 
 // Example usage:
 // deleteJob(1);
+
+
+
+// user logic below
+// create function
+async function createUser(userData) {
+  try {
+    let response = await fetch(apiUserString, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+    });
+
+    if (!response.ok) throw new Error("Failed to create user");
+
+    const newUser = await response.json();
+    console.log("User created:", newUser);
+  } catch (error) {
+    console.error("Error creating user:", error);
+  }
+}
+
+function utilizeCreateUser() {
+  createUser({
+    userType: document.getElementById("userType").value,
+    username: document.getElementById("username").value,
+    password: document.getElementById("password").value
+  });
+}
+
+
+
+
+
+
+
+// login function
+async function login() {
+  let reponse = await fetch(apiUserString);
+  let jsonData = await response.json();
+
+}

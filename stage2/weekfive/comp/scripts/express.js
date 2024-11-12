@@ -140,7 +140,7 @@ app.post("/api/users", (req, res) => {
   }
 
   const user = {
-    userID: jobs.length + 1,
+    userID: users.length + 1,
     userType: req.body.userType,
     username: req.body.username,
     password: req.body.password
@@ -205,7 +205,7 @@ function validateUserCreation(user) {
     userType: Joi.string().valid("employer", "user").required().messages({
       "any.only": 'userType must be either "employer" or "user".',
     }),
-    userName: Joi.string().min(3).max(30).required().messages({
+    username: Joi.string().min(3).max(30).required().messages({
       "string.empty": "userName is required.",
       "string.min": "userName must be at least 3 characters long.",
       "string.max": "userName must be at most 30 characters long.",
