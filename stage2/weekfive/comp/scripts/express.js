@@ -128,7 +128,7 @@ const users = [
     userType: "user",
     username: "Kodad",
     password: "luna",
-  }
+  },
 ];
 
 // create operation
@@ -143,7 +143,7 @@ app.post("/api/users", (req, res) => {
     userID: users.length + 1,
     userType: req.body.userType,
     username: req.body.username,
-    password: req.body.password
+    password: req.body.password,
   };
 
   users.push(user);

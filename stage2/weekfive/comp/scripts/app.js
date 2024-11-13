@@ -27,7 +27,7 @@ function utilizeCreateJob() {
     jobTitle: document.getElementById("jobTitle").value,
     companyEmail: document.getElementById("companyEmail").value,
     jobState: document.getElementById("jobState").value,
-    description: document.getElementById("description").value
+    description: document.getElementById("description").value,
   });
 }
 
@@ -99,8 +99,6 @@ async function deleteJob(jobID) {
 // Example usage:
 // deleteJob(1);
 
-
-
 // user logic below
 // create function
 async function createUser(userData) {
@@ -126,7 +124,7 @@ function utilizeCreateUser() {
   createUser({
     userType: document.getElementById("userType").value,
     username: document.getElementById("username").value,
-    password: document.getElementById("password").value
+    password: document.getElementById("password").value,
   });
 }
 
@@ -147,8 +145,8 @@ async function login() {
     if (!response.ok) throw new Error("Login failed");
 
     const loggedInUser = await response.json();
-    console.log("Login successful:", loggedInUser);
 
+    console.log("Login successful:", loggedInUser);
   } catch (error) {
     console.error("Error logging in:", error);
   }
