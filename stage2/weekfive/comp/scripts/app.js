@@ -128,6 +128,13 @@ function utilizeCreateUser() {
   });
 }
 
+
+
+
+
+
+// USER STUFF | New Changes
+
 // Login function
 async function login() {
   try {
