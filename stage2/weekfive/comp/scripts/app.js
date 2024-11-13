@@ -1,7 +1,25 @@
 let apiJobString = `http://localhost:3000/api/jobs`;
 let apiUserString = `http://localhost:3000/api/users`;
 
-// create function
+// initial check to see if a user is currently logged in
+let userLoggedIn = false;
+document.addEventListener("DOMContentLoaded", () => {
+  const key = Object.keys(localStorage);
+  const value = localStorage.getItem(key);
+
+  if (value == exist) {
+    
+  }
+
+
+
+    
+  // if (value !== undefined) {
+  //   console.log("User is currently signed in");
+  // }
+})
+
+// create job function
 async function createJob(jobData) {
   try {
     let response = await fetch(apiJobString, {
@@ -31,7 +49,7 @@ function utilizeCreateJob() {
   });
 }
 
-// read function
+// read job function
 async function getJobs() {
   let response = await fetch(apiJobString);
   let jsonData = await response.json();
@@ -61,7 +79,7 @@ function clearInnerHTML() {
   document.getElementById("output-formatted").innerHTML = "";
 }
 
-// update function
+// update job function
 async function updateJob(jobID, updatedData) {
   try {
     let response = await fetch(`${apiJobString}/${jobID}`, {
@@ -81,7 +99,7 @@ async function updateJob(jobID, updatedData) {
   }
 }
 
-// delete function
+// delete job function
 async function deleteJob(jobID) {
   try {
     let response = await fetch(`${apiJobString}/${jobID}`, {
@@ -99,8 +117,7 @@ async function deleteJob(jobID) {
 // Example usage:
 // deleteJob(1);
 
-// user logic below
-// create function
+// create user function
 async function createUser(userData) {
   try {
     let response = await fetch(apiUserString, {
@@ -123,38 +140,29 @@ async function createUser(userData) {
 function utilizeCreateUser() {
   createUser({
     userType: document.getElementById("userType").value,
-    username: document.getElementById("username").value,
+    username: document.getElementById("username").value.toUpperCase(),
     password: document.getElementById("password").value,
   });
 }
 
-
-
-
-
-
-// USER STUFF | New Changes
-
-// Login function
+// login user function
 async function login() {
-  try {
-    let response = await fetch(apiUserString, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: document.getElementById("username").value,
-        password: document.getElementById("password").value,
-      }),
-    });
+  let response = await fetch(apiUserString);
+  let jsonData = await response.json();
 
-    if (!response.ok) throw new Error("Login failed");
+  let usernameInput = document.getElementById("username").value.toUpperCase();
+  let passwordInput = document.getElementById("password").value;
 
-    const loggedInUser = await response.json();
-
-    console.log("Login successful:", loggedInUser);
-  } catch (error) {
-    console.error("Error logging in:", error);
+  for (let user of jsonData) {
+    if (usernameInput == user.username) {
+      if (passwordInput == user.password) {
+        window.localStorage.setItem("user", usernameInput); // makes user active throughout session
+        window.location.replace("/html/jobs.html");
+        console.log("Successful login!");
+        return;
+      } else {
+        console.log("Incorrect Password!");
+      }
+    }
   }
 }

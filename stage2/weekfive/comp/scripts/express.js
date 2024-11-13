@@ -120,13 +120,13 @@ const users = [
   {
     userID: 1,
     userType: "employer",
-    username: "Tyler",
+    username: "TYLER",
     password: "password",
   },
   {
     userID: 2,
     userType: "user",
-    username: "Kodad",
+    username: "KODAD",
     password: "luna",
   },
 ];
