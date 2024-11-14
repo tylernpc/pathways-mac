@@ -164,41 +164,6 @@ app.get("/api/users", (req, res) => {
   res.send(users);
 });
 
-// update operation || ********* POTENTIALLY NOT DOING AN UPDATE FOR USERS FOR NOW
-// app.put("/api/users/:user", (req, res) => {
-//     const user = users.find((u) => u.userID === parseInt(req.params.user));
-//   if (!user) {
-//     res.status(404).send("Apologies, there was no user matching that.");
-//   } else {
-//     const { error } = validateUserCreation(req.body);
-//     if (error) {
-//       return res.status(400).send(error.details[0].message);
-//     }
-
-//     user.
-//     job.companyName = req.body.companyName;
-//     job.jobTitle = req.body.jobTitle;
-//     job.companyEmail = req.body.companyEmail;
-//     job.jobState = req.body.jobState;
-//     job.description = req.body.description;
-
-//     console.log("Request body: ", req.body);
-//     res.send(job);
-//   }
-// });
-
-// delete operation || ********* POTENTIALLY NOT DOING AN UPDATE FOR USERS FOR NOW
-// app.delete("/api/jobs/:job", (req, res) => {
-//   const job = jobs.find((j) => j.jobID === parseInt(req.params.job));
-//   if (!job) {
-//     res.status(404).send("Apologies, there was no job matching that.");
-//   } else {
-//     const index = jobs.indexOf(job);
-//     jobs.splice(index, 1);
-//     res.send(jobs);
-//   }
-// });
-
 // basic validation function
 function validateUserCreation(user) {
   const schema = Joi.object({

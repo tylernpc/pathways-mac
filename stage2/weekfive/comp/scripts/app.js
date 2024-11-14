@@ -2,22 +2,18 @@ let apiJobString = `http://localhost:3000/api/jobs`;
 let apiUserString = `http://localhost:3000/api/users`;
 
 // initial check to see if a user is currently logged in
-let userLoggedIn = false;
+
 document.addEventListener("DOMContentLoaded", () => {
-  const key = Object.keys(localStorage);
-  const value = localStorage.getItem(key);
+  const value = localStorage.getItem("user");
+  const loginBtn = document.getElementById("login-btn");
 
-  if (value == exist) {
-    
+  if (value !== null) {
+    console.log(`${value} is currently signed in`);
+    loginBtn.style.display = "none";
+  } else {
+    console.log("No user logged in");
   }
-
-
-
-    
-  // if (value !== undefined) {
-  //   console.log("User is currently signed in");
-  // }
-})
+});
 
 // create job function
 async function createJob(jobData) {
@@ -132,17 +128,39 @@ async function createUser(userData) {
 
     const newUser = await response.json();
     console.log("User created:", newUser);
+    // window.location.replace("/html/jobs.html");
   } catch (error) {
     console.error("Error creating user:", error);
   }
 }
 
-function utilizeCreateUser() {
-  createUser({
+async function utilizeCreateUser() {
+  let usernameInput = document.getElementById("username").value.toUpperCase();
+  let passwordInput = document.getElementById("password").value;
+
+  await createUser({
     userType: document.getElementById("userType").value,
     username: document.getElementById("username").value.toUpperCase(),
     password: document.getElementById("password").value,
   });
+
+  let response = await fetch(apiUserString);
+  let jsonData = await response.json();
+
+  for (let user of jsonData) {
+    if (usernameInput == user.username) {
+      if (passwordInput == user.password) {
+        window.localStorage.setItem("user", usernameInput); // makes user active throughout session
+        window.location.replace("/html/jobs.html");
+        console.log("Successful login!");
+        return;
+      } else {
+        console.log("Incorrect Password!");
+      }
+    }
+  }
+
+  window.location.replace("/html/jobs.html");
 }
 
 // login user function
