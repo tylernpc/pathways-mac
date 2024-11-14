@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (value === null || value.trim() === "") {
     console.log("No user is logged in");
   } else {
-    console.log(`${value} is currently signed in`);
     loginBtn.style.display = "none";
 
     async function getUserType() {
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       let jsonData = await response.json();
 
       const value = localStorage.getItem("user");
-      console.log(value);
       for (let user of jsonData) {
         if (value == user.username) {
           let currentUserType = user;
@@ -82,7 +80,7 @@ async function getJobs() {
           <p>Description: ${job.description || "N/A"}</p>
           <div class="ud-operations">
             <input type="button" id="deleteJobBtn" value="Delete Item" onclick="deleteJob(${job.jobID})">
-            <input type="button" id="updateJobBtn" value="Update Item" onclick="utilizeUpdateJob()">
+            <input type="button" id="updateJobBtn" value="Update Item" onclick="utilizeUpdateJob(${job.jobID})">
           </div>
         </div>`;
     } else {
@@ -137,12 +135,18 @@ async function updateJob(jobID, updatedData) {
 }
 
 async function utilizeUpdateJob(jobID) {
+  let newCompanyName = prompt("Please enter new company name: ");
+  let newJobTitle = prompt("Please enter new job title: ");
+  let newCompanyEmail = prompt("Please enter new company email: ");
+  let newJobState = prompt("Please enter new job state: ");
+  let newDescription = prompt("Please enter new job description: ");
+  
   let updatedData = {
-    newCompanyName: prompt("Please enter new company name: "),
-    newJobTitle: prompt("Please enter new job title: "),
-    newCompanyEmail: prompt("Please enter new company email: "),
-    newJobState: prompt("Please enter new job state: "),
-    newDescription: prompt("Please enter new job description: ")
+    companyName: newCompanyName,
+    jobTitle: newJobTitle,
+    companyEmail: newCompanyEmail,
+    jobState: newJobState,
+    description: newDescription,
   };
 
   await updateJob(jobID, updatedData);
@@ -157,8 +161,6 @@ async function deleteJob(jobID) {
     });
     location.reload();
     if (!response.ok) throw new Error("Failed to delete job");
-
-    console.log("Job deleted");
   } catch (error) {
     console.error("Error deleting job:", error);
   }
