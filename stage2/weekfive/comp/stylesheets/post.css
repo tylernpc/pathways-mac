@@ -276,3 +276,7 @@ p {
         margin-left: -1600px;
     }
 }
+
+input, select {
+    cursor: pointer;
+}

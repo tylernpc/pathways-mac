@@ -35,14 +35,15 @@ async function createJob(jobData) {
   }
 }
 
-function utilizeCreateJob() {
-  createJob({
+async function utilizeCreateJob() {
+  await createJob({
     companyName: document.getElementById("companyName").value,
     jobTitle: document.getElementById("jobTitle").value,
     companyEmail: document.getElementById("companyEmail").value,
     jobState: document.getElementById("jobState").value,
     description: document.getElementById("description").value,
   });
+  location.reload();
 }
 
 // read job function
@@ -55,20 +56,23 @@ async function getJobs() {
 
     clearInnerHTML();
 
+    console.log(job.id)
+
     for (let job of jsonData) {
-      document.getElementById(
-        "output-formatted"
-      ).innerHTML += `<div class="job-item">
-                <p>Company: ${job.companyName || "N/A"}</p>
-                <p>Job Title: ${job.jobTitle || "N/A"}</p>
-                <p>Email: ${job.companyEmail || "N/A"}</p>
-                <p>State: ${job.jobState || "N/A"}</p>
-                <p>Description: ${job.description || "N/A"}</p>
-             </div>`;
+      document.getElementById("output-formatted").innerHTML += `
+        <div class="job-item">
+          <p>Company: ${job.companyName || "N/A"}</p>
+          <p>Job Title: ${job.jobTitle || "N/A"}</p>
+          <p>Email: ${job.companyEmail || "N/A"}</p>
+          <p>State: ${job.jobState || "N/A"}</p>
+          <p>Description: ${job.description || "N/A"}</p>
+          <div class="ud-operations">
+            <input type="button" value="Delete Item" onclick="deleteJob(${job.id})">
+            <input type="button" value="Update Item" onclick="updateJob(${job.id})">
+          </div>
+        </div>`;
     }
   }
-
-  console.log(jsonData);
 }
 
 function clearInnerHTML() {
@@ -184,3 +188,19 @@ async function login() {
     }
   }
 }
+
+// check user type
+// async function userType() {
+//   let response = await fetch(apiUserString);
+//   let jsonData = await response.json();
+
+//   // Loop through the array of users
+//   for (let user of jsonData) {
+//     // Compare userType of the current user
+//     if (user.userType == "employer") {
+//       console.log(user.userType); // Log the userType if it matches
+//     } else {
+//       console.log("not found");
+//     }
+//   }
+// }
