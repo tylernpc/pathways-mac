@@ -23,16 +23,16 @@
                     <li><a href="/html/jobs.html">Jobs </a></li>
                     <!-- <li><a href="#">Contact</a></li> -->
                     <button id="login-btn" class="login-btn"><a href="/html/login.html">Login</a></button>
-                    <button class="job-btn"><a href="/html/post.html">Post a job</a></button>
+                    <!-- <button class="job-btn"><a href="/html/post.html">Post a job</a></button> -->
                 </ul>
             </div>
         </div>
     </header>
 
     <div class="hero">
-        <h2 class="hero-statement">Have a job? Post it!</h2>
+        <h2 id="hero-statement" class="hero-statement">Have a job? Post it!</h2>
 
-        <form class="form-look">
+        <form id="job-post-form" class="form-look">
             <input type="text" id="companyName" name="companyName" placeholder="Enter company name">
             <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title">
             <input type="text" id="companyEmail" name="companyEmail" placeholder="Enter company email">
@@ -94,6 +94,8 @@
             <input type="button" value="Submit" onclick="utilizeCreateJob()">
         </form>
     </div>
+    <p id="sign-up" class="sign-up" style="display: none;">Create an account! <a href="/html/signup.html">Sign Up</a>
+    </p>
 
     <div class="ocean">
         <div class="wave"></div>
@@ -131,6 +133,29 @@
         <div class="point"></div>
         <div class="point"></div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            async function getUserType() {
+                let response = await fetch("http://localhost:3000/api/users");
+                let jsonData = await response.json();
+
+                const value = localStorage.getItem("user");
+                console.log(value);
+                for (let user of jsonData) {
+                    console.log("Username: ", user.username);
+                    if (value == user.username) {
+                        let currentUserType = user;
+                        if (currentUserType.userType == "user") {
+                            document.getElementById("job-post-form").style.display = "none";
+                            document.getElementById("hero-statement").innerHTML = "Looking to post a job? <br>Please create an employer account!";
+                            document.getElementById("sign-up").style.display = "block";
+                        }
+                    } 
+                }
+            }
+            getUserType();
+        });
+    </script>
 </body>
 
 </html>

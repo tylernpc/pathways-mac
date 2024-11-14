@@ -89,17 +89,6 @@ li a {
     margin-right: 25px;
 }
 
-.login-btn {
-    background: rgb(254, 254, 254);
-    background: linear-gradient(0deg, rgba(254, 254, 254, 1) 27%, rgba(248, 248, 250, 1) 41%, rgba(244, 244, 247, 1) 100%);
-    border-color: black;
-    color: rgb(31, 31, 31);
-}
-
-.login-btn a {
-    color: rgb(31, 31, 31);
-}
-
 .logo a {
     color: rgb(33, 33, 33);
     font-family: "Poppins", sans-serif;

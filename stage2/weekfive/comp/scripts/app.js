@@ -6,12 +6,30 @@ let apiUserString = `http://localhost:3000/api/users`;
 document.addEventListener("DOMContentLoaded", () => {
   const value = localStorage.getItem("user");
   const loginBtn = document.getElementById("login-btn");
+  const postBtn = document.getElementById("postJob");
 
-  if (value !== null) {
+  if (value === null || value.trim() === "") {
+    console.log("No user is logged in");
+  } else {
     console.log(`${value} is currently signed in`);
     loginBtn.style.display = "none";
-  } else {
-    console.log("No user logged in");
+
+    async function getUserType() {
+      let response = await fetch("http://localhost:3000/api/users");
+      let jsonData = await response.json();
+
+      const value = localStorage.getItem("user");
+      console.log(value);
+      for (let user of jsonData) {
+        if (value == user.username) {
+          let currentUserType = user;
+          if (currentUserType.userType != "employer") {
+            postBtn.style.display = "none";
+          }
+        }
+      }
+    }
+    getUserType();
   }
 });
 
@@ -46,19 +64,15 @@ async function utilizeCreateJob() {
   location.reload();
 }
 
-// read job function
 async function getJobs() {
-  let response = await fetch(apiJobString);
-  let jsonData = await response.json();
+  clearInnerHTML();
+  let response = await fetch("http://localhost:3000/api/jobs");
+  let jobData = await response.json();
 
-  for (let job of jsonData) {
-    console.log(job);
+  const userType = await checkUserType();
 
-    clearInnerHTML();
-
-    console.log(job.id)
-
-    for (let job of jsonData) {
+  for (let job of jobData) {
+    if (userType === "employer") {
       document.getElementById("output-formatted").innerHTML += `
         <div class="job-item">
           <p>Company: ${job.companyName || "N/A"}</p>
@@ -67,12 +81,35 @@ async function getJobs() {
           <p>State: ${job.jobState || "N/A"}</p>
           <p>Description: ${job.description || "N/A"}</p>
           <div class="ud-operations">
-            <input type="button" value="Delete Item" onclick="deleteJob(${job.id})">
-            <input type="button" value="Update Item" onclick="updateJob(${job.id})">
+            <input type="button" id="deleteJobBtn" value="Delete Item" onclick="deleteJob(${job.jobID})">
+            <input type="button" id="updateJobBtn" value="Update Item" onclick="utilizeUpdateJob()">
           </div>
+        </div>`;
+    } else {
+      document.getElementById("output-formatted").innerHTML += `
+        <div class="job-item">
+          <p>Company: ${job.companyName || "N/A"}</p>
+          <p>Job Title: ${job.jobTitle || "N/A"}</p>
+          <p>Email: ${job.companyEmail || "N/A"}</p>
+          <p>State: ${job.jobState || "N/A"}</p>
+          <p>Description: ${job.description || "N/A"}</p>
         </div>`;
     }
   }
+}
+
+async function checkUserType() {
+  let response = await fetch("http://localhost:3000/api/users");
+  let userData = await response.json();
+
+  const currentUsername = localStorage.getItem("user");
+
+  for (let user of userData) {
+    if (user.username === currentUsername) {
+      return user.userType;
+    }
+  }
+  return null;
 }
 
 function clearInnerHTML() {
@@ -99,13 +136,26 @@ async function updateJob(jobID, updatedData) {
   }
 }
 
+async function utilizeUpdateJob(jobID) {
+  let updatedData = {
+    newCompanyName: prompt("Please enter new company name: "),
+    newJobTitle: prompt("Please enter new job title: "),
+    newCompanyEmail: prompt("Please enter new company email: "),
+    newJobState: prompt("Please enter new job state: "),
+    newDescription: prompt("Please enter new job description: ")
+  };
+
+  await updateJob(jobID, updatedData);
+  location.reload();
+}
+
 // delete job function
 async function deleteJob(jobID) {
   try {
     let response = await fetch(`${apiJobString}/${jobID}`, {
       method: "DELETE",
     });
-
+    location.reload();
     if (!response.ok) throw new Error("Failed to delete job");
 
     console.log("Job deleted");
@@ -113,9 +163,6 @@ async function deleteJob(jobID) {
     console.error("Error deleting job:", error);
   }
 }
-
-// Example usage:
-// deleteJob(1);
 
 // create user function
 async function createUser(userData) {
@@ -188,19 +235,3 @@ async function login() {
     }
   }
 }
-
-// check user type
-// async function userType() {
-//   let response = await fetch(apiUserString);
-//   let jsonData = await response.json();
-
-//   // Loop through the array of users
-//   for (let user of jsonData) {
-//     // Compare userType of the current user
-//     if (user.userType == "employer") {
-//       console.log(user.userType); // Log the userType if it matches
-//     } else {
-//       console.log("not found");
-//     }
-//   }
-// }
