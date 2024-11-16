@@ -1,0 +1,7 @@
+// {
+//     "companyName": "3dRen",
+//     "jobTitle" : "Janitor",
+//     "companyEmail" : "3dRen@gmail.com",
+//     "jobState" : "NE",
+//     "description" : "An exciting workplace der"
+// }

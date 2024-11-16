@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace EFTEST;
+namespace EF_TEST;
 
 public class AppDbContext : DbContext
 {
-    public DbSet <Customer> YourEntities { get; set; }
+    public DbSet<Customer> YourEntities { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -33,39 +33,24 @@ class Program
 
     static void DisplayCustomers()
     {
-        using (var db = new AppDbContext())
-        {
-            var customers = db.YourEntities.ToList();
+        using var db = new AppDbContext();
 
-            foreach (var customer in customers)
-            {
-                Console.WriteLine(customer.account_id);
-            }
+        var customers = db.YourEntities.ToList();
+
+        foreach (var customer in customers)
+        {
+            Console.WriteLine(customer.account_id);
         }
+
     }
 
     static void CreateCustomer
     (
-        string account_id,
-        string email_address,
-        string account_type,
-        int annual_fee,
-        double total_amount_spent,
-        string type_of_nonprofit
+        Customer customer
     )
     {
         using (var context = new AppDbContext())
         {
-            var customer = new Customer
-            {
-                account_id = account_id,
-                email_address = email_address,
-                account_type = account_type,
-                annual_fee = annual_fee,
-                total_amount_spent = total_amount_spent,
-                type_of_nonprofit = type_of_nonprofit
-            };
-
             context.YourEntities.Add(customer);
             context.SaveChanges();
         }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+
+<body>
+
+    <h1>Kanban Board</h1>
+    <div class="container">
+        <div class="kanban-board">
+
+            <div class="header-label">Todo</div>
+            <div id="Todo">
+                <input id="new-item-btn" type="button" value="New Item +" onclick="createNewItem()">
+                <div class="list" draggable="true">List Item 1</div>
+                <div class="list" draggable="true">List Item 2</div>
+                <div class="list" draggable="true">List Item 3</div>
+            </div>
+
+            <div class="header-label">Working On</div>
+            <div id="WorkinOn"></div>
+
+            <div class="header-label">Complete</div>
+            <div id="Done"></div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

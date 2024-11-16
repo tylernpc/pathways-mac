@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    background: #f2f2f2;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: -4em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container-headers {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -10em;
+    margin-top: 7em;
+}
+
+.header-label {
+    font-size: 30px;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+}
+
+.kanban-board {
+    align-items: flex-start;
+    display: flex;
+}
+
+.list {
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 5px;
+    color: black;
+    cursor: grab;
+    display: flex;
+    height: 60px;
+    margin: 30px;
+    padding-left: 20px;
+}
+
+#new-item-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 1em 0em -1em 2em;
+    transition: background-color 0.3s ease;
+}
+
+#new-item-btn:active {
+    background-color: #003f7f;
+}
+
+#new-item-btn:hover {
+    background-color: #0056b3;
+}
+
+#Todo,
+#WorkinOn,
+#Done {
+    background-color: #e69a00;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 0 20px;
+    min-height: 400px;
+    width: 300px;
+}

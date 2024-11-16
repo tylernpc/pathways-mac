@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* kanit or quicksand for font */
+
+* {
+    font-family: "Kanit", sans-serif;
+    margin: 0em;
+    padding: 0em;
+    text-decoration: none;
+}
+
+body {
+    background: #f2f2f2;
+    background: linear-gradient(0deg, #b0ebff 27%, #f2f2f2 100%);
+    overflow: hidden;
+}
+
+button {
+    background: rgb(93, 94, 255);
+    background: linear-gradient(0deg, rgb(18, 124, 172) 27%, rgb(5, 159, 214) 100%);
+    border-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -6px #222;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    margin-bottom: 1em;
+    margin-left: 10px;
+    margin-top: 1em;
+    padding: 6px 20px;
+    border-color: rgb(31, 31, 31);
+}
+
+button a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hero {
+    animation: fade-up 0.5s;
+    margin-right: 8em;
+}
+
+.hero-statement {
+    color: rgb(33, 33, 33);
+    font-family: "Poppins", sans-serif;
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.job-btn {
+    color: rgb(31, 31, 31);
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+li a {
+    color: rgb(33, 33, 33);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.logo a {
+    color: rgb(33, 33, 33);
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.navbar {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px -6px #222;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navdiv {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* animation: fade-down 0.5s; */
+}
+
+.ocean {
+    background: #015871;
+    bottom: 0;
+    height: 5%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+p {
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    margin-left: 6.4em;
+    margin-top: 2em;
+}
+
+.point {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    height: 3px;
+    width: 3px;
+}
+
+.point-container {
+    bottom: 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 50vw;
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    z-index: -1;
+}
+
+.wave {
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    height: 198px;
+    position: absolute;
+    top: -198px;
+    transform: translate3d(0, 0, 0);
+    width: 6400px;
+}
+
+.wave:nth-of-type(2) {
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+    top: -175px;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+input {
+    cursor: pointer;
+}
