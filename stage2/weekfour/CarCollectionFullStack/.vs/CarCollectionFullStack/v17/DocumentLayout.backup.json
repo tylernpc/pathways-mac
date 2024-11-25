@@ -36,17 +36,11 @@
               "RelativeDocumentMoniker": "wwwroot\\index.html",
               "ToolTip": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\index.html",
               "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-11-05T18:03:30.615Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 226,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -55,10 +49,9 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
               "ToolTip": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\css\\style.css",
               "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AgIAAAwAAAAANTMzMzMbwCgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-05T18:51:57.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T18:51:57.878Z"
             }
           ]
         },
@@ -74,7 +67,7 @@
               "RelativeDocumentMoniker": "wwwroot\\js\\app.js",
               "ToolTip": "C:\\Users\\tyler\\source\\repos\\pathways-mac\\stage2\\weekfour\\CarCollectionFullStack\\wwwroot\\js\\app.js",
               "RelativeToolTip": "wwwroot\\js\\app.js",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAWwHgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-06T15:58:25.282Z",
               "EditorCaption": ""
