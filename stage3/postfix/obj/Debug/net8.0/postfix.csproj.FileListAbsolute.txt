@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage3/postfix/bin/Debug/net8.0/postfix
+/Users/tyler/Repos/pathways-mac/stage3/postfix/bin/Debug/net8.0/postfix.deps.json
+/Users/tyler/Repos/pathways-mac/stage3/postfix/bin/Debug/net8.0/postfix.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage3/postfix/bin/Debug/net8.0/postfix.dll
+/Users/tyler/Repos/pathways-mac/stage3/postfix/bin/Debug/net8.0/postfix.pdb
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.sourcelink.json
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.dll
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/refint/postfix.dll
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.pdb
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/postfix.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage3/postfix/obj/Debug/net8.0/ref/postfix.dll
