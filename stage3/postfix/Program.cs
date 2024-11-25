@@ -18,8 +18,35 @@ class Program
                 var first = stack.Pop();
                 var second = stack.Pop();
                 var add = first + second;
-                Console.WriteLine("Adding " + first + " and " + second + " result = " + add);
+                Console.WriteLine($"Adding {first} and {second} result = {add}");
                 stack.Push(add);
+            }
+            else if (input == "-")
+            {
+                // subtract two numbers
+                var first = stack.Pop();
+                var second = stack.Pop();
+                var subtract = first - second;
+                Console.WriteLine($"Subtracting {first} and {second} result = {subtract}");
+                stack.Push(subtract);
+            }
+            else if (input == "*")
+            {
+                // multiply two numbers
+                var first = stack.Pop();
+                var second = stack.Pop();
+                var multiply = first * second;
+                Console.WriteLine($"Multiplying {first} and {second} result = {multiply}");
+                stack.Push(multiply);
+            }
+            else if (input == "/")
+            {
+                // divide two numbers
+                var first = stack.Pop();
+                var second = stack.Pop();
+                var divide = first / second;
+                Console.WriteLine($"Dividing {first} and {second} result = {divide}");
+                stack.Push(divide);
             }
             else
             {
@@ -27,7 +54,7 @@ class Program
                 stack.Push(int.Parse(input));
             }
         }
-        Console.WriteLine("Stack: ");
+        Console.WriteLine($"Stack: {stack.Pop()}");
         // print stack by popping each element (use a while loop)
     }
 }
