@@ -40,9 +40,9 @@ class Program
 
     struct Node
     {
-        // public bool IsNumber { get; private set; }
-        // public int Number { get; private set; }
-        // public Operator? Operator { get; private set; }
+        // public bool IsNumber { get; set; }
+        // public int Number { get; set; }
+        // public Operator Operator { get; set; }
 
         public Node(string input)
         {
