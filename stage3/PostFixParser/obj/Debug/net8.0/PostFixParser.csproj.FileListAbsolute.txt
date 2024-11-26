@@ -1,0 +1,15 @@
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/bin/Debug/net8.0/PostFixParser
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/bin/Debug/net8.0/PostFixParser.deps.json
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/bin/Debug/net8.0/PostFixParser.runtimeconfig.json
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/bin/Debug/net8.0/PostFixParser.dll
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/bin/Debug/net8.0/PostFixParser.pdb
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.AssemblyInfoInputs.cache
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.AssemblyInfo.cs
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.csproj.CoreCompileInputs.cache
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.sourcelink.json
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.dll
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/refint/PostFixParser.dll
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.pdb
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/PostFixParser.genruntimeconfig.cache
+/Users/tyler/Repos/pathways-mac/stage3/PostFixParser/obj/Debug/net8.0/ref/PostFixParser.dll
